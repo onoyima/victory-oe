@@ -84,7 +84,7 @@ h6,
     position: relative;
     margin-left: 25px;
     padding: 35px 0;
-    color: var(--light) !important;
+    color: rgb(14, 44, 179);
     outline: none;
     transition: .5s;
 }
@@ -131,7 +131,7 @@ h6,
     }
 
     .navbar-light .navbar-brand h1 {
-        color: var(--primary);
+        color: var(--primary) !important;
     }
 
     .navbar-light .navbar-brand img {
@@ -176,7 +176,7 @@ h6,
     }
 
     .sticky-top.navbar-light .navbar-brand h1 {
-        color: var(--primary);
+        color: var(--primary) !important;
     }
 }
 
@@ -258,7 +258,7 @@ h6,
 }
 
 .service-item:hover {
-    background: var(--primary);
+    background: var(--primary) !important;
 }
 
 .service-item .service-icon {
@@ -274,7 +274,7 @@ h6,
 }
 
 .service-item:hover .service-icon {
-    color: var(--primary);
+    color: var(--primary)  !important;
     background: url(../img/icon-shape-white.png);
 }
 
@@ -291,13 +291,13 @@ h6,
 .service-item a.btn {
     position: relative;
     display: flex;
-    color: var(--primary);
+    color: var(--primary) !important;
     transition: .5s;
     z-index: 1;
 }
 
 .service-item:hover a.btn {
-    color: var(--primary);
+    color: var(--primary) !important;
 }
 
 .service-item a.btn::before {
@@ -376,7 +376,7 @@ h6,
 }
 
 .team-item:hover::after {
-    background: var(--primary);
+    background: var(--primary) !important;
 }
 
 .team-item h5,
@@ -411,7 +411,7 @@ h6,
 #portfolio-flters .btn:hover,
 #portfolio-flters .btn.active {
     color: var(--light);
-    background: var(--primary);
+    background: var(--primary) !important;
 }
 
 .portfolio-overlay {
@@ -424,7 +424,7 @@ h6,
     padding: 30px;
     top: 0;
     left: 0;
-    background: var(--primary);
+    background: var(--primary) !important;
     transition: .5s;
     z-index: 1;
     opacity: 0;
@@ -457,9 +457,15 @@ h6,
 
 
 /*** Footer ***/
-.footer {
+/* .footer {
     background: url(../img/footer.png) center center no-repeat;
     background-size: contain;
+} */
+
+.footer {
+    background: url('../img/Footer-Background-Image.png') no-repeat center center;
+    background-size: cover;
+    color: rgb(133, 125, 125);
 }
 
 .footer .btn.btn-social {
@@ -476,7 +482,7 @@ h6,
 }
 
 .footer .btn.btn-social:hover {
-    color: var(--primary);
+    color: var(--primary) !important;
 }
 
 .footer .btn.btn-link {

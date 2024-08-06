@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Victory Oil &amp; Energy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="images/fav.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="agency/css/styles.css" rel="stylesheet">
+
+    <style>
+        /* Carousel Item */
+        .carousel-item {
+            position: relative;
+            height: 80vh;
+            overflow: hidden;
+        }
+
+        /* Video Background */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Behind text and overlay */
+        }
+
+        /* Text Overlay */
+        .masthead {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff; /* Text color */
+            padding: 20px;
+            z-index: 2; /* Above the video and overlay */
+        }
+
+        .masthead-subheading {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .masthead-heading {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        /* Social Media Icons */
+        .social-media {
+            margin-top: 20px; /* Adjust space between button and icons */
+        }
+
+        .social-media a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem; /* Adjust size as needed */
+        }
+
+        .social-media a:hover {
+            color: #007bff; /* Color on hover */
+        }
+
+        /* Overlay on Carousel */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 255, 0.5);
+            z-index: 1; /* Above video, below text */
+        }
+
+        /* Container Height */
+        .container-xxl.custom-height {
+            height: 80vh; /* Default height */
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            .container-xxl.custom-height {
+                height: 60vh; /* Adjust height for smaller screens */
+            }
+        }
+
+        /* Partnership Section */
+        .partnership-section {
+            background-color: #f8f9fa;
+        }
+
+        /* Partner Carousel */
+        .partner-carousel {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 150px;
+        }
+
+        /* Partner Carousel Inner */
+        .partner-carousel-inner {
+            display: flex;
+            flex-wrap: nowrap;
+            animation: moveRightToLeft 20s linear infinite;
+        }
+
+        .partner-carousel-inner-reverse {
+            animation: moveLeftToRight 20s linear infinite;
+        }
+
+        /* Partner Logo */
+        .partner-logo {
+            flex: 0 0 auto;
+            width: 150px;
+            margin: 0 10px;
+        }
+
+        .partner-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Keyframes for Carousel Animation */
+        @keyframes moveRightToLeft {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes moveLeftToRight {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(100%);
+            }
+        }
+
+        /* Pause Animation on Hover */
+        .partner-carousel-inner:hover,
+        .partner-carousel-inner-reverse:hover {
+            animation-play-state: paused;
+        }
+
+        /* Background Slides */
+        .bg-slide-1, .bg-slide-2, .bg-slide-3 {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+    
+    <!-- Navigation-->
+    
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="#" class="navbar-brand p-0">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#about" class="nav-item nav-link text-primary"><strong>About Us</strong></a>
+                <div class="nav-item dropdown">
+                    <a href="#services" class="nav-item nav-link dropdown-toggle"><strong>Services</strong></a>
+                    <div class="dropdown-menu m-0 text-danger">
+                        <a href="technical-Services.html" class="dropdown-item">Technical Services</a>
+                        <a href="inspection-Services.html" class="dropdown-item">Inspection Services</a>
+                        <a href="earth-Services.html" class="dropdown-item">Earth Science Services</a>
+                        <a href="engineering-services.html" class="dropdown-item">Engineering Solutions</a>
+                        <a href="training-services.html" class="dropdown-item">Training Solutions</a>
+                        <a href="project-services.html" class="dropdown-item">Project Management Services</a>
+                    </div>
+                </div>
+                <a href="#partners" class="nav-item nav-link"><strong>Partners</strong></a>
+                <a href="#team" class="nav-item nav-link"><strong>Our Team</strong></a>
+                <a href="#contact" class="nav-item nav-link"><strong>Contact Us</strong></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Carousel -->
+    <header class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- Video Background -->
+                <video class="video-background" autoplay muted loop>
+                    <source src="images/slider/energy/web.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- Overlay -->
+                <div class="overlay"></div>
+                <!-- Masthead Content -->
+                <div class="masthead">
+                    <!-- <div class="masthead-subheading">Welcome To Our Studio!</div> -->
+                    <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                    <!-- <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a> -->
+                    <!-- Social Media Icons -->
+                    <div class="social-media">
+                        <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+                        <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+                        <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+                        <a href="https://linkedin.com" target="_blank" class="fab fa-linkedin-in"></a>
+                        <a href="https://youtube.com" target="_blank" class="fab fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

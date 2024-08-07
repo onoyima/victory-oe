@@ -239,6 +239,26 @@
     height: 100vh; /* Adjust the height as needed */
     position: relative; /* Required for overlay positioning */
 }
+/* General styles for the image */
+.img-fluid {
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 768px) {
+    .img-fluid {
+        width: 100%; /* Ensure the image scales to fit the container */
+        max-width: none; /* Remove any max-width constraints */
+    }
+}
+
+@media (max-width: 576px) {
+    .img-fluid {
+        width: 100%; /* Ensure the image scales to fit the container */
+        max-width: none; /* Remove any max-width constraints */
+    }
+}
 
     </style>
     
@@ -495,13 +515,32 @@
                         </div>
                         <div class="d-flex align-items-center mt-4">
                             <a class="btn btn-primary rounded-pill px-4 me-3" href="">Read More</a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i
+                            <!-- <a class="btn btn-outline-primary btn-square me-3" href=""><i
                                     class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-primary btn-square me-3" href=""><i
                                     class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-primary btn-square me-3" href=""><i
                                     class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a> -->
+
+                            <a class="btn btn-outline-primary btn-social mx-2" href="https://twitter.com/victoryoilenergy" target="_blank">
+                                <i class="fab fa-fw fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-outline-primary btn-social mx-2" href="https://web.facebook.com/VictoryOilandEnergy" target="_blank">
+                                <i class="fab fa-fw fa-facebook-f"></i>
+                            </a>
+                            <a class="btn btn-outline-primary btn-social mx-2" href="https://www.linkedin.com/company/victory-oil-energy" target="_blank">
+                                <i class="fab fa-fw fa-linkedin-in"></i>
+                            </a>
+                            <a class="btn btn-outline-primary btn-social mx-2" href="https://www.instagram.com/victoryoilenergy" target="_blank">
+                                <i class="fab fa-fw fa-instagram"></i>
+                            </a>
+                            <a class="btn btn-outline-primary btn-social mx-2" href="https://api.whatsapp.com/send?phone=2347015727527" target="_blank">
+                                <i class="fab fa-fw fa-whatsapp"></i>
+                            </a>
+                            <a class="btn btn-outline-primary btn-social mx-2" href="https://www.youtube.com/@victoryoilenergy" target="_blank">
+                                <i class="fab fa-fw fa-youtube"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -646,7 +685,8 @@
                                     <a class="btn btn-square text-primary bg-white my-1" href=""><i
                                             class="fab fa-linkedin-in"></i></a>
                                 </div>
-                                <img class="img-fluid rounded w-80" src="images/h.png" alt="">
+                                <img class="img-fluid rounded w-80" src="images/h.png" alt="Image Description">
+
                             </div>
                             <div class="px-4 py-3">
                                 <h5 class="fw-bold m-0">Deji Boss</h5>

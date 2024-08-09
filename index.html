@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +25,222 @@
     <link href="agency/css/styles.css" rel="stylesheet">
 
     <style>
+        /* Carousel Item */
+.carousel-item {
+    position: relative;
+    height: 80vh; /* Adjust as needed */
+    overflow: hidden;
+}
+
+/* Video Background Wrapper */
+.video-background-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Video Background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    z-index: -1; /* Behind text and overlay */
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(57, 57, 145, 0.5);
+    z-index: 1; /* Above video, below text */
+}
+
+/* Masthead Content */
+.masthead {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Text color */
+    padding: 20px;
+    z-index: 2; /* Above the video and overlay */
+}
+
+/* Text Styling */
+.masthead-subheading {
+    font-size: 2rem; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.masthead-heading {
+    font-size: 3rem; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Social Media Icons */
+.btn-social {
+    font-size: 1.5rem; /* Adjust as needed */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 60vh; /* Adjust height for smaller screens */
+    }
+
+    .masthead {
+        top: 40%; /* Adjust for smaller screens */
+        left: 50%;
+        transform: translate(-50%, -40%);
+        padding: 10px;
+    }
+
+    .masthead-heading {
+        font-size: 2rem; /* Smaller heading for mobile */
+    }
+
+    .masthead-subheading {
+        font-size: 1.5rem; /* Smaller subheading for mobile */
+    }
+
+    .btn-primary {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .btn-social {
+        margin: 5px;
+        font-size: 1.2rem; /* Adjust icon size for mobile */
+    }
+
+    .masthead p {
+        font-size: 1rem; /* Adjust paragraph font size for mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item {
+        height: 50vh; /* Further adjust height for extra small screens */
+    }
+
+    .masthead {
+        top: 30%; /* Adjust for extra small screens */
+        left: 50%;
+        transform: translate(-50%, -30%);
+        padding: 5px;
+    }
+
+    .masthead-heading {
+        font-size: 1.5rem; /* Smaller heading for extra small screens */
+    }
+
+    .masthead-subheading {
+        font-size: 1rem; /* Smaller subheading for extra small screens */
+    }
+
+    .btn-primary {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    .btn-social {
+        margin: 3px;
+        font-size: 1rem; /* Adjust icon size for extra small screens */
+    }
+
+    .masthead p {
+        font-size: 0.9rem; /* Further adjust paragraph font size for extra small screens */
+    }
+}
+
+/* Partnership Section */
+.partnership-section {
+    background-color: #f8f9fa;
+}
+
+/* Partner Carousel */
+.partner-carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+}
+
+/* Partner Carousel Inner */
+.partner-carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: moveRightToLeft 20s linear infinite;
+}
+
+.partner-carousel-inner-reverse {
+    animation: moveLeftToRight 20s linear infinite;
+}
+
+/* Partner Logo */
+.partner-logo {
+    flex: 0 0 auto;
+    width: 150px; /* Adjust width as needed */
+    margin: 0 10px;
+}
+
+.partner-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures images maintain aspect ratio */
+}
+
+/* Keyframes for Carousel Animation */
+@keyframes moveRightToLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveLeftToRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* Pause Animation on Hover */
+.partner-carousel-inner:hover,
+.partner-carousel-inner-reverse:hover {
+    animation-play-state: paused;
+}
+
+/* Background Slides */
+.bg-slide-1, .bg-slide-2, .bg-slide-3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust the height as needed */
+    position: relative; /* Required for overlay positioning */
+}
+
     </style>
     
 </head>
@@ -73,10 +290,9 @@
                 <!-- Overlay -->
                 <div class="overlay"></div>
                 <!-- Masthead Content -->
-                <div class="masthead">
+                <div class="masthead ps-4">
                     <div class=""><h3 class="masthead-heading text-uppercase text-white animated zoomIn">Energy Reimagined</h3>
-                        <p>First-Class Custom-fit Energy Solutions made for Your Most Ambitious Business Goals.</p>
-                       
+                        <p> <strong>First-Class Custom-fit Energy Solutions made for Your Most Ambitious Business Goals.</strong> </p>
                     </div>
                     
                 </div>
@@ -94,7 +310,7 @@
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4">About Us</h6>
+                            <h6 class="position-relative text-primary ps-4"> <strong>About Us</strong></h6>
                             <h2 class="mt-2">Victory Oil & Energy</h2>
                         </div>
                         <p class="mb-4">We are, a Pan African centric oil and energy organization with a diverse and
@@ -262,32 +478,7 @@
                         </div>
                         <div class="d-flex align-items-center mt-4">
                             <a class="btn btn-primary rounded-pill px-4 me-3" href="about.html">Read More</a>
-                            <!-- <a class="btn btn-outline-primary btn-square me-3" href=""><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-primary btn-square me-3" href=""><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a> -->
-
-                            <!-- <a class="btn btn-outline-primary btn-social mx-2" href="https://twitter.com/victoryoilenergy" target="_blank">
-                                <i class="fab fa-fw fa-twitter"></i>
-                            </a>
-                            <a class="btn btn-outline-primary btn-social mx-2" href="https://web.facebook.com/VictoryOilandEnergy" target="_blank">
-                                <i class="fab fa-fw fa-facebook-f"></i>
-                            </a>
-                            <a class="btn btn-outline-primary btn-social mx-2" href="https://www.linkedin.com/company/victory-oil-energy" target="_blank">
-                                <i class="fab fa-fw fa-linkedin-in"></i>
-                            </a>
-                            <a class="btn btn-outline-primary btn-social mx-2" href="https://www.instagram.com/victoryoilenergy" target="_blank">
-                                <i class="fab fa-fw fa-instagram"></i>
-                            </a>
-                            <a class="btn btn-outline-primary btn-social mx-2" href="https://api.whatsapp.com/send?phone=2347015727527" target="_blank">
-                                <i class="fab fa-fw fa-whatsapp"></i>
-                            </a>
-                            <a class="btn btn-outline-primary btn-social mx-2" href="https://www.youtube.com/@victoryoilenergy" target="_blank">
-                                <i class="fab fa-fw fa-youtube"></i>
-                            </a> -->
+                           
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -299,12 +490,37 @@
 
         <!-- About End -->
 
-        
 
+        <!-- Newsletter Start -->
+        <!-- <div class="container-xxl bg-secondary newsletter my-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container px-lg-5">
+                <div class="row align-items-center" style="height: 250px;">
+                    <div class="col-12 col-md-6">
+                        <h3 class="text-white">Ready to get started</h3>
+                        <small class="text-white">Subsribe to our Newsletter.</small>
+                        <form action="subscribe_newsletter.php" method="POST" class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="email" name="email"
+                                placeholder="Enter Your Email" style="height: 48px;" required>
+                            <button type="submit" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2">
+                                <i class="fa fa-paper-plane text-primary fs-4"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 text-center mb-n5 d-none d-md-block">
+                        <img class="img-fluid mt-5" style="height: 250px;" src="img/newsletter.png" alt="Newsletter Image">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+        <!-- Newsletter End -->
+
+
+        <!-- Service Start -->
         <div class="container-xxl py-5">
             <div class="container px-lg-5">
                 <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Services</h6>
+                    <h6 class="position-relative d-inline text-primary ps-4"><strong>Our Services</strong></h6>
                     <h2 class="mt-2">A Leading Multi-Service Pan African-centric Organization</h2>
                 </div>
         
@@ -317,7 +533,7 @@
                             <div class="card-body text-center d-flex flex-column">
                                 <h3 class="mb-3">Technical Services</h3>
                                 <p>From exploration to production, we’re your complete technical solution.</p>
-                                <a class="btn text-primary  " href="services/project-services.html">Read More</a>
+                                <a class="btn text-primary  " href="services/technical-Services.html">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -386,162 +602,11 @@
             </div>
         </div>
         
-        
-        <!-- Team Start -->
-        <!-- <div class="container-xxl py-5" id="team">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4">Our Team</h6>
-                    <h2 class="mt-2">Meet Our Team Members</h2>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
-                                    style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="images/h.png" alt="Image Description">
 
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Deji Boss</h5>
-                                <small>CEO</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
-                                    style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="img/team-2.jpg" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Chinedu Abuad</h5>
-                                <small>Manager</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
-                                    style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="images/h.png" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Juliet Nduka</h5>
-                                <small>Inspector</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
-                                    style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="images/h.png" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Juliet Nduka</h5>
-                                <small>Inspector</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
-                                    style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="images/h.png" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Juliet Nduka</h5>
-                                <small>Inspector</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5"
-                                    style="width: 75px;">
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-instagram"></i></a>
-                                    <a class="btn btn-square text-primary bg-white my-1" href=""><i
-                                            class="fab fa-linkedin-in"></i></a>
-                                </div>
-                                <img class="img-fluid rounded w-100" src="images/h.png" alt="">
-                            </div>
-                            <div class="px-4 py-3">
-                                <h5 class="fw-bold m-0">Juliet Nduka</h5>
-                                <small>Inspector</small>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div> -->
-        <!-- Team End -->
-
-
-
-           <!-- Partnership Section -->
-<!-- Partnership Section -->
 <section class="partnership-section py-5" id="partners">
     <div class="container">
         <div class="section-title position-relative mb-4 pb-2 text-center">
-            <h6 class="position-relative text-primary ps-4">Our Partners</h6>
+            <h6 class="position-relative text-primary ps-4"> <strong>Our Partners</strong></h6>
             <h2 class="mt-2">Trusted by Leading Companies</h2>
         </div>
         <div class="partner-carousel">
@@ -613,70 +678,13 @@
 
        
 
-        <!-- Testimonial Start -->
-        <!-- <div class="container-xxl bg-secondary testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>"Victory Oil and Energy stands out in the industry for their dedication to quality and sustainability. Their projects are meticulously planned and executed, ensuring that we achieve our goals while minimizing environmental impact. "</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
-                                style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>Working with Victory Oil and Energy has been a game-changer for our company. Their expertise in energy solutions and dedication to sustainability have significantly enhanced our operations.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
-                                style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>"Victory Oil and Energy has consistently delivered outstanding results for our company. Their expertise in the oil and energy sector is unmatched, and their focus on sustainable practices is commendable. "</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
-                                style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                        <i class="fa fa-quote-left fa-2x mb-3"></i>
-                        <p>"Victory Oil and Energy's dedication to sustainability and environmental stewardship is truly inspiring. Their projects not only contribute to energy efficiency but also promote a greener future. "</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg"
-                                style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h6 class="text-white mb-1">Client Name</h6>
-                                <small>Profession</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Testimonial End -->
-        
 
         <div class="container-xxl py-5" id="contact">
             <div class="container px-lg-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 mb-5 mb-lg-0">
                         <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                            <h6 class="position-relative d-inline text-primary ps-4">Contact Us</h6>
+                            <h6 class="position-relative d-inline text-primary ps-4"> <strong> Contact Us </strong></h6>
                             <h2 class="mt-2">Contact For Any Query</h2>
                         </div>
                         <div class="wow fadeInUp" data-wow-delay="0.3s">
@@ -744,8 +752,6 @@
         
 
         <!-- Footer Start -->
-        
-    
         <div class="container-fluid bg-secondary text-light footer mt-5 pt-4 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-3 px-lg-5">
                 <div class="row g-5">
@@ -763,9 +769,9 @@
                     
                     <!-- Footer Column 2 -->
                     <div class="col-md-6 col-lg-4">
-                        <h5 class="text-white mb-4">Menu</h5>
+                        <h5 class="text-white mb-4"><strong>Menu</strong></h5>
                         <div class="d-flex flex-column">
-                            <a class="btn btn-link text-light mb-2" href="">Home</a>
+                            <!-- <a class="btn btn-link text-light mb-2" href="">Home</a> -->
                             <a class="btn btn-link text-light mb-2" href="">Services</a>
                             <a class="btn btn-link text-light mb-2" href="">Contact Us</a>
                             <a class="btn btn-link text-light" href="">About Us</a>
@@ -779,10 +785,10 @@
                     
                     <!-- Footer Column 4 -->
                     <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4">Get In Touch</h5>
+                        <h5 class="text-white mb-4"><strong>Get In Touch</strong></h5>
                         <p><i class="fa fa-map-marker-alt me-3"></i>Victory Oil & Energy International Operations, 3 Sugarcreek Boulevard, Sugarland, Houston, Texas.</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+244 222 350 574</p>
-                        <p><i class="fa fa-envelope me-3"></i>sales@victoryoe.com</p>
+                        <p><i class="fa fa-phone-alt me-3"></i> <strong>+244 222 350 574</strong></p>
+                        <p><i class="fa fa-envelope me-3"></i><strong>sales@victoryoe.com</strong></p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social me-2" href="https://web.facebook.com/VictoryOilEnergy"><i class="fab fa-facebook-f"></i></a>
@@ -798,6 +804,8 @@
             
             
         </div>
+        
+        
         
         <!-- Footer End -->
 

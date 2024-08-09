@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Victory Oil &amp; Energy</title>
+    <title>Victory Oil &amp; Energy | Technical Services </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -22,7 +22,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
 
 
 
@@ -34,86 +34,209 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <link href="../css/style.css" rel="stylesheet">
+
+    <link href="../agency/css/styles.css" rel="stylesheet">
+
+    <style>
+      .carousel-item {
+            position: relative;
+            height: 25vh; /* Adjust height for smaller screens */
+            background: no-repeat center center;
+            background-size: cover;
+        }
+
+        /* Ensure the carousel height adjusts on larger screens */
+        @media (min-width: 768px) {
+            .carousel-item {
+                height: 25vh; /* Larger height for medium screens and up */
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .carousel-item {
+                height: 25vh; /* Even larger height for large screens and up */
+            }
+        }
+
+        .masthead {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 0;
+        }
+
+        .carousel-caption {
+            display: none; /* Hide the default carousel caption */
+        }
+
+        .text-uppercase {
+            text-transform: uppercase;
+        }
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .zoomIn {
+            animation-name: zoomIn;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+/* Partnership Section */
+.partnership-section {
+    background-color: #f8f9fa;
+}
+
+/* Partner Carousel */
+.partner-carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+}
+
+/* Partner Carousel Inner */
+.partner-carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: moveRightToLeft 20s linear infinite;
+}
+
+.partner-carousel-inner-reverse {
+    animation: moveLeftToRight 20s linear infinite;
+}
+
+/* Partner Logo */
+.partner-logo {
+    flex: 0 0 auto;
+    width: 150px; /* Adjust width as needed */
+    margin: 0 10px;
+}
+
+.partner-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures images maintain aspect ratio */
+}
+
+/* Keyframes for Carousel Animation */
+@keyframes moveRightToLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveLeftToRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* Pause Animation on Hover */
+.partner-carousel-inner:hover,
+.partner-carousel-inner-reverse:hover {
+    animation-play-state: paused;
+}
+
+/* Background Slides */
+.bg-slide-1, .bg-slide-2, .bg-slide-3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust the height as needed */
+    position: relative; /* Required for overlay positioning */
+}
+
+    </style>
     
 </head>
 
-<body>
-    <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+<body id="page-top">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Spinner End -->
-
-
-        <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="#" class="navbar-brand p-0">
-                    <img src="../images/logo.png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="../index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About Us</a>
-                        <div class="nav-item dropdown">
-                            <a href="../index.html" class="nav-item nav-link dropdown-toggle">Services</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="technical-Services.html" class="dropdown-item">Technical Services</a>
-                                <a href="inspection-Services.html" class="dropdown-item">Inspection Services</a>
-                                <a href="earth-Services.html" class="dropdown-item">Earth Science Services</a>
-                                <a href="engineering-services.html" class="dropdown-item">Engineering Solutions</a>
-                                <a href="training-services.html" class="dropdown-item">Training Solutions</a>
-                                <a href="project-services.html" class="dropdown-item">Project Management Services</a>
-                            </div>
-                        </div>
-                        <a href="../index.html" class="nav-item nav-link">Partners</a>
-                        <a href="../index.html" class="nav-item nav-link">Our Team</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+    </div>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="../index.html" class="navbar-brand p-0">
+            <img src="../images/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="../about.html" class="nav-item nav-link text-primary"><strong>About Us</strong></a>
+                <div class="nav-item dropdown">
+                    <a href="../index.html" class="nav-item nav-link dropdown-toggle text-primary"><strong>Services</strong></a>
+                    <div class="dropdown-menu m-0 text-danger">
+                        <a href="technical-Services.html" class="dropdown-item text-primary">Technical Services</a>
+                        <a href="inspection-Services.html" class="dropdown-item text-primary">Inspection Services</a>
+                        <a href="earth-Services.html" class="dropdown-item text-primary">Earth Science Services</a>
+                        <a href="engineering-services.html" class="dropdown-item text-primary">Engineering Solutions</a>
+                        <a href="training-services.html" class="dropdown-item text-primary">Training Solutions</a>
+                        <a href="project-services.html" class="dropdown-item text-primary">Project Management Services</a>
                     </div>
                 </div>
-            </nav>
-
-            <div class="container-xxl py-5 bg-primary hero-header mb-5">
-                <div class="container my-5 py-5 px-lg-5">
-                    <div class="row g-5 py-5">
-                        <div class="col-12 text-center">
-                            <h1 class="text-white animated zoomIn">Technical Services</h1>
-                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                            
-                        </div>
-                    </div>
-                </div>
+                <a href="#partners" class="nav-item nav-link text-primary"><strong>Partners</strong></a>
+                <!-- <a href="#team" class="nav-item nav-link"><strong>Our Team</strong></a> -->
+                <a href="#contact" class="nav-item nav-link text-primary"><strong>Contact Us</strong></a>
             </div>
         </div>
-        <!-- Navbar & Hero End -->
-
-
-        <!-- Full Screen Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-                    <div class="modal-header border-0">
-                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
-                        <div class="input-group" style="max-width: 600px;">
-                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                        </div>
-                    </div>
+    </nav>
+    <header class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('../images/services/Technical.jpg');">
+                <div class="overlay"></div>
+                <!-- Masthead Content -->
+                <div class="masthead">
+                    <h3 class="text-uppercase text-white animated zoomIn"> <strong>Technical Services</strong> </h3>
                 </div>
-            </div>
-        </div>
-        <!-- Full Screen Search End -->
 
+            </div>
+            <!-- Additional slides (e.g., bg-slide-2, bg-slide-3) can be added here -->
+        </div>
+    </header>
+
+
+
+        <!-- section  End -->
 
         <div class="container-xxl py-5" id="about">
             <div class="container px-lg-5">
@@ -318,75 +441,85 @@
             </div>
         </div>
 
+
+        
+    
+
       <!-- Footer Start -->
-      <div class="container-fluid bg-primary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5 px-lg-5">
+      <div class="container-fluid bg-secondary text-light footer mt-5 pt-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-3 px-lg-5">
             <div class="row g-5">
+                <!-- Footer Column 1 -->
+                <div class="col-md-6 col-lg-5">
+                    <a href="" class="navbar-brand p-0">
+                        <img src="../images/logo.png" alt="Logo" width="80%">
+                    </a>
+                    <p class="text-justify">
+                        Victory Oil & Energy is a leading multi-service Pan African-centric oil and energy organization 
+                        with a diverse and growing portfolio of <br> solutions and capabilities geared towards the delivery 
+                        of efficient and reliable quality services within the oil & gas and renewable energy market space.
+                    </p>
+                </div>
+                
+                <!-- Footer Column 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <h5 class="text-white mb-4"><strong>Menu</strong></h5>
+                    <div class="d-flex flex-column">
+                        <!-- <a class="btn btn-link text-light mb-2" href="">Home</a> -->
+                        <a class="btn btn-link text-light mb-2" href="../index.html">Services</a>
+                        <a class="btn btn-link text-light mb-2" href="../index.html">Contact Us</a>
+                        <a class="btn btn-link text-light" href="../about.html">About Us</a>
+                        <a class="btn btn-link text-light mb-2" href="../index.html">Partners</a>
+                       
+                    </div>
+                </div>
+                
+               
+                
+                <!-- Footer Column 4 -->
                 <div class="col-md-6 col-lg-3">
-                    <h5 class="text-white mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i> <span>Victory Oil & Energy International Operations,
-                        3 Sugarcreek Boulevard, Sugarland, Houston, Texas.</span></p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+244 222 350 574</p>
-                    <p><i class="fa fa-envelope me-3"></i>sales@victoryoe.com</p>
+                    <h5 class="text-white mb-4"><strong>Get In Touch</strong></h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Victory Oil & Energy International Operations, 3 Sugarcreek Boulevard, Sugarland, Houston, Texas.</p>
+                    <p><i class="fa fa-phone-alt me-3"></i> <strong>+244 222 350 574</strong></p>
+                    <p><i class="fa fa-envelope me-3"></i><strong>sales@victoryoe.com</strong></p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://web.facebook.com/VictoryOilEnergy"><i class="fab fa-facebook-f"></i></a>
-                        <!-- <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a> -->
-                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/victoryoilenergy.ao/"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social me-2" href="https://web.facebook.com/VictoryOilEnergy"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social me-2" href="https://www.instagram.com/victoryoilenergy.ao/"><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/victoryoe/"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="text-white mb-4">Popular Link</h5>
-                    <a class="btn btn-link" href="">Home</a>
-                    <a class="btn btn-link" href="">Services</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">About Us</a>
-                    
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="text-white mb-4">Popular Link</h5>
-                    <a class="btn btn-link" href="">Partners</a>
-                    <a class="btn btn-link" href="">Our Team</a>
-                    <a class="btn btn-link" href="">Tesmonies</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    
-                </div>
-                
-                <div class="col-md-6 col-lg-3">
-                    <!-- <h5 class="text-white mb-4">Newsletter</h5> -->
-                    <a href="../index.html" class="navbar-brand p-0">
-                        <img src="images/logo.png" alt="Logo" width="80%">
-                    </a>
-                    <p class="align-content-center" > Victory Oil & Energy is a Leading Multi-Service Pan African-centric oil and energy
-                         organization with a diverse and growing portfolio of solutions and capabilities 
-                         geared towards the delivery of efficient and 
-                        reliable quality services within the Oil & Gas and renewable energy market space. </p>
-                
-                </div>
+            </div>
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a class="border-bottom" href="#">Victory Oil & Energy</a> All Rights Reserved. Designed By <a class="border-bottom" href="https://www.linkedin.com/in/boniface-onoyima-47b764287/">Onoyimacv</a>
             </div>
         </div>
-        <div class="container px-lg-5">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Victory oil and Energy </a> All Right Reserved. Designed By <a class="border-bottom" href="https://www.linkedin.com/in/boniface-onoyima-47b764287/">Onoyimacv</a>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+        
+        
     </div>
+    
+    
+    
     <!-- Footer End -->
+
 
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+        <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-1"><i class="fab fa-instagram"></a> -->
     </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+<!-- Bootstrap JS Bundle (includes Popper.js) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="../lib/wow/wow.min.js"></script>
     <script src="../lib/easing/easing.min.js"></script>
     <script src="../lib/waypoints/waypoints.min.js"></script>

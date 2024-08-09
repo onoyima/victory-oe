@@ -62,7 +62,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #ede8e8;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -76,7 +76,7 @@
   --bs-link-color: #ffc800;
   --bs-link-hover-color: #cca000;
   --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff4cc;
+  --bs-highlight-bg: #f7f4eb;
 }
 
 *,

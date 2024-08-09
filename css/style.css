@@ -5,8 +5,239 @@
     --light: #cdcd9f;
     --dark: #1D1D27;
 }
+/* CUSTOMIZED  */
 
 
+.btn-primary {
+    background-color: #009dd1 !important;
+    border-color: #009dd1 !important;
+    color: #fff !important; /* Ensure text is readable on the new background */
+}
+.text-primary{
+   color: #009dd1 !important;
+}
+
+
+
+        /* Carousel Item */
+        .carousel-item {
+            position: relative;
+            height: 80vh; /* Adjust as needed */
+            overflow: hidden;
+        }
+        
+        /* Video Background Wrapper */
+        .video-background-wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 100vh; /* Full viewport height */
+        }
+        
+        /* Video Background */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the entire container */
+            z-index: -1; /* Behind text and overlay */
+        }
+        
+        /* Overlay */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(57, 57, 145, 0.5);
+            z-index: 1; /* Above video, below text */
+        }
+        
+        /* Masthead Content */
+        .masthead {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff; /* Text color */
+            padding: 20px;
+            z-index: 2; /* Above the video and overlay */
+        }
+        
+        /* Text Styling */
+        .masthead-subheading {
+            font-size: 2rem; /* Adjust as needed */
+            margin-bottom: 10px;
+        }
+        
+        .masthead-heading {
+            font-size: 3rem; /* Adjust as needed */
+            margin-bottom: 20px;
+        }
+        
+        /* Button */
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        
+        /* Social Media Icons */
+        .btn-social {
+            font-size: 1.5rem; /* Adjust as needed */
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .carousel-item {
+                height: 60vh; /* Adjust height for smaller screens */
+            }
+        
+            .masthead {
+                top: 40%; /* Adjust for smaller screens */
+                left: 50%;
+                transform: translate(-50%, -40%);
+                padding: 10px;
+            }
+        
+            .masthead-heading {
+                font-size: 2rem; /* Smaller heading for mobile */
+            }
+        
+            .masthead-subheading {
+                font-size: 1.5rem; /* Smaller subheading for mobile */
+            }
+        
+            .btn-primary {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        
+            .btn-social {
+                margin: 5px;
+                font-size: 1.2rem; /* Adjust icon size for mobile */
+            }
+        
+            .masthead p {
+                font-size: 1rem; /* Adjust paragraph font size for mobile */
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .carousel-item {
+                height: 50vh; /* Further adjust height for extra small screens */
+            }
+        
+            .masthead {
+                top: 30%; /* Adjust for extra small screens */
+                left: 50%;
+                transform: translate(-50%, -30%);
+                padding: 5px;
+            }
+        
+            .masthead-heading {
+                font-size: 1.5rem; /* Smaller heading for extra small screens */
+            }
+        
+            .masthead-subheading {
+                font-size: 1rem; /* Smaller subheading for extra small screens */
+            }
+        
+            .btn-primary {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+        
+            .btn-social {
+                margin: 3px;
+                font-size: 1rem; /* Adjust icon size for extra small screens */
+            }
+        
+            .masthead p {
+                font-size: 0.9rem; /* Further adjust paragraph font size for extra small screens */
+            }
+        }
+        
+        /* Partnership Section */
+        .partnership-section {
+            background-color: #f8f9fa;
+        }
+        
+        /* Partner Carousel */
+        .partner-carousel {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 150px; /* Adjust height as needed */
+        }
+        
+        /* Partner Carousel Inner */
+        .partner-carousel-inner {
+            display: flex;
+            flex-wrap: nowrap;
+            animation: moveRightToLeft 20s linear infinite;
+        }
+        
+        .partner-carousel-inner-reverse {
+            animation: moveLeftToRight 20s linear infinite;
+        }
+        
+        /* Partner Logo */
+        .partner-logo {
+            flex: 0 0 auto;
+            width: 150px; /* Adjust width as needed */
+            margin: 0 10px;
+        }
+        
+        .partner-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures images maintain aspect ratio */
+        }
+        
+        /* Keyframes for Carousel Animation */
+        @keyframes moveRightToLeft {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes moveLeftToRight {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(100%);
+            }
+        }
+        
+        /* Pause Animation on Hover */
+        .partner-carousel-inner:hover,
+        .partner-carousel-inner-reverse:hover {
+            animation-play-state: paused;
+        }
+        
+        /* Background Slides */
+        .bg-slide-1, .bg-slide-2, .bg-slide-3 {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh; /* Adjust the height as needed */
+            position: relative; /* Required for overlay positioning */
+        }
+
+
+        
+/* CUSTOMIZED ENDS         */
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -434,38 +665,11 @@ h6,
     opacity: 1;
 }
 
-.portfolio-item .btn {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    top: 0px;
-    right: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url(../img/icon-shape-white.png) center center no-repeat;
-    border: none;
-    transition: .5s;
-    opacity: 0;
-    z-index: 2;
-}
-
-.portfolio-item:hover .btn {
-    opacity: 1;
-    transition-delay: .15s;
-}
-
-
-/*** Footer ***/
-/* .footer {
-    background: url(../img/footer.png) center center no-repeat;
-    background-size: contain;
-} */
 
 .footer {
-    background: url('../img/Footer-Background-Image.png') no-repeat center center;
+    background: url('../img/Footer-Background-Image.png') no-repeat center center !important;
     background-size: cover;
-    color: rgb(133, 125, 125);
+    color: rgb(245, 241, 241);
 }
 
 .footer .btn.btn-social {

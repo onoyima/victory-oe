@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
@@ -25,806 +34,539 @@
     <link href="agency/css/styles.css" rel="stylesheet">
 
     <style>
-        /* Carousel Item */
-.carousel-item {
-    position: relative;
-    height: 80vh; /* Adjust as needed */
-    overflow: hidden;
-}
-
-/* Video Background Wrapper */
-.video-background-wrapper {
-    position: relative;
-    overflow: hidden;
-    height: 100vh; /* Full viewport height */
-}
-
-/* Video Background */
-.video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cover the entire container */
-    z-index: -1; /* Behind text and overlay */
-}
-
-/* Overlay */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(57, 57, 145, 0.5);
-    z-index: 1; /* Above video, below text */
-}
-
-/* Masthead Content */
-.masthead {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff; /* Text color */
-    padding: 20px;
-    z-index: 2; /* Above the video and overlay */
-}
-
-/* Text Styling */
-.masthead-subheading {
-    font-size: 2rem; /* Adjust as needed */
-    margin-bottom: 10px;
-}
-
-.masthead-heading {
-    font-size: 3rem; /* Adjust as needed */
-    margin-bottom: 20px;
-}
-
-/* Button */
-.btn-primary {
-    background-color: #007bff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-/* Social Media Icons */
-.btn-social {
-    font-size: 1.5rem; /* Adjust as needed */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .carousel-item {
-        height: 60vh; /* Adjust height for smaller screens */
-    }
-
-    .masthead {
-        top: 40%; /* Adjust for smaller screens */
-        left: 50%;
-        transform: translate(-50%, -40%);
-        padding: 10px;
-    }
-
-    .masthead-heading {
-        font-size: 2rem; /* Smaller heading for mobile */
-    }
-
-    .masthead-subheading {
-        font-size: 1.5rem; /* Smaller subheading for mobile */
-    }
-
-    .btn-primary {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-
-    .btn-social {
-        margin: 5px;
-        font-size: 1.2rem; /* Adjust icon size for mobile */
-    }
-
-    .masthead p {
-        font-size: 1rem; /* Adjust paragraph font size for mobile */
-    }
-}
-
-@media (max-width: 576px) {
-    .carousel-item {
-        height: 50vh; /* Further adjust height for extra small screens */
-    }
-
-    .masthead {
-        top: 30%; /* Adjust for extra small screens */
-        left: 50%;
-        transform: translate(-50%, -30%);
-        padding: 5px;
-    }
-
-    .masthead-heading {
-        font-size: 1.5rem; /* Smaller heading for extra small screens */
-    }
-
-    .masthead-subheading {
-        font-size: 1rem; /* Smaller subheading for extra small screens */
-    }
-
-    .btn-primary {
-        padding: 6px 12px;
-        font-size: 0.8rem;
-    }
-
-    .btn-social {
-        margin: 3px;
-        font-size: 1rem; /* Adjust icon size for extra small screens */
-    }
-
-    .masthead p {
-        font-size: 0.9rem; /* Further adjust paragraph font size for extra small screens */
-    }
-}
-
-/* Partnership Section */
-.partnership-section {
-    background-color: #f8f9fa;
-}
-
-/* Partner Carousel */
-.partner-carousel {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 150px; /* Adjust height as needed */
-}
-
-/* Partner Carousel Inner */
-.partner-carousel-inner {
-    display: flex;
-    flex-wrap: nowrap;
-    animation: moveRightToLeft 20s linear infinite;
-}
-
-.partner-carousel-inner-reverse {
-    animation: moveLeftToRight 20s linear infinite;
-}
-
-/* Partner Logo */
-.partner-logo {
-    flex: 0 0 auto;
-    width: 150px; /* Adjust width as needed */
-    margin: 0 10px;
-}
-
-.partner-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensures images maintain aspect ratio */
-}
-
-/* Keyframes for Carousel Animation */
-@keyframes moveRightToLeft {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes moveLeftToRight {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(100%);
-    }
-}
-
-/* Pause Animation on Hover */
-.partner-carousel-inner:hover,
-.partner-carousel-inner-reverse:hover {
-    animation-play-state: paused;
-}
-
-/* Background Slides */
-.bg-slide-1, .bg-slide-2, .bg-slide-3 {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Adjust the height as needed */
-    position: relative; /* Required for overlay positioning */
-}
-
+       h1{
+        font-family: "Noi Grotesk" !important;
+        font-weight: 300;
+        font-size:  clamp(38px, 5.208vw, 100px);
+        letter-spacing: -2px;
+        line-height: 1;
+        color: red !important;
+       }
     </style>
-    
+
+
 </head>
 
 <body id="page-top">
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 px-lg-5 py-3 py-lg-0">
-        <a href="#" class="navbar-brand p-0">
-            <img src="images/logo.png" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="#about" class="nav-item nav-link text-primary"><strong>About Us</strong></a>
-                <div class="nav-item dropdown">
-                    <a href="#services" class="nav-item nav-link dropdown-toggle text-primary"><strong>Services</strong></a>
-                    <div class="dropdown-menu m-0 text-danger">
-                        <a href="technical-Services.html" class="dropdown-item text-primary">Technical Services</a>
-                        <a href="inspection-Services.html" class="dropdown-item text-primary">Inspection Services</a>
-                        <a href="earth-Services.html" class="dropdown-item text-primary">Earth Science Services</a>
-                        <a href="engineering-services.html" class="dropdown-item text-primary">Engineering Solutions</a>
-                        <a href="training-services.html" class="dropdown-item text-primary">Training Solutions</a>
-                        <a href="project-services.html" class="dropdown-item text-primary">Project Management Services</a>
-                    </div>
-                </div>
-                <a href="#partners" class="nav-item nav-link text-primary"><strong>Partners</strong></a>
-                <!-- <a href="#team" class="nav-item nav-link"><strong>Our Team</strong></a> -->
-                <a href="#contact" class="nav-item nav-link text-primary"><strong>Contact Us</strong></a>
-            </div>
-        </div>
-    </nav>
+   
+    <div id="nav"></div>
     <header class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <!-- Video Background -->
                 <video class="video-background" autoplay muted loop>
-                    <source src="images/slider/energy/web.mp4" type="video/mp4">
+                    <!-- <source src="https://www.youtube.com/watch?v=LqSvHEknsQg" type="video/mp4"> -->
+                    <source src="images/slider/energy/video-clip.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <!-- Overlay -->
                 <div class="overlay"></div>
                 <!-- Masthead Content -->
                 <div class="masthead ps-4">
-                    <div class=""><h3 class="masthead-heading text-uppercase text-white animated zoomIn">Energy Reimagined</h3>
-                        <p> <strong>First-Class Custom-fit Energy Solutions made for Your Most Ambitious Business Goals.</strong> </p>
+                    <div class="">
+                        <h3 class="masthead-heading text-uppercase text-white animated zoomIn">Energy Reimagined</h3>
+                        <p> <strong>First-Class Custom-fit Energy Solutions made for Your Most Ambitious Business
+                                Goals.</strong> </p>
                     </div>
-                    
+
                 </div>
             </div>
-            <!-- Additional slides (e.g., bg-slide-2, bg-slide-3) can be added here -->
+           
         </div>
     </header>
 
 
 
-        <!-- About Start -->
+    <!-- About Start -->
 
-        <div class="container-xxl py-5" id="about">
-            <div class="container px-lg-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <h6 class="position-relative text-primary ps-4"> <strong>About Us</strong></h6>
-                            <h2 class="mt-2">Victory Oil & Energy</h2>
-                        </div>
-                        <p class="mb-4">We are, a Pan African centric oil and energy organization with a diverse and
-                            growing portfolio of solutions and capabilities geared towards the delivery of efficient and
-                            reliable quality services within the Oil and Gas Market space in Angola, Nigeria and new
-                            market entry of Namibia.</p>
-                        <p class="mb-4">VOE is well positioned with its affiliates and partners strategically positioned
-                            in the USA. UK and South Africa to better serve the needs of its growing client base, in
-                            offering solutions within Technical services, inspection services, Earth science services,
-                            Training solution.</p>
-                        <!-- Accordion structure -->
-                        <div class="accordion" id="aboutAccordion">
-                            <div class="accordion-item">
-                                <h6 class="accordion-header text-primary " id="headingOne">
-                                    <button class="accordion-button btn-primary" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        CORPORATE CULTURE
-                                    </button>
-                                </h6>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#aboutAccordion">
-                                    <div class="accordion-body">
-                                        <p><i class="fa fa-check text-primary me-2"></i> <strong
-                                                class="text-primary">Vision:</strong> To
-                                            be a leading global
-                                            provider of Oil and Gas
-                                            &amp; Energy Solutions,
-                                            trusted by our partners
-                                            and clients for our
-                                            staunch commitment to
-                                            excellence, compliance
-                                            and innovation.</p>
-
-                                        <p><i class="fa fa-check text-primary me-2"></i> <strong
-                                                class="text-primary">Mission: </strong>We
-                                            are strongly committed
-                                            to achieving our
-                                            long-term strategy of
-                                            becoming the leading
-                                            provider of
-                                            multi-service solutions
-                                            that are innovative,
-                                            streamlined, sustainable
-                                            and operationally
-                                            excellent.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h6 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button btn-primary collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
-                                        BUSINESS GOALS
-                                    </button>
-                                </h6>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#aboutAccordion">
-                                    <div class="accordion-body">
-                                        <p>
-                                            <i class="fa fa-check text-primary me-2"></i> <strong
-                                                class="text-primary">HSE: </strong>To create a culture of safety where
-                                            everyone is valued and respected, and accidents are prevented.
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-check text-primary me-2"></i> <strong
-                                                class="text-primary">SERVICE QUALILTY: </strong>To
-                                            create a
-                                            customer-centric culture
-                                            where everyone is
-                                            committed to providing
-                                            exceptional service.
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-check text-primary me-2"></i> <strong
-                                                class="text-primary">OUR
-                                                PEOPLE: </strong>To
-                                            create a workplace where
-                                            employees are valued,
-                                            respected, and empowered
-                                            to achieve their full
-                                            potential.
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-check text-primary me-2"></i> <strong
-                                                class="text-primary">COMMUNITY: </strong>To
-                                            spread impact in the
-                                            communities where we
-                                            operate and leave them
-                                            in a better state than
-                                            we found them.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h6 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button btn-primary collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        VALUES
-                                    </button>
-                                </h6>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#aboutAccordion">
-                                    <div class="accordion-body">
-                                        <p> <i class="fa fa-check text-primary me-2"></i><strong
-                                                class="text-primary">INTEGRITY:</strong> Our
-                                            unwavering commitment to
-                                            honesty, transparency,
-                                            and ethical practices
-                                            forms the foundation of
-                                            everything we do,
-                                            ensuring trust, respect,
-                                            and long-lasting
-                                            relationships.
-                                        </p>
-                                        <p><i class="fa fa-check text-primary me-2"></i> <strong class="text-primary">QUALITY: </strong>Our
-                                            relentless pursuit of
-                                            excellence drives us to
-                                            deliver solutions that
-                                            surpass expectations,
-                                            inspiring confidence and
-                                            creating lasting value
-                                            for our customers.
-                                       
-                                        </p>
-                                        <p><i class="fa fa-check text-primary me-2"></i> <strong
-                                                class="text-primary">TEAMWORK: </strong>Together,
-                                            we achieve greatness.
-                                            Embracing collaboration,
-                                            mutual support, and
-                                            diverse perspectives, we
-                                            unite our strengths to
-                                            accomplish shared goals,
-                                            fuel innovation, and
-                                            foster an empowering
-                                            work environment. 
-                                        </p>
-                                        <p><i class="fa fa-check text-primary me-2"></i> <strong
-                                                class="text-primary">INNOVATION: </strong>We
-                                            are committed to pushing
-                                            boundaries &amp;
-                                            embracing creativity.
-                                        </p>
-                                        <p><i class="fa fa-check text-primary me-2"></i><strong
-                                                class="text-primary">LEADERSHIP: </strong>We
-                                            inspire, empower, and
-                                            guide. With visionary
-                                            thinking, integrity, and
-                                            a commitment to
-                                            excellence, we cultivate
-                                            leaders at all levels,
-                                            driving positive change,
-                                            fostering growth, and
-                                            making a meaningful
-                                            impact in our industry
-                                            and beyond.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="d-flex align-items-center mt-4">
-                            <a class="btn btn-primary rounded-pill px-4 me-3" href="about.html">Read More</a>
-                           
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg">
-                    </div>
+    <div class="container-xxl py-5" id="about">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="section-title position-relative mb-4 pb-2">
+                    <h6 class="position-relative text-primary ps-4"> <strong>About Us</strong></h6>
+                    <h2 class="mt-2">Victory Oil & Energy</h2>
                 </div>
+                <p class="mb-4">Victory Oil & Energy (VOE) is a Pan-African oil and energy organization with a diverse
+                    portfolio of solutions designed to deliver efficient and reliable services within the Oil and Gas
+                    markets in Angola, Nigeria, and Namibia. Strategically partnered with affiliates in the USA, UK, and
+                    South Africa, VOE offers a range of services, including Technical services, Inspection services,
+                    Earth science services, Training solutions, Engineering solutions, and Project management services.
+
+                </p>
+                <p class="mb-4">VOE is committed to combining local content with international standards to lead in its
+                    served locations. Our solutions focus on transforming, transferring, and transporting energy
+                    efficiently while minimizing environmental impact and maximizing productivity. At the heart of VOE
+                    is a dedicated team of professionals who drive our success, upholding our commitment to safety,
+                    quality, and sustainable development in every project.</p>
+                <!-- Accordion structure -->
+                <div class="accordion" id="aboutAccordion">
+                    <div class="accordion-item">
+                        <h6 class="accordion-header text-primary " id="headingOne">
+                            <button class="accordion-button btn-primary" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                CORPORATE CULTURE
+                            </button>
+                        </h6>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#aboutAccordion">
+                            <div class="accordion-body">
+                                <p><i class="fa fa-eye text-primary me-2"></i> <strong
+                                        class="text-primary">Vision:</strong> To
+                                    be a leading global
+                                    provider of Oil and Gas
+                                    &amp; Energy Solutions,
+                                    trusted by our partners
+                                    and clients for our
+                                    staunch commitment to
+                                    excellence, compliance
+                                    and innovation.</p>
+
+                                <p><i class="fa fa-bullseye text-primary me-2"></i> <strong
+                                        class="text-primary">Mission: </strong>We
+                                    are strongly committed
+                                    to achieving our
+                                    long-term strategy of
+                                    becoming the leading
+                                    provider of
+                                    multi-service solutions
+                                    that are innovative,
+                                    streamlined, sustainable
+                                    and operationally
+                                    excellent.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h6 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button btn-primary collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                BUSINESS GOALS
+                            </button>
+                        </h6>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#aboutAccordion">
+                            <div class="accordion-body">
+                                <p>
+                                    <i class="fa fa-shield-alt text-primary me-2"></i> <strong
+                                        class="text-primary">HSE: </strong>To create a culture of safety where
+                                    everyone is valued and respected, and accidents are prevented.
+                                </p>
+                                <p>
+                                    <i class=" fa fa-star text-primary me-2"></i> <strong class="text-primary">SERVICE
+                                        QUALILTY: </strong>To
+                                    create a
+                                    customer-centric culture
+                                    where everyone is
+                                    committed to providing
+                                    exceptional service.
+                                </p>
+                                <p>
+                                    <i class="fa fa-users text-primary me-2"></i> <strong class="text-primary">OUR
+                                        PEOPLE: </strong>To
+                                    create a workplace where
+                                    employees are valued,
+                                    respected, and empowered
+                                    to achieve their full
+                                    potential.
+                                </p>
+                                <p>
+                                    <i class="fa fa-handshake text-primary me-2"></i> <strong
+                                        class="text-primary">COMMUNITY: </strong>To
+                                    spread impact in the
+                                    communities where we
+                                    operate and leave them
+                                    in a better state than
+                                    we found them.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h6 class="accordion-header" id="headingThree">
+                            <button class="accordion-button btn-primary collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                VALUES
+                            </button>
+                        </h6>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#aboutAccordion">
+                            <div class="accordion-body">
+                                <p> <i class="fa fa-balance-scale text-primary me-2"></i><strong
+                                        class="text-primary">INTEGRITY:</strong> Our
+                                    unwavering commitment to
+                                    honesty, transparency,
+                                    and ethical practices
+                                    forms the foundation of
+                                    everything we do,
+                                    ensuring trust, respect,
+                                    and long-lasting
+                                    relationships.
+                                </p>
+                                <p><i class="fa fa-trophy text-primary me-2"></i> <strong
+                                        class="text-primary">QUALITY: </strong>Our
+                                    relentless pursuit of
+                                    excellence drives us to
+                                    deliver solutions that
+                                    surpass expectations,
+                                    inspiring confidence and
+                                    creating lasting value
+                                    for our customers.
+
+                                </p>
+                                <p><i class="fa fa-hands-helping text-primary me-2"></i> <strong
+                                        class="text-primary">TEAMWORK: </strong>Together,
+                                    we achieve greatness.
+                                    Embracing collaboration,
+                                    mutual support, and
+                                    diverse perspectives, we
+                                    unite our strengths to
+                                    accomplish shared goals,
+                                    fuel innovation, and
+                                    foster an empowering
+                                    work environment.
+                                </p>
+                                <p><i class="fa fa-lightbulb text-primary me-2"></i> <strong
+                                        class="text-primary">INNOVATION: </strong>We
+                                    are committed to pushing
+                                    boundaries &amp;
+                                    embracing creativity.
+                                </p>
+                                <p><i class="fa fa-crown text-primary me-2"></i><strong
+                                        class="text-primary">LEADERSHIP: </strong>We
+                                    inspire, empower, and
+                                    guide. With visionary
+                                    thinking, integrity, and
+                                    a commitment to
+                                    excellence, we cultivate
+                                    leaders at all levels,
+                                    driving positive change,
+                                    fostering growth, and
+                                    making a meaningful
+                                    impact in our industry
+                                    and beyond.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg" alt="">
             </div>
         </div>
+    </div>
+    </div>
 
-        <!-- About End -->
+   
 
-
-        <!-- Newsletter Start -->
-        <!-- <div class="container-xxl bg-secondary newsletter my-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container px-lg-5">
-                <div class="row align-items-center" style="height: 250px;">
-                    <div class="col-12 col-md-6">
-                        <h3 class="text-white">Ready to get started</h3>
-                        <small class="text-white">Subsribe to our Newsletter.</small>
-                        <form action="subscribe_newsletter.php" method="POST" class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="email" name="email"
-                                placeholder="Enter Your Email" style="height: 48px;" required>
-                            <button type="submit" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2">
-                                <i class="fa fa-paper-plane text-primary fs-4"></i>
-                            </button>
-                        </form>
-                    </div>
-                    <div class="col-md-6 text-center mb-n5 d-none d-md-block">
-                        <img class="img-fluid mt-5" style="height: 250px;" src="img/newsletter.png" alt="Newsletter Image">
-                    </div>
-                </div>
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container px-lg-5">
+            <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="position-relative d-inline text-primary ps-4"><strong>Our Services</strong></h6>
+                <h2 class="mt-2">A Leading Multi-Service Pan African-centric Organization</h2>
             </div>
-        </div> -->
-        
-        <!-- Newsletter End -->
 
+            <div class="row g-4 portfolio-container">
+                <!-- Portfolio Item 1 -->
 
-        <!-- Service Start -->
-        <div class="container-xxl py-5">
-            <div class="container px-lg-5">
-                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-primary ps-4"><strong>Our Services</strong></h6>
-                    <h2 class="mt-2">A Leading Multi-Service Pan African-centric Organization</h2>
-                </div>
-        
-                <div class="row g-4 portfolio-container">
-                    <!-- Portfolio Item 1 -->
-                   
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
-                        <div class="card h-100 shadow-lg border-0">
-                            <img class="card-img-top" src="images/services//Technical.jpg" alt="Project Image">
-                            <div class="card-body text-center d-flex flex-column">
-                                <h3 class="mb-3">Technical Services</h3>
-                                <p>From exploration to production, we’re your complete technical solution.</p>
-                                <a class="btn text-primary  " href="services/technical-Services.html">Read More</a>
-                            </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
+                    <div class="card h-100 shadow-lg border-0">
+                        <img class="card-img-top" src="images/services//Technical.jpg" alt="Project Image">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h3 class="mb-3">Technical Services</h3>
+                            <p>From exploration to production, we’re your complete technical solution.</p>
+                            <a class="btn text-primary  " href="services/technical-Services.html">Read More</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
-                        <div class="card h-100 shadow-lg border-0">
-                            <img class="card-img-top" src="images/services/Inspection.jpg" alt="Project Image">
-                            <div class="card-body text-center d-flex flex-column">
-                                <h3 class="mb-3">Inspection Services</h3>
-                            <p>Beyond the surface, we uncover what matters most. Meticulous inspections, built-in trust. </p>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
+                    <div class="card h-100 shadow-lg border-0">
+                        <img class="card-img-top" src="images/services/Inspection.jpg" alt="Project Image">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h3 class="mb-3">Inspection Services</h3>
+                            <p>Beyond the surface, we uncover what matters most. Meticulous inspections, built-in trust.
+                            </p>
 
                             <a class="btn text-primary" href="services/inspection-Services.html">Read More</a>
-                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
-                        <div class="card h-100 shadow-lg border-0">
-                            <img class="card-img-top" src="images/services/Earth.jpg" alt="Project Image">
-                            <div class="card-body text-center d-flex flex-column">
-                                <h3 class="mb-3">Earth Science Services</h3>
-                                <p>We illuminate the obscured so you can capture what waits below.</p>
-                                            
-                                <a class="btn text-primary" href="services/earth-Services.html">Read More</a>
-                           
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
-                        <div class="card h-100 shadow-lg border-0">
-                            <img class="card-img-top" src="images/services/Enginnering.jpg" alt="Project Image">
-                            <div class="card-body text-center d-flex flex-column">
-                                <h3 class="mb-3">Engineering Solutions</h3>
-                            <p>Precision, innovation, results. Your trusted partner for engineered solutions. </p>
-										
-                            <a class="btn text-primary" href="services/engineering-services.html">Read More</a>
-                           
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
-                        <div class="card h-100 shadow-lg border-0">
-                            <img class="card-img-top" src="images/services/Training.jpg" alt="Project Image">
-                            <div class="card-body text-center d-flex flex-column">
-                                <h3 class="mb-3">Training Solutions</h3>
-                                <p>Bridge the knowledge gap. Empower your workforce with expert training.</p>
-                                            
-                                <a class="btn text-primary" href="services/training-services.html">Read More</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
-                        <div class="card h-100 shadow-lg border-0">
-                            <img class="card-img-top" src="images/services/Screenshot_18.jpg" alt="Project Image">
-                            <div class="card-body text-center d-flex flex-column">
-                                <h3 class="mb-3">Project Management Services</h3>
-                            <p>From Concept to Completion: Project Management Perfected!</p>
-										
-                            <a class="btn text-primary" href="services/project-services.html">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-        
                 </div>
-            </div>
-        </div>
-        
+                <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
+                    <div class="card h-100 shadow-lg border-0">
+                        <img class="card-img-top" src="images/services/Earth.jpg" alt="Project Image">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h3 class="mb-3">Earth Science Services</h3>
+                            <p>We illuminate the obscured so you can capture what waits below.</p>
 
-<section class="partnership-section py-5" id="partners">
-    <div class="container">
-        <div class="section-title position-relative mb-4 pb-2 text-center">
-            <h6 class="position-relative text-primary ps-4"> <strong>Our Partners</strong></h6>
-            <h2 class="mt-2">Trusted by Leading Companies</h2>
-        </div>
-        <div class="partner-carousel">
-            <div class="partner-carousel-inner">
-                <div class="partner-logo">
-                    <img src="images/partners/C1.jpg" class="img-fluid" alt="Partner 1">
+                            <a class="btn text-primary" href="services/earth-Services.html">Read More</a>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C2.jpg" class="img-fluid" alt="Partner 2">
+                <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
+                    <div class="card h-100 shadow-lg border-0">
+                        <img class="card-img-top" src="images/services/Enginnering.jpg" alt="Project Image">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h3 class="mb-3">Engineering Solutions</h3>
+                            <p>Precision, innovation, results. Your trusted partner for engineered solutions. </p>
+
+                            <a class="btn text-primary" href="services/engineering-services.html">Read More</a>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C3.jpg" class="img-fluid" alt="Partner 3">
+
+                <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
+                    <div class="card h-100 shadow-lg border-0">
+                        <img class="card-img-top" src="images/services/training1.jpg" alt="Project Image">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h3 class="mb-3">Training Solutions</h3>
+                            <p>Bridge the knowledge gap. Empower your workforce with expert training.</p>
+
+                            <a class="btn text-primary" href="services/training-services.html">Read More</a>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C4.jpg" class="img-fluid" alt="Partner 4">
+                <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
+                    <div class="card h-100 shadow-lg border-0">
+                        <img class="card-img-top" src="images/services/Screenshot_18.jpg" alt="Project Image">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h3 class="mb-3">Project Management</h3>
+                            <p>From Concept to Completion: Project Management Perfected!</p>
+
+                            <a class="btn text-primary" href="services/project-services.html">Read More</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C5.jpg" class="img-fluid" alt="Partner 5">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C6.jpg" class="img-fluid" alt="Partner 6">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C7.jpg" class="img-fluid" alt="Partner 7">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C8.jpg" class="img-fluid" alt="Partner 8">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C9.jpg" class="img-fluid" alt="Partner 9">
-                </div>
-            </div>
-            <div class="partner-carousel-inner partner-carousel-inner-reverse">
-                <div class="partner-logo">
-                    <img src="images/partners/C10.jpg" class="img-fluid" alt="Partner 10">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C11.jpg" class="img-fluid" alt="Partner 11">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C12.jpg" class="img-fluid" alt="Partner 12">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C13.jpg" class="img-fluid" alt="Partner 13">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C14.jpg" class="img-fluid" alt="Partner 14">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C15.jpg" class="img-fluid" alt="Partner 15">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C16.jpg" class="img-fluid" alt="Partner 16">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C17.jpg" class="img-fluid" alt="Partner 17">
-                </div>
-                <div class="partner-logo">
-                    <img src="images/partners/C18.jpg" class="img-fluid" alt="Partner 18">
-                </div>
+
+
             </div>
         </div>
     </div>
-</section>
+
+
+    <section class="partnership-section py-5" id="partners">
+        <div class="container">
+            <div class="section-title position-relative mb-4 pb-2 text-center">
+                <h6 class="position-relative text-primary ps-4"> <strong>Our Partners</strong></h6>
+                <h2 class="mt-2">Trusted by Leading Companies</h2>
+            </div>
+            <div class="partner-carousel">
+                <div class="partner-carousel-inner">
+                    <div class="partner-logo">
+                        <img src="images/partners/C1.jpg" class="img-fluid" alt="Partner 1">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C2.jpg" class="img-fluid" alt="Partner 2">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C3.jpg" class="img-fluid" alt="Partner 3">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C4.jpg" class="img-fluid" alt="Partner 4">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C5.jpg" class="img-fluid" alt="Partner 5">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C6.jpg" class="img-fluid" alt="Partner 6">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C7.jpg" class="img-fluid" alt="Partner 7">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C8.jpg" class="img-fluid" alt="Partner 8">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C9.jpg" class="img-fluid" alt="Partner 9">
+                    </div>
+                </div>
+                <div class="partner-carousel-inner partner-carousel-inner-reverse">
+                    <div class="partner-logo">
+                        <img src="images/partners/C10.jpg" class="img-fluid" alt="Partner 10">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C11.jpg" class="img-fluid" alt="Partner 11">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C12.jpg" class="img-fluid" alt="Partner 12">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C13.jpg" class="img-fluid" alt="Partner 13">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C14.jpg" class="img-fluid" alt="Partner 14">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C15.jpg" class="img-fluid" alt="Partner 15">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C16.jpg" class="img-fluid" alt="Partner 16">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C17.jpg" class="img-fluid" alt="Partner 17">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="images/partners/C18.jpg" class="img-fluid" alt="Partner 18">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
 
 
-       
 
 
-        <div class="container-xxl py-5" id="contact">
-            <div class="container px-lg-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7 mb-5 mb-lg-0">
-                        <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                            <h6 class="position-relative d-inline text-primary ps-4"> <strong> Contact Us </strong></h6>
-                            <h2 class="mt-2">Contact For Any Query</h2>
-                        </div>
-                        <div class="wow fadeInUp" data-wow-delay="0.3s">
-                            <form action="send_email.php" method="POST">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
-                                            <label for="name">Your Name</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
-                                            <label for="email">Your Email</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px"></textarea>
-                                            <label for="message">Message</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+
+    <div class="container-xxl py-5" id="contact" style="margin-bottom: 0px;">
+        <div class="container px-lg-5" style="padding-bottom:0px;">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp"
+                        data-wow-delay="0.1s">
+                        <h6 class="position-relative d-inline text-primary ps-4"> <strong> Contact Us </strong></h6>
+                        <h2 class="mt-2">Contact For Any Query</h2>
+                    </div>
+                    <div class="wow fadeInUp" data-wow-delay="0.3s">
+
+                        <form action="process.php" method="POST">
+
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Your Name">
+                                        <label for="name">Your Name</label>
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" name="subject"
+                                            placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                            name="message" style="height: 100px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" name="btn-send" type="submit">Send
+                                        Message</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-lg-5">
-                        <div class="card border-0 shadow-sm wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="card-body">
-                                <h5 class="card-title mt-4 text-primary">Angola Office:</h5>
-                                <p class="card-text text-dark">
-                                    <i class="fa fa-map-marker-alt me-3 text-warning"></i> Rua Dr. Jose Pereiva do Nascimento, No 49 Maianga, Luanda Angola.
-                                </p>
-                                <h5 class="card-title mt-4 text-primary">Nigeria Office:</h5>
-                                <p class="card-text text-dark">
-                                    <i class="fa fa-map-marker-alt me-3 text-warning"></i> No 1, Oladimeji Alo Str, off Hakeem Dickson Road, Lekki Phase 1, Lagos
-                                </p>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title mt-4 text-primary">Namibia Office:</h5>
-                                <p class="card-text text-dark">
-                                    <i class="fa fa-map-marker-alt me-3 text-warning"></i>Sam Nujoma Drive, Vivo House. Klein Windhoek, Windhoek
-                                </p>
-                                <h5 class="card-title mt-4 text-primary">USA Office:</h5>
-                                <p class="card-text text-dark">
-                                    <i class="fa fa-map-marker-alt me-3 text-warning"></i> Victory Oil & Energy International Operations, 3 Sugarcreek Boulevard, Sugarland, Houston, Texas.
-                                </p>
-                            </div>
+                </div>
+                <div class="col-lg-5" style="margin-top: 100px;">
+                    <div class="card border-0 shadow-sm wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="card-body">
+                            <!-- <h5 class="card-title mt-4 text-primary">Angola Office:</h5> -->
+                            <h6 class="position-relative d-inline text-primary ps-4"> <strong> Angola Office: </strong>
+                            </h6>
+                            <p class="card-text text-dark">
+                                <i class="fa fa-map-marker-alt text-warning"> </i> Rua Dr. Jose Pereiva do Nascimento,
+                                No 49 Maianga, Luanda Angola.
+                            </p>
+                            <h6 class="position-relative d-inline text-primary ps-4"> <strong> Nigeria Office: </strong>
+                            </h6>
+                            <p class="card-text text-dark">
+                                <i class="fa fa-map-marker-alt text-warning"> </i> No 1, Oladimeji Alo Str, off Hakeem
+                                Dickson Road, Lekki Phase 1, Lagos
+                            </p>
+                            <h6 class="position-relative d-inline text-primary ps-4"> <strong> Namibia Office:</strong>
+                            </h6>
+                            <p class="card-text text-dark">
+                                <i class="fa fa-map-marker-alt text-warning"> </i>Sam Nujoma Drive, Vivo House. Klein
+                                Windhoek, Windhoek
+                            </p>
+                            <h6 class="position-relative d-inline text-primary ps-4"> <strong> USA Office: </strong>
+                            </h6>
+                            <p class="card-text text-dark">
+                                <i class="fa fa-map-marker-alt text-warning"> </i> Victory Oil & Energy International
+                                Operations, 3 Sugarcreek Boulevard, Sugarland, Houston, Texas.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
-
-        <!-- Footer Start -->
-        <div class="container-fluid bg-secondary text-light footer mt-5 pt-4 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-3 px-lg-5">
-                <div class="row g-5">
-                    <!-- Footer Column 1 -->
-                    <div class="col-md-6 col-lg-5">
-                        <a href="" class="navbar-brand p-0">
-                            <img src="images/logo.png" alt="Logo" width="80%">
-                        </a>
-                        <p class="text-justify">
-                            Victory Oil & Energy is a leading multi-service Pan African-centric oil and energy organization 
-                            with a diverse and growing portfolio of <br> solutions and capabilities geared towards the delivery 
-                            of efficient and reliable quality services within the oil & gas and renewable energy market space.
-                        </p>
-                    </div>
-                    
-                    <!-- Footer Column 2 -->
-                    <div class="col-md-6 col-lg-4">
-                        <h5 class="text-white mb-4"><strong>Menu</strong></h5>
-                        <div class="d-flex flex-column">
-                            <!-- <a class="btn btn-link text-light mb-2" href="">Home</a> -->
-                            <a class="btn btn-link text-light mb-2" href="">Services</a>
-                            <a class="btn btn-link text-light mb-2" href="">Contact Us</a>
-                            <a class="btn btn-link text-light" href="">About Us</a>
-                            <a class="btn btn-link text-light mb-2" href="">Partners</a>
-                            <!-- <a class="btn btn-link text-light mb-2" href="">Our Team</a> -->
-                            <!-- <a class="btn btn-link text-light mb-2" href="">Testimonials</a> -->
-                        </div>
-                    </div>
-                    
-                   
-                    
-                    <!-- Footer Column 4 -->
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="text-white mb-4"><strong>Get In Touch</strong></h5>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>Victory Oil & Energy International Operations, 3 Sugarcreek Boulevard, Sugarland, Houston, Texas.</p>
-                        <p><i class="fa fa-phone-alt me-3"></i> <strong>+244 222 350 574</strong></p>
-                        <p><i class="fa fa-envelope me-3"></i><strong>sales@victoryoe.com</strong></p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social me-2" href="https://web.facebook.com/VictoryOilEnergy"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social me-2" href="https://www.instagram.com/victoryoilenergy.ao/"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/victoryoe/"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Victory Oil & Energy</a> All Rights Reserved. Designed By <a class="border-bottom" href="https://www.linkedin.com/in/boniface-onoyima-47b764287/">Onoyimacv</a>
-                </div>
-            </div>
-            
-            
-        </div>
-        
-        
-        
-        <!-- Footer End -->
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
-
-        <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-1"><i class="fab fa-instagram"></a> -->
     </div>
 
+
+
+    <!-- Footer Start -->
+  
+    <div id="footer"></div>
+
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-1"><i class="fab fa-instagram"></a> -->
+    </div>
+
+
+
+
+
+    <!-- <div id="header"></div> -->
+    <!-- Main content here -->
+    
+
+    <script>
+        // Function to include HTML from separate files
+        function includeHTML(elementId, filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                });
+        }
+
+        // Load header and footer
+        includeHTML('nav', 'nav.html');
+        includeHTML('footer', 'footer.html');
+    </script>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-<!-- Bootstrap JS Bundle (includes Popper.js) -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap JS Bundle (includes Popper.js) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>

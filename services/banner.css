@@ -1,0 +1,153 @@
+   /*  */
+        /* h1{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;
+            line-height: -2;
+            font-weight: 300;
+        } */
+
+        .carousel-item {
+            position: relative;
+            height: 25vh; /* Adjust height for smaller screens */
+            background: no-repeat center center;
+            background-size: cover;
+        }
+
+        /* Ensure the carousel height adjusts on larger screens */
+        @media (min-width: 768px) {
+            .carousel-item {
+                height: 25vh; /* Larger height for medium screens and up */
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .carousel-item {
+                height: 25vh; /* Even larger height for large screens and up */
+            }
+        }
+
+        .masthead {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 0;
+        }
+
+        .carousel-caption {
+            display: none; /* Hide the default carousel caption */
+        }
+
+        .text-uppercase {
+            text-transform: uppercase;
+        }
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .zoomIn {
+            animation-name: zoomIn;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+/* Partnership Section */
+.partnership-section {
+    background-color: #f8f9fa;
+}
+
+/* Partner Carousel */
+.partner-carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+}
+
+/* Partner Carousel Inner */
+.partner-carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: moveRightToLeft 20s linear infinite;
+}
+
+.partner-carousel-inner-reverse {
+    animation: moveLeftToRight 20s linear infinite;
+}
+
+/* Partner Logo */
+.partner-logo {
+    flex: 0 0 auto;
+    width: 150px; /* Adjust width as needed */
+    margin: 0 10px;
+}
+
+.partner-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures images maintain aspect ratio */
+}
+
+/* Keyframes for Carousel Animation */
+@keyframes moveRightToLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes moveLeftToRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* Pause Animation on Hover */
+.partner-carousel-inner:hover,
+.partner-carousel-inner-reverse:hover {
+    animation-play-state: paused;
+}
+
+/* Background Slides */
+.bg-slide-1, .bg-slide-2, .bg-slide-3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust the height as needed */
+    position: relative; /* Required for overlay positioning */
+}
+
+.mybox1 { 
+    display: none; 
+} 

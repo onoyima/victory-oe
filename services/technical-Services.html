@@ -17,6 +17,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -39,187 +49,13 @@
 
     <link href="../agency/css/styles.css" rel="stylesheet">
 
-    <style>
-      .carousel-item {
-            position: relative;
-            height: 25vh; /* Adjust height for smaller screens */
-            background: no-repeat center center;
-            background-size: cover;
-        }
-
-        /* Ensure the carousel height adjusts on larger screens */
-        @media (min-width: 768px) {
-            .carousel-item {
-                height: 25vh; /* Larger height for medium screens and up */
-            }
-        }
-        
-        @media (min-width: 992px) {
-            .carousel-item {
-                height: 25vh; /* Even larger height for large screens and up */
-            }
-        }
-
-        .masthead {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-            z-index: 1;
-        }
-
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-            z-index: 0;
-        }
-
-        .carousel-caption {
-            display: none; /* Hide the default carousel caption */
-        }
-
-        .text-uppercase {
-            text-transform: uppercase;
-        }
-
-        .animated {
-            animation-duration: 1s;
-            animation-fill-mode: both;
-        }
-
-        .zoomIn {
-            animation-name: zoomIn;
-        }
-
-        @keyframes zoomIn {
-            from {
-                transform: scale(0.3);
-                opacity: 0;
-            }
-            50% {
-                transform: scale(1.05);
-                opacity: 1;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-/* Partnership Section */
-.partnership-section {
-    background-color: #f8f9fa;
-}
-
-/* Partner Carousel */
-.partner-carousel {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 150px; /* Adjust height as needed */
-}
-
-/* Partner Carousel Inner */
-.partner-carousel-inner {
-    display: flex;
-    flex-wrap: nowrap;
-    animation: moveRightToLeft 20s linear infinite;
-}
-
-.partner-carousel-inner-reverse {
-    animation: moveLeftToRight 20s linear infinite;
-}
-
-/* Partner Logo */
-.partner-logo {
-    flex: 0 0 auto;
-    width: 150px; /* Adjust width as needed */
-    margin: 0 10px;
-}
-
-.partner-logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensures images maintain aspect ratio */
-}
-
-/* Keyframes for Carousel Animation */
-@keyframes moveRightToLeft {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes moveLeftToRight {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(100%);
-    }
-}
-
-/* Pause Animation on Hover */
-.partner-carousel-inner:hover,
-.partner-carousel-inner-reverse:hover {
-    animation-play-state: paused;
-}
-
-/* Background Slides */
-.bg-slide-1, .bg-slide-2, .bg-slide-3 {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Adjust the height as needed */
-    position: relative; /* Required for overlay positioning */
-}
-
-    </style>
     
+
 </head>
 
 <body id="page-top">
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 px-lg-5 py-3 py-lg-0">
-        <a href="../index.html" class="navbar-brand p-0">
-            <img src="../images/logo.png" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="../about.html" class="nav-item nav-link text-primary"><strong>About Us</strong></a>
-                <div class="nav-item dropdown">
-                    <a href="../index.html" class="nav-item nav-link dropdown-toggle text-primary"><strong>Services</strong></a>
-                    <div class="dropdown-menu m-0 text-danger">
-                        <a href="technical-Services.html" class="dropdown-item text-primary">Technical Services</a>
-                        <a href="inspection-Services.html" class="dropdown-item text-primary">Inspection Services</a>
-                        <a href="earth-Services.html" class="dropdown-item text-primary">Earth Science Services</a>
-                        <a href="engineering-services.html" class="dropdown-item text-primary">Engineering Solutions</a>
-                        <a href="training-services.html" class="dropdown-item text-primary">Training Solutions</a>
-                        <a href="project-services.html" class="dropdown-item text-primary">Project Management Services</a>
-                    </div>
-                </div>
-                <a href="#partners" class="nav-item nav-link text-primary"><strong>Partners</strong></a>
-                <!-- <a href="#team" class="nav-item nav-link"><strong>Our Team</strong></a> -->
-                <a href="#contact" class="nav-item nav-link text-primary"><strong>Contact Us</strong></a>
-            </div>
-        </div>
-    </nav>
+
+    <div id="nav"></div>
     <header class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" style="background-image: url('../images/services/Technical.jpg');">
@@ -236,289 +72,299 @@
 
 
 
-        <!-- section  End -->
+    <!-- section  End -->
 
-        <div class="container-xxl py-5" id="about">
-            <div class="container px-lg-5">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <!-- <h6 class="position-relative text-primary ps-4">About Us</h6> -->
-                            <h2 class="mt-2">Drilling Tools & Rentals</h2>
-                        </div>
-                        <p class="mb-4">
-                            We understand the importance of having reliable and efficient drilling tools for successful operations. Our extensive inventory of drilling tools and equipment is available for rental, ensuring that you have access to top-quality tools tailored to your specific drilling needs. 
-                            From drill pipes to drill bits, we have you covered with our comprehensive range of equipment. 
-                       
-                        </p>
-                        
-                    
+    <div class="container-fluid py-5 bg-light" id="about">
+        <div class="container px-lg-5">
+            <div class="row g-5 align-items-center">
+                <!-- Text Content Section -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="section-title position-relative mb-4 pb-2">
+                        <h2 class="mt-2">Drilling Tools & Rentals</h2>
                     </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="../images/services/Drilling-Tools.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-xxl py-5" id="about">
-            <div class="container px-lg-5">
-                <div class="row g-5">
-                    
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="../images/services/Slickline.jpg">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <!-- <h6 class="position-relative text-primary ps-4">About Us</h6> -->
-                            <h2 class="mt-2">Slickline Services</h2>
-                        </div>
-                        <p class="mb-4">Our slickline services are designed to provide precise and efficient well intervention solutions. Advanced slickline tools and techniques are Specifically designed to provide precise and efficient well intervention solutions. Our advanced slickline tools are fully ... utilized to perform a variety of operations, including logging, perforating, and wellbore clean-up. We strive to optimize your well performance and minimize downtime, all while ensuring the highest level of safety and quality.</p>
-                        <div class="row g-3">
-                            <h4>ASSETS</h4>
+                    <p class="mb-4">
+                        We understand the importance of having reliable and efficient drilling tools for successful operations. Our extensive inventory of drilling tools and equipment is available for rental, ensuring that you have access to top-quality tools tailored to your specific drilling needs. From drill pipes to drill bits, we have you covered with our comprehensive range of equipment.
+                    </p>
+                    <details>
+                        <summary><h6 class="position-relative d-inline text-primary ps-4"><strong>More</strong></h6></summary> 
+                        <div class="row g-3 mt-3">
                             <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Modern Generation</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>ASEP-NOV Slickline Units</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Pressure Control Equipment</h6>
+                                <h6 class="mb-3"><i class="fa fa-tools text-primary me-2"></i> Drill Pipes</h6>
+                                <h6 class="mb-3"><i class="fa fa-cogs text-primary me-2"></i> Drill Bits</h6>
+                                <h6 class="mb-3"><i class="fa fa-tools text-primary me-2"></i> Wellheads</h6>
                             </div>
                             <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>10K Pr. Rating & 5” ID</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Slickline Downhole Tools</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Bottom Hole Pressure Gauges</h6>
+                                <h6 class="mb-3"><i class="fa fa-wrench text-primary me-2"></i> Safety Equipment</h6>
+                                <h6 class="mb-3"><i class="fa fa-cogs text-primary me-2"></i> Maintenance Tools</h6>
+                                <h6 class="mb-3"><i class="fa fa-cube text-primary me-2"></i> Additional Accessories</h6>
                             </div>
                         </div>
-                    </div>
-                    
+                    </details>
+                </div>
+                <!-- Image Section -->
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.5s">
+                    <img class="img-fluid rounded shadow" alt="Drilling Tools" src="../images/services/Drilling-Tools.jpg">
                 </div>
             </div>
         </div>
-        <div class="container-xxl py-5" id="about">
-            <div class="container px-lg-5">
-                <div class="row g-5">
-                    
-                   
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <!-- <h6 class="position-relative text-primary ps-4">About Us</h6> -->
-                            <h2 class="mt-2">Well Bore Clean-out & Filtration Services</h2>
-                        </div>
-                        <p class="mb-4">Maintaining clean and efficient wellbores is vital for optimal production and operational efficiency. Our well bore clean-out and filtration services are tailored to remove debris, scale, and other obstructions that may hinder your operations. With our expertise and specialized equipment, we ensure the integrity and cleanliness of your wellbores, enhancing overall productivity.</p>
-                        <div class="row g-3">
-                            <h4  class="text-primary">ASSETS</h4>
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Casing Scrappers</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Brush Tools</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Magnet Tools</h6>
-                            </div>
-                            <div class="col-sm-6">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Waste Retriever Tool</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Circulating Tool</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Well Head Jetting Tool</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="../images/services/Well-Bore-Cleaning.png">
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="container-xxl py-5" id="about">
-            <div class="container px-lg-5">
-                <div class="row g-5">
-                    
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="../images/services/Drilling-Tools.jpg">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <!-- <h6 class="position-relative text-primary ps-4">About Us</h6> -->
-                            <h2 class="mt-2">Fishing</h2>
-                        </div>
-                        <p class="mb-4">In the event of equipment failure or obstructions in the well, our fishing services come to the rescue. Our skilled team of professionals utilizes innovative techniques and tools to recover lost or stuck equipment, ensuring minimal downtime and maximum efficiency. We are committed to resolving any fishing challenges you may encounter, ensuring the smooth continuation of your operations. Our extensive inventory of drilling tools and equipment is available for rental, ensuring that you have access to top-quality tools tailored to your specific drilling needs. From drill pipes to drill bits, we have you covered with our comprehensive range of equipment</p>
-                        <div class="row g-4">
-                            <h4  class="text-primary">ASSETS</h4>
-                            <div class="col-sm-4">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Fishing Jars </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Accelerators </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Bumper Subs</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Safety Joints </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Junk Mills </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Junk Baskets </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Stabilizers</h6>
-                            </div>
-                            <div class="col-sm-4">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Junk Baskets </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>LIB</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Wash Pipes   </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> String   </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Bit Subs        </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Circulation Subs </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Cross-Overs  </h6>
-                            </div>
-                            <div class="col-sm-4">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Magnets </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Basket Grapples</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Spiral Grapples  </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>String Cutters </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Drilling Jars       </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>  Wash Pipes       </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Over-shots of Various Sizes        </h6>
-
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="container-xxl py-5" id="about">
-            <div class="container px-lg-5">
-                <div class="row g-5">
-                    
-                    
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <!-- <h6 class="position-relative text-primary ps-4">About Us</h6> -->
-                            <h2 class="mt-2">Well Testing</h2>
-                        </div>
-                        <p class="mb-4">
-                            Accurate and comprehensive well testing is crucial for understanding reservoir behavior and optimizing production strategies. Our well testing services encompass a range of solutions, including pressure testing, flow rate measurement, and data analysis. With our advanced testing equipment and analytical expertise, we provide valuable insights into your reservoir's performance, helping you make informed decisions.
-
-                        </p>
-                       
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="../images/services/well-testing.jpg">
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="container-xxl py-5" id="about">
-            <div class="container px-lg-5">
-                <div class="row g-5">
-                    
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="../images/services/Marine-support-service.jpg">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="section-title position-relative mb-4 pb-2">
-                            <!-- <h6 class="position-relative text-primary ps-4">About Us</h6> -->
-                            <h2 class="mt-2">Marine Support Services</h2>
-                        </div>
-                        <p class="mb-4">
-                            Operating in offshore environments requires specialized support and services. Our marine support services cater to the unique needs of offshore operations, offering logistics, vessel support, equipment transportation, and personnel transportation. With a focus on safety and efficiency, we ensure seamless operations and effective project management for offshore endeavors. Our diverse range includes of Marine support services such as:
-                        </p>
-                        <div class="row g-6">
-                            <h4  class="text-primary">ASSETS</h4>
-                            <div class="col-sm-4">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Subsea installation engineering </h6>
-                              
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Offshore decommissioning inspection, repair and maintenance</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Construction and installation support</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Commissioning, cable and pipe laying projects </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Key operational personnel </h6>
-                              
-                            </div>
-                            <div class="col-sm-4">
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Diving and ROV </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> QHSE Subsea</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> AHTS</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>FSV </h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Barges</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i> PSV</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Rigs</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Maritime Subsea Surveys</h6>
-                                <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>All types of vessels</h6>
-                            </div>
-                         
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-
-
-        
+    </div>
     
 
-      <!-- Footer Start -->
-      <div class="container-fluid bg-secondary text-light footer mt-5 pt-4 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-3 px-lg-5">
-            <div class="row g-5">
-                <!-- Footer Column 1 -->
-                <div class="col-md-6 col-lg-5">
-                    <a href="" class="navbar-brand p-0">
-                        <img src="../images/logo.png" alt="Logo" width="80%">
-                    </a>
-                    <p class="text-justify">
-                        Victory Oil & Energy is a leading multi-service Pan African-centric oil and energy organization 
-                        with a diverse and growing portfolio of <br> solutions and capabilities geared towards the delivery 
-                        of efficient and reliable quality services within the oil & gas and renewable energy market space.
+    <div class="container-xxl py-5 bg-gray" id="slickline">
+        <div class="container px-lg-5">
+            <div class="row g-5 align-items-center">
+                <!-- Image Section -->
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.5s">
+                    <img class="img-fluid rounded shadow" alt="Slickline Services" src="../images/services/Slickline.jpg">
+                </div>
+                <!-- Text Content Section -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="section-title position-relative mb-4 pb-2">
+                        <h2 class="mt-2">Slickline Services</h2>
+                    </div>
+                    <p class="mb-4">
+                        Our slickline services are designed to provide precise and efficient well intervention solutions. Advanced slickline tools and techniques are utilized to perform a variety of operations, including logging, perforating, and wellbore clean-up. We strive to optimize your well performance and minimize downtime, all while ensuring the highest level of safety and quality.
+                    </p>
+                    <details id="more">
+                        <summary class="text-primary" id="less"><strong>Read More</strong></summary> 
+                        <div class="row g-3 mt-3">
+                            <div class="col-sm-6">
+                                <h6 class="mb-3"><i class="fa fa-cogs text-primary me-2"></i>Modern Generation</h6>
+                                <h6 class="mb-3"><i class="fa fa-wrench text-primary me-2"></i>ASEP-NOV Slickline Units</h6>
+                                <h6 class="mb-3"><i class="fa fa-tools text-primary me-2"></i>Pressure Control Equipment</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <h6 class="mb-3"><i class="fa fa-tachometer-alt text-primary me-2"></i>10K Pr. Rating & 5” ID</h6>
+                                <h6 class="mb-3"><i class="fa fa-cogs text-primary me-2"></i>Slickline Downhole Tools</h6>
+                                <h6 class="mb-3"><i class="fa fa-gauge text-primary me-2"></i>Bottom Hole Pressure Gauges</h6>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container-fluid py-5 bg-light" id="about">
+        <div class="container px-lg-5">
+            <div class="row g-5 align-items-center">
+                <!-- Text Content Section -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="section-title position-relative mb-4 pb-2">
+                        <h2 class="mt-2">Well Bore Clean-out & Filtration Services</h2>
+                    </div>
+                    <p class="mb-4">
+                        Maintaining clean and efficient wellbores is vital for optimal production and operational efficiency. Our well bore clean-out and filtration services are tailored to remove debris, scale, and other obstructions that may hinder your operations. With our expertise and specialized equipment, we ensure the integrity and cleanliness of your wellbores, enhancing overall productivity.
+                    </p>
+                    
+                    <details id="more">
+                        <summary class="text-primary" id="less"><strong>Read More</strong></summary> 
+                        <div class="row g-3 mt-3">
+                            <div class="col-sm-6">
+                                <h6 class="mb-3"><i class="fa fa-filter text-primary me-2"></i> Casing Scrapers</h6>
+                                <h6 class="mb-3"><i class="fa fa-brush text-primary me-2"></i> Brush Tools</h6>
+                                <h6 class="mb-3"><i class="fa fa-magnet text-primary me-2"></i> Magnet Tools</h6>
+                            </div>
+                            <div class="col-sm-6">
+                                <h6 class="mb-3"><i class="fa fa-recycle text-primary me-2"></i> Waste Retriever Tool</h6>
+                                <h6 class="mb-3"><i class="fa fa-circle-notch text-primary me-2"></i> Circulating Tool</h6>
+                                <h6 class="mb-3"><i class="fa fa-tachometer-alt text-primary me-2"></i> Well Head Jetting Tool</h6>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+                <!-- Image Section -->
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.5s">
+                    <img class="img-fluid rounded shadow" alt="Well Bore Clean-out" src="../images/services/Well-Bore-Cleaning.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container-xxl py-5 bg-gray" id="fishing">
+        <div class="container px-lg-5">
+            <div class="row g-5 align-items-center">
+                <!-- Image Section -->
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.5s">
+                    <img class="img-fluid rounded shadow" alt="Fishing Services" src="../images/services/Drilling-Tools.jpg">
+                </div>
+                <!-- Text Content Section -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="section-title position-relative mb-4 pb-2">
+                        <h2 class="mt-2">Fishing</h2>
+                    </div>
+                    <p class="mb-4">
+                        In the event of equipment failure or obstructions in the well, our fishing services
+                        come to the rescue. Our skilled team of professionals utilizes innovative techniques and tools
+                        to recover lost or stuck equipment, ensuring minimal downtime and maximum efficiency. We are
+                        committed to resolving any fishing challenges you may encounter, ensuring the smooth
+                        continuation of your operations. Our extensive inventory of drilling tools and equipment is
+                        available for rental, ensuring that you have access to top-quality tools tailored to your
+                        specific drilling needs. From drill pipes to drill bits, we have you covered with our
+                        comprehensive range of equipment.
+                    </p>
+    
+                    <details id="more">
+                        <summary class="text-primary" id="less"><strong>Read More</strong></summary> 
+                        <div class="row g-6 mt-3">
+                            <div class="col-sm-4">
+                                <h6 class="mb-3"><i class="fa fa-cogs text-primary me-2"></i> Fishing Jars</h6>
+                                <h6 class="mb-3"><i class="fa fa-tachometer-alt text-primary me-2"></i> Accelerators</h6>
+                                <h6 class="mb-3"><i class="fa fa-wrench text-primary me-2"></i> Bumper Subs</h6>
+                                <h6 class="mb-3"><i class="fa fa-lock text-primary me-2"></i> Safety Joints</h6>
+                                <h6 class="mb-3"><i class="fa fa-hammer text-primary me-2"></i> Junk Mills</h6>
+                                <h6 class="mb-3"><i class="fa fa-basketball-ball text-primary me-2"></i> Junk Baskets</h6>
+                                <h6 class="mb-3"><i class="fa fa-anchor text-primary me-2"></i> Stabilizers</h6>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 class="mb-3"><i class="fa fa-industry text-primary me-2"></i> LIB</h6>
+                                <h6 class="mb-3"><i class="fa fa-cogs text-primary me-2"></i> Wash Pipes</h6>
+                                <h6 class="mb-3"><i class="fa fa-schlix text-primary me-2"></i> String</h6>
+                                <h6 class="mb-3"><i class="fa fa-bitcoin text-primary me-2"></i> Bit Subs</h6>
+                                <h6 class="mb-3"><i class="fa fa-cogs text-primary me-2"></i> Circulation Subs</h6>
+                                <h6 class="mb-3"><i class="fa fa-link text-primary me-2"></i> Cross-Overs</h6>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 class="mb-3"><i class="fa fa-magnet text-primary me-2"></i> Magnets</h6>
+                                <h6 class="mb-3"><i class="fa fa-grip-vertical text-primary me-2"></i> Basket Grapples</h6>
+                                <h6 class="mb-3"><i class="fa fa-circle text-primary me-2"></i> Spiral Grapples</h6>
+                                <h6 class="mb-3"><i class="fa fa-cut text-primary me-2"></i> String Cutters</h6>
+                                <h6 class="mb-3"><i class="fa fa-tools text-primary me-2"></i> Drilling Jars</h6>
+                                <h6 class="mb-3"><i class="fa fa-tachometer-alt text-primary me-2"></i> Wash Pipes</h6>
+                                <h6 class="mb-3"><i class="fa fa-anchor text-primary me-2"></i> Over-shots of Various Sizes</h6>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container-fluid py-5 bg-light" id="about">
+        <div class="container px-lg-5">
+            <div class="row g-5 align-items-center">
+                <!-- Text Content Section -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="section-title position-relative mb-4 pb-2">
+                        <h2 class="mt-2">Well Testing</h2>
+                    </div>
+                    <p class="mb-4">
+                        Accurate and comprehensive well testing is crucial for understanding reservoir behavior and optimizing production strategies. Our well testing services encompass a range of solutions, including pressure testing, flow rate measurement, and data analysis. With our advanced testing equipment and analytical expertise, we provide valuable insights into your reservoir's performance, helping you make informed decisions.
                     </p>
                 </div>
-                
-                <!-- Footer Column 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <h5 class="text-white mb-4"><strong>Menu</strong></h5>
-                    <div class="d-flex flex-column">
-                        <!-- <a class="btn btn-link text-light mb-2" href="">Home</a> -->
-                        <a class="btn btn-link text-light mb-2" href="../index.html">Services</a>
-                        <a class="btn btn-link text-light mb-2" href="../index.html">Contact Us</a>
-                        <a class="btn btn-link text-light" href="../about.html">About Us</a>
-                        <a class="btn btn-link text-light mb-2" href="../index.html">Partners</a>
-                       
-                    </div>
+                <!-- Image Section -->
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.5s">
+                    <img class="img-fluid rounded shadow" alt="Well Testing" src="../images/services/well-testing.jpg">
                 </div>
-                
-               
-                
-                <!-- Footer Column 4 -->
-                <div class="col-md-6 col-lg-3">
-                    <h5 class="text-white mb-4"><strong>Get In Touch</strong></h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>Victory Oil & Energy International Operations, 3 Sugarcreek Boulevard, Sugarland, Houston, Texas.</p>
-                    <p><i class="fa fa-phone-alt me-3"></i> <strong>+244 222 350 574</strong></p>
-                    <p><i class="fa fa-envelope me-3"></i><strong>sales@victoryoe.com</strong></p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social me-2" href="https://web.facebook.com/VictoryOilEnergy"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social me-2" href="https://www.instagram.com/victoryoilenergy.ao/"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/victoryoe/"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                &copy; <a class="border-bottom" href="#">Victory Oil & Energy</a> All Rights Reserved. Designed By <a class="border-bottom" href="https://www.linkedin.com/in/boniface-onoyima-47b764287/">Onoyimacv</a>
             </div>
         </div>
-        
-        
     </div>
     
-    
-    
-    <!-- Footer End -->
 
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+    <div class="container-xxl py-5 bg-gray" id="fishing">
+        <div class="container px-lg-5">
+            <div class="row g-5 align-items-center">
+                <!-- Image Section -->
+                <div class="col-lg-6 wow zoomIn" data-wow-delay="0.5s">
+                    <img class="img-fluid rounded shadow" alt="Fishing Services" src="../images/services/Marine-support-service.jpg">
+                </div>
+                <!-- Text Content Section -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="section-title position-relative mb-4 pb-2">
+                        <h2 class="mt-2">Marine Support Services</h2>
+                    </div>
+                    <p class="mb-4">
+                        Operating in offshore environments requires specialized support and services. Our marine support
+                        services cater to the unique needs of offshore operations, offering logistics, vessel support,
+                        equipment transportation, and personnel transportation. With a focus on safety and efficiency,
+                        we ensure seamless operations and effective project management for offshore endeavors. Our
+                        diverse range includes Marine support services such as:
+                    </p>
+        
+                    <details id="more">
+                        <summary class="text-primary" id="less"><strong>Read More</strong></summary> 
+                        <div class="row g-6">
+                            <div class="col-sm-8">
+                                
+                                <h6 class="mb-3"><i class="fa fa-cogs text-primary me-2"></i> Subsea installation
+                                    engineering</h6>
+                                <h6 class="mb-3"><i class="fa fa-wrench text-primary me-2"></i> Offshore decommissioning
+                                    inspection, repair and maintenance</h6>
+                                <h6 class="mb-3"><i class="fa fa-tools text-primary me-2"></i> Construction and
+                                    installation support</h6>
+                                <h6 class="mb-3"><i class="fa fa-plug text-primary me-2"></i> Commissioning, cable and
+                                    pipe laying projects</h6>
+                                <h6 class="mb-3"><i class="fa fa-users text-primary me-2"></i> Key operational personnel
+                                </h6>
+                                <h6 class="mb-3"><i class="fa fa-radar text-primary me-2"></i> Maritime Subsea Surveys
+                                </h6>
+                                <h6 class="mb-3"><i class="fa fa-ship text-primary me-2"></i> All types of vessels</h6>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 class="mb-3"><i class="fa fa-water text-primary me-2"></i> Diving and ROV</h6>
+                                <h6 class="mb-3"><i class="fa fa-shield-alt text-primary me-2"></i> QHSE Subsea</h6>
+                                <h6 class="mb-3"><i class="fa fa-anchor text-primary me-2"></i> AHTS</h6>
+                                <h6 class="mb-3"><i class="fa fa-ship text-primary me-2"></i> FSV</h6>
+                                <h6 class="mb-3"><i class="fa fa-shipping-fast text-primary me-2"></i> Barges</h6>
+                                <h6 class="mb-3"><i class="fa fa-oil-can text-primary me-2"></i> PSV</h6>
+                                <h6 class="mb-3"><i class="fa fa-oil-well text-primary me-2"></i> Rigs</h6>
 
-        <!-- <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-1"><i class="fab fa-instagram"></a> -->
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- footer  -->
+     <div id="footer"></div>
+
+    
+    
+     <script>
+        const detailsElement = document.getElementById('more');
+        const summaryElement = document.getElementById('less');
+    
+        detailsElement.addEventListener('toggle', function() {
+            if (detailsElement.open) {
+                summaryElement.textContent = 'Read Less';
+            } else {
+                summaryElement.textContent = 'Read More';
+            }
+        });
+    </script>
+
+
+    <script>
+        // Function to include HTML from separate files
+        function includeHTML(elementId, filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                });
+        }
+
+        // Load header and footer
+        includeHTML('nav', 'nav.html');
+        includeHTML('footer', 'footer.html');
+    </script>
+    
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-<!-- Bootstrap JS Bundle (includes Popper.js) -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap JS Bundle (includes Popper.js) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="../lib/wow/wow.min.js"></script>
     <script src="../lib/easing/easing.min.js"></script>
@@ -529,6 +375,7 @@
 
     <!-- Template Javascript -->
     <script src="../js/main.js"></script>
+
 </body>
 
 </html>

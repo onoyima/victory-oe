@@ -44,7 +44,106 @@
 
     <link href="../agency/css/styles.css" rel="stylesheet">
 
-    
+    <style>
+        ol li {
+            --stop: calc(100% / var(--length) * var(--i));
+            --l: 62%;
+            --l2: 88%;
+            --h: calc((var(--i) - 1) * (180 / var(--length)));
+            --c1: hsl(var(--h), 71%, var(--l));
+            --c2: hsl(var(--h), 71%, var(--l2));
+
+            position: relative;
+            counter-increment: list;
+            margin: 1.5rem 0;
+            padding: 2rem 1rem 1rem;
+            box-shadow: 0.1rem 0.1rem 1.5rem rgba(0, 0, 0, 0.3);
+            border-radius: 0.25rem;
+            overflow: hidden;
+            background-color: rgb(221, 210, 210);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        ol li:nth-child(odd) {
+            left: 5%;
+        }
+
+        ol li:nth-child(even) {
+            left: 50%;
+        }
+
+        ol li::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to right, var(--c1) var(--stop), var(--c2) var(--stop));
+        }
+
+        ol li h3 {
+            display: flex;
+            align-items: baseline;
+            margin: 0 0 1rem;
+            color: rgb(70, 70, 70);
+        }
+
+        ol li h3::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0 0 auto;
+            margin-right: 1rem;
+            width: 3rem;
+            height: 3rem;
+            content: counter(list);
+            padding: 1rem;
+            border-radius: 50%;
+            background-color: var(--c1);
+            color: white;
+        }
+
+       
+
+        /* Media Queries for responsive behavior */
+        @media (min-width: 40em) {
+            ol li {
+                max-width: 45%;
+                margin: 2rem 0;
+                padding: 3rem 2rem 2rem;
+            }
+
+            ol li h3 {
+                font-size: 1.75rem;
+                margin: 0 0 1.5rem;
+            }
+
+            ol li h3::before {
+                margin-right: 1.5rem;
+            }
+        }
+
+        @media (max-width: 40em) {
+            ol {
+                padding-left: 0;
+            }
+
+            ol li {
+                max-width: 100%;
+                left: 0 !important;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            ol::before {
+                left: 0;
+                width: 2px;
+            }
+        }
+    </style>
 </head>
 
 <body id="page-top">
@@ -67,56 +166,26 @@
 
 
 
-        <!-- section  End -->
-
         <section class="page-section" id="about">
             <div class="container">
-                <div class="text-center">
-                    <!-- <h2 class="section-heading text-uppercase">About</h2> -->
-                    <h3 class="section-subheading text-muted">Success in the dynamic Oil and Energy industry demands seamless Project Management solutions. Victory Oil and Energy stands apart, offering a superior level of expertise and a full suite of first-class Project management solutions. Our seasoned professionals will ensure that every aspect of your project from Implementation to Execution is expertly handled.</h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../images/services/Technical-Service.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <!-- <h4>2009-2011</h4> -->
-                                <h4 class="subheading">Operations and Maintenance</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">
-                                
-                                Maintaining and optimizing the performance of the oil and energy facilities, including regular inspections and repairs, and implementing best practices to minimize downtime and ensure efficient and safe operations.
-                            </p></div>
-                        </div>
+                <ol style="--length: 5" role="list">
+                    <li style="--i: 1">
+                        <h3>Operations and Maintenance</h3>
+                        <p>
+                            Maintaining and optimizing the performance of the oil and energy facilities, including regular inspections and repairs, and implementing best practices to minimize downtime and ensure efficient and safe operations.
+                        </p>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../images/services/Learning-management-solutions.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <!-- <h4>March 2011</h4> -->
-                                <h4 class="subheading">Project Implementation and Execution</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">
-                                
-                                This covers all aspects of actually executing the project, from securing necessary permits and licenses to coordinating with contractors and suppliers to overseeing construction and operations.
-                            </p>
-                        </div>
-                        </div>
+                    <li style="--i: 2">
+                        <h3>Project Implementation and Execution</h3>
+                        <p>This covers all aspects of actually executing the project, from securing necessary permits and licenses to coordinating with contractors and suppliers to overseeing construction and operations.</p>
                     </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="../images/services/Transportation-and-Freight.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <!-- <h4>December 2015</h4> -->
-                                <h4 class="subheading">Exploration and Development Planning</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">
-                                
-                                Identifying potential sites for oil and energy exploration, conducting surveys and assessments, and creating development plans for the most promising areas.
-                            </p></div>
-                        </div>
+                    <li style="--i: 3">
+                        <h3>Exploration and Development Planning</h3>
+                        <p>
+                            Identifying potential sites for oil and energy exploration, conducting surveys and assessments, and creating development plans for the most promising areas.
+                        </p>
                     </li>
-                   
+                </ol>
             </div>
         </section>
 

@@ -32,30 +32,44 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="agency/css/styles.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Noto+Sans+Hanunoo&display=swap" rel="stylesheet">
     <style>
-       h1{
-        font-family: "Noi Grotesk" !important;
-        font-weight: 300;
-        font-size:  clamp(38px, 5.208vw, 100px);
-        letter-spacing: -2px;
-        line-height: 1;
-        color: red !important;
-       }
-    </style>
+    
+    .masthead-heading {
+  font-family: "Jersey 10", sans-serif !important;
+  letter-spacing: 20px !important;
+  /* line-height: 1; */
 
+
+  /* color: red !important; */
+}
+
+        
+    /* .masthead-heading
+    {
+     font-family: "poppinsNoto Sans Hanunoo" !important;
+     font-weight: 200;
+     font-size: 20px;
+
+     letter-spacing: 5px;
+     line-height: 1;
+    } */
+
+        
+    </style>
+   
 
 </head>
 
 <body id="page-top">
-    <div id="spinner"
+    <!-- <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
-    </div>
+    </div> -->
     <!-- Navigation-->
-   
+
     <div id="nav"></div>
     <header class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -63,7 +77,7 @@
                 <!-- Video Background -->
                 <video class="video-background" autoplay muted loop>
                     <!-- <source src="https://www.youtube.com/watch?v=LqSvHEknsQg" type="video/mp4"> -->
-                    <source src="images/slider/energy/video-clip.mp4" type="video/mp4">
+                    <source src="images/slider/energy/about.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <!-- Overlay -->
@@ -71,14 +85,15 @@
                 <!-- Masthead Content -->
                 <div class="masthead ps-4">
                     <div class="">
-                        <h3 class="masthead-heading text-uppercase text-white animated zoomIn">Energy Reimagined</h3>
-                        <p> <strong>First-Class Custom-fit Energy Solutions made for Your Most Ambitious Business
-                                Goals.</strong> </p>
+                        <h1 class="text-uppercase" >Energy Reimagined</h1>
+                        <!-- <h3 class="masthead-heading text-uppercase text-white animated zoomIn">Energy Reimagined</h3> -->
+                        <p> First-Class Custom-fit Energy Solutions made for Your Most Ambitious Business
+                                Goals. </p>
                     </div>
 
                 </div>
             </div>
-           
+
         </div>
     </header>
 
@@ -86,7 +101,7 @@
 
     <!-- About Start -->
 
-    <div class="container-xxl py-5" id="about">
+    <div class="container-xxl py-5 bg-gray " id="about">
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="section-title position-relative mb-4 pb-2">
@@ -260,19 +275,22 @@
                     </div>
 
                 </div>
-            
+
             </div>
             <div class="col-lg-6">
-                <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg" alt="">
+                <video class="video-fluid wow zoomIn" data-wow-delay="0.5s" autoplay muted loop>
+                    <source src="images/slider/energy/about.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>
-    </div>
+    
 
-   
+
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
+    <div class="container-fluid py-5 bg-light">
         <div class="container px-lg-5">
             <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="position-relative d-inline text-primary ps-4"><strong>Our Services</strong></h6>
@@ -361,8 +379,9 @@
 
     <section class="partnership-section py-5" id="partners">
         <div class="container">
-            <div class="section-title position-relative mb-4 pb-2 text-center">
-                <h6 class="position-relative text-primary ps-4"> <strong>Our Partners</strong></h6>
+            
+            <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="position-relative d-inline text-primary ps-4"><strong>Our Partners</strong></h6>
                 <h2 class="mt-2">Trusted by Leading Companies</h2>
             </div>
             <div class="partner-carousel">
@@ -435,7 +454,7 @@
 
 
 
-    <div class="container-xxl py-5" id="contact" style="margin-bottom: 0px;">
+    <div class="container-fluid py-5 bg-light" id="contact" style="margin-bottom: 0px;">
         <div class="container px-lg-5" style="padding-bottom:0px;">
             <div class="row justify-content-center">
                 <div class="col-lg-7 mb-5 mb-lg-0">
@@ -523,7 +542,7 @@
 
 
     <!-- Footer Start -->
-  
+
     <div id="footer"></div>
 
 
@@ -542,7 +561,7 @@
 
     <!-- <div id="header"></div> -->
     <!-- Main content here -->
-    
+
 
     <script>
         // Function to include HTML from separate files

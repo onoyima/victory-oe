@@ -340,7 +340,7 @@ button:focus:not(:focus-visible) {
     outline: 0
 }
 
-input,
+/* input,
 button,
 select,
 optgroup,
@@ -349,7 +349,7 @@ textarea {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit
-}
+} */
 
 button,
 select {

@@ -38,6 +38,43 @@
     <link rel="preload" href="agency/css/styles.css" as="style" onload="this.rel='stylesheet'">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap" rel="stylesheet"> -->
   
+
+
+    <style>
+        
+/* Adjust text on smaller screens */
+@media (max-width: 768px) {
+    .masthead {
+        top: 30% !important; /* Move the content higher on mobile */
+        padding-top: 20px !important; /* Add a bit of padding at the top */
+    }
+
+    .masthead h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+        padding-bottom: 10px; /* Reduce space under the h1 */
+    }
+
+    .masthead p {
+        font-size: 1rem; /* Adjust font size for better readability */
+        padding-top: 10px; /* Add space above the paragraph */
+    }
+}
+
+/* For extra small screens (like smartphones) */
+@media (max-width: 576px) {
+    .masthead {
+        top: 25% !important; /* Move the content even higher */
+    }
+
+    .masthead h1 {
+        font-size: 1.5rem; /* Smaller h1 size for very small screens */
+    }
+
+    .masthead p {
+        font-size: 0.9rem; /* Adjust font size for small screens */
+    }
+}
+    </style>
    
 
 </head>
@@ -67,9 +104,6 @@
                 <div class="masthead ps-4">
                     <div class="">
                         <h1 class="text-uppercase title1 sevillana-regular" >Energy Reimagined</h1>
-
-                        <!-- <span class="sevillana-regular">No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms</span> -->
-                        <!-- <h3 class="masthead-heading text-uppercase text-white animated zoomIn">Energy Reimagined</h3> -->
                         <p class="sevillana-regular"> First-Class Custom-fit Energy Solutions made for Your Most Ambitious Business
                                 Goals. </p>
                     </div>
@@ -82,7 +116,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5 bg-gray" id="about">
+    <div class="container-fluid py-5 bg-gray about" id="about">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -277,7 +311,7 @@
 
 
     <!-- Service Start -->
-    <div class="container-fluid py-5 bg-light">
+    <div class="container-fluid py-5 bg-light" id="services">
         <div class="container px-lg-5">
             <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="position-relative d-inline text-primary ps-4"><strong>Our Services</strong></h6>
@@ -293,7 +327,7 @@
                         <div class="card-body text-center d-flex flex-column">
                             <h3 class="mb-3">Technical Services</h3>
                             <p>From exploration to production, we’re your complete technical solution.</p>
-                            <a class="btn text-primary  " href="services/technical-Services.html">Read More</a>
+                            <a class="btn btn-custom   " href="services/technical-Services.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -305,7 +339,7 @@
                             <p>Beyond the surface, we uncover what matters most. Meticulous inspections, built-in trust.
                             </p>
 
-                            <a class="btn text-primary" href="services/inspection-Services.html">Read More</a>
+                            <a class="btn btn-custom " href="services/inspection-Services.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -316,7 +350,7 @@
                             <h3 class="mb-3">Earth Science Services</h3>
                             <p>We illuminate the obscured so you can capture what waits below.</p>
 
-                            <a class="btn text-primary" href="services/earth-Services.html">Read More</a>
+                            <a class="btn btn-custom " href="services/earth-Services.html">Read More</a>
 
                         </div>
                     </div>
@@ -328,7 +362,7 @@
                             <h3 class="mb-3">Engineering Solutions</h3>
                             <p>Precision, innovation, results. Your trusted partner for engineered solutions. </p>
 
-                            <a class="btn text-primary" href="services/engineering-services.html">Read More</a>
+                            <a class="btn btn-custom " href="services/engineering-services.html">Read More</a>
 
                         </div>
                     </div>
@@ -341,7 +375,7 @@
                             <h3 class="mb-3">Training Solutions</h3>
                             <p>Bridge the knowledge gap. Empower your workforce with expert training.</p>
 
-                            <a class="btn text-primary" href="services/training-services.html">Read More</a>
+                            <a class="btn btn-custom" href="services/training-services.html">Read More</a>
 
                         </div>
                     </div>
@@ -353,7 +387,7 @@
                             <h3 class="mb-3">Project Management</h3>
                             <p>From Concept to Completion: Project Management Perfected!</p>
 
-                            <a class="btn text-primary" href="services/project-services.html">Read More</a>
+                            <a class="btn btn-custom " href="services/project-services.html">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -366,7 +400,7 @@
 
     
 
-    <div class="container-fluid text-light footer mt-5 pt-4 " data-wow-delay="0.1s">
+    <div class="container-fluid text-light footer mt-5 pt-4 " data-wow-delay="0.1s" id="partners">
         <div class="container py-3 px-lg-5">
             <div class="row g-5">
                 <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
@@ -499,34 +533,38 @@
                 <div class="col-lg-5" style="margin-top: 100px;">
                     <div class="card border-0 shadow-sm wow fadeInUp" data-wow-delay="0.5s">
                         <div class="card-body">
-                            <!-- <h5 class="card-title mt-4 text-primary">Angola Office:</h5> -->
-                            <h6 class="position-relative d-inline text-primary ps-4"> <strong> Angola Office: </strong>
+                            <h6 class="position-relative d-inline text-primary ps-4" style="margin-bottom: 0.25rem;">
+                                <strong>Angola Office:</strong>
                             </h6>
-                            <p class="card-text text-dark">
-                                <i class="fa fa-map-marker-alt text-warning"> </i> Rua Dr. Jose Pereiva do Nascimento,
+                            <p class="card-text text-dark" style="margin-top: 0; margin-bottom: 0.75rem;">
+                                <i class="fa fa-map-marker-alt text-warning"></i> Rua Dr. Jose Pereiva do Nascimento,
                                 No 49 Maianga, Luanda Angola.
                             </p>
-                            <h6 class="position-relative d-inline text-primary ps-4"> <strong> Nigeria Office: </strong>
+                            <h6 class="position-relative d-inline text-primary ps-4" style="margin-bottom: 0.25rem;">
+                                <strong>Nigeria Office:</strong>
                             </h6>
-                            <p class="card-text text-dark">
-                                <i class="fa fa-map-marker-alt text-warning"> </i> No 1, Oladimeji Alo Str, off Hakeem
+                            <p class="card-text text-dark" style="margin-top: 0; margin-bottom: 0.75rem;">
+                                <i class="fa fa-map-marker-alt text-warning"></i> No 1, Oladimeji Alo Str, off Hakeem
                                 Dickson Road, Lekki Phase 1, Lagos
                             </p>
-                            <h6 class="position-relative d-inline text-primary ps-4"> <strong> Namibia Office:</strong>
+                            <h6 class="position-relative d-inline text-primary ps-4" style="margin-bottom: 0.25rem;">
+                                <strong>Namibia Office:</strong>
                             </h6>
-                            <p class="card-text text-dark">
-                                <i class="fa fa-map-marker-alt text-warning"> </i>Sam Nujoma Drive, Vivo House. Klein
+                            <p class="card-text text-dark" style="margin-top: 0; margin-bottom: 0.75rem;">
+                                <i class="fa fa-map-marker-alt text-warning"></i> Sam Nujoma Drive, Vivo House. Klein
                                 Windhoek, Windhoek
                             </p>
-                            <h6 class="position-relative d-inline text-primary ps-4"> <strong> USA Office: </strong>
+                            <h6 class="position-relative d-inline text-primary ps-4" style="margin-bottom: 0.25rem;">
+                                <strong>USA Office:</strong>
                             </h6>
-                            <p class="card-text text-dark">
-                                <i class="fa fa-map-marker-alt text-warning"> </i> Victory Oil & Energy International
+                            <p class="card-text text-dark" style="margin-top: 0; margin-bottom: 0;">
+                                <i class="fa fa-map-marker-alt text-warning"></i> Victory Oil & Energy International
                                 Operations, 3 Sugarcreek Boulevard, Sugarland, Houston, Texas.
                             </p>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>

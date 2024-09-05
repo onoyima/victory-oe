@@ -13,7 +13,7 @@
     <link rel="preload" href="lib/owlcarousel/assets/owl.carousel.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="lib/animate/animate.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="agency/css/styles.css" as="style" onload="this.rel='stylesheet'">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap" rel="stylesheet">
+    <link  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap" rel="stylesheet">
     <style>
          
     
@@ -45,8 +45,9 @@
     /* font-family: "Nanum Gothic", sans-serif !important; */
             /* font-family: "Athiti", sans-serif !important; */
             /* font-family: "Arsenal", sans-serif !important; */
-            font-family: "Rajdhani", sans-serif !important; 
+            /* font-family: "Rajdhani", sans-serif !important;  */
             /* font-family: "Sevillana", cursive !important; */
+            font-family: "Poppins", sans-serif;
     letter-spacing:1px;
     font-size: 1rem;
     line-height: 2;
@@ -121,8 +122,82 @@
         height: auto;
     }
 }
-        
-   
+
+/* Set a fixed height for all cards */
+.card {
+    height: 450px; /* Adjust the height as needed */
+}
+
+/* Ensure card body fills the available space and aligns content properly */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+/* Ensure paragraph takes exactly 3 lines */
+.card-body p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Optional, adds "..." if the text overflows */
+    line-height: 1.5em; /* Set line height to control spacing between lines */
+    height: 4.5em; /* Ensure 3 lines total (3 * line-height) */
+}
+
+/* Ensure 'Read More' button stays at the bottom */
+.card-body .btn {
+    margin-top: auto; /* Pushes the button to the bottom */
+}
+
+
+
+/* Base styles for buttons */
+.btn-custom {
+    font-family: "Rajdhani", sans-serif !important; 
+    position: relative;
+    font-size: 1rem;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    color: #009dd1; /* Button text color */
+    transition: color 0.3s ease;
+}
+
+.btn-custom::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #009dd1; /* Line color */
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.btn-custom:hover::after {
+    width: 100%; /* Expands line on hover */
+}
+
+.btn-custom:hover {
+    color: #009dd1; /* Darker color on hover */
+}
+
+/* Additional styles for different sections */
+.btn-custom:focus {
+    outline: none;
+}
+
+.text-primary{
+    color: #009dd1 !important;
+}
+.about {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+        }
     </style>
 </head>
 

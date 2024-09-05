@@ -82,11 +82,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   }
   p{
     
-    font-family: "Quicksand", sans-serif !important;
+    /* font-family: "Quicksand", sans-serif !important; */
     /* font-family: "Nanum Gothic", sans-serif !important; */
             /* font-family: "Athiti", sans-serif !important; */
             /* font-family: "Arsenal", sans-serif !important; */
             /* font-family: "Rajdhani", sans-serif !important; */ 
+            font-family: "Poppins", sans-serif;
     letter-spacing:1px;
     font-size: 1rem;
     line-height: 2;

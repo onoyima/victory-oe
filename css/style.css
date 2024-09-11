@@ -4,7 +4,8 @@
 :root {
     --primary: #2124B1;
     --secondary: #4777F5;
-    --light: #cdcd9f;
+    /* --light: #cdcd9f; */
+    --light: gold;
     --dark: #1D1D27;
 }
 .btn-primary {
@@ -780,11 +781,11 @@ body{
 .partner-carousel-inner {
     display: flex;
     flex-wrap: nowrap;
-    animation: moveRightToLeft 20s linear infinite;
+    animation: moveRightToLeft 15s linear infinite;
 }
 
 .partner-carousel-inner-reverse {
-    animation: moveLeftToRight 20s linear infinite;
+    animation: moveLeftToRight 15s linear infinite;
 }
 
 /* Partner Logo */

@@ -23,7 +23,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet"> -->
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@300;400;700;800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -38,45 +38,53 @@
     <link rel="preload" href="lib/animate/animate.min.css" as="style" onload="this.rel='stylesheet'">
     <link rel="preload" href="agency/css/styles.css" as="style" onload="this.rel='stylesheet'">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap" rel="stylesheet"> -->
-  
+
 
 
     <style>
-        
-/* Adjust text on smaller screens */
-@media (max-width: 768px) {
-    .masthead {
-        top: 30% !important; /* Move the content higher on mobile */
-        padding-top: 20px !important; /* Add a bit of padding at the top */
-    }
+        /* Adjust text on smaller screens */
+        @media (max-width: 768px) {
+            .masthead {
+                top: 30% !important;
+                /* Move the content higher on mobile */
+                padding-top: 20px !important;
+                /* Add a bit of padding at the top */
+            }
 
-    .masthead h1 {
-        font-size: 2rem; /* Smaller font size for mobile */
-        padding-bottom: 10px; /* Reduce space under the h1 */
-    }
+            .masthead h1 {
+                font-size: 2rem;
+                /* Smaller font size for mobile */
+                padding-bottom: 10px;
+                /* Reduce space under the h1 */
+            }
 
-    .masthead p {
-        font-size: 1rem; /* Adjust font size for better readability */
-        padding-top: 10px; /* Add space above the paragraph */
-    }
-}
+            .masthead p {
+                font-size: 1rem;
+                /* Adjust font size for better readability */
+                padding-top: 10px;
+                /* Add space above the paragraph */
+            }
+        }
 
-/* For extra small screens (like smartphones) */
-@media (max-width: 576px) {
-    .masthead {
-        top: 25% !important; /* Move the content even higher */
-    }
+        /* For extra small screens (like smartphones) */
+        @media (max-width: 576px) {
+            .masthead {
+                top: 25% !important;
+                /* Move the content even higher */
+            }
 
-    .masthead h1 {
-        font-size: 1.5rem; /* Smaller h1 size for very small screens */
-    }
+            .masthead h1 {
+                font-size: 1.5rem;
+                /* Smaller h1 size for very small screens */
+            }
 
-    .masthead p {
-        font-size: 0.9rem; /* Adjust font size for small screens */
-    }
-}
+            .masthead p {
+                font-size: 0.9rem;
+                /* Adjust font size for small screens */
+            }
+        }
     </style>
-   
+
 
 </head>
 
@@ -99,14 +107,15 @@
                     <source src="images/slider/energy/video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-               
+
                 <div class="overlay"></div>
-                
+
                 <div class="masthead ps-4">
                     <div class="">
-                        <h1 class="text-uppercase title1 sevillana-regular" >Energy Reimagined</h1>
-                        <p class="sevillana-regular"> First-Class Custom-fit Energy Solutions made for Your Most Ambitious Business
-                                Goals. </p>
+                        <h1 class="text-uppercase title1 sevillana-regular">Energy Reimagined</h1>
+                        <p class="sevillana-regular"> First-Class Custom-fit Energy Solutions made for Your Most
+                            Ambitious Business
+                            Goals. </p>
                     </div>
 
                 </div>
@@ -125,177 +134,179 @@
                         <h6 class="position-relative text-primary ps-4"><strong>About Us</strong></h6>
                         <h2 class="mt-2">Victory Oil & Energy</h2>
                     </div>
-                    <p class="mb-4">Victory Oil & Energy (VOE) is a Pan-African oil and energy organization with a diverse
-                    portfolio of solutions designed to deliver efficient and reliable services within the Oil and Gas
-                    markets in Angola, Nigeria, and Namibia. Strategically partnered with affiliates in the USA, UK, and
-                    South Africa, VOE offers a range of services, including Technical services, Inspection services,
-                    Earth science services, Training solutions, Engineering solutions, and Project management services.
+                    <p class="mb-1"> <span style="color: rgb(7, 112, 177); font-weight: 700;"><span >Victory Oil & Energy</span><span style="color: gold;">(VOE) </span> </span>is a Pan-African oil and energy organization with a
+                        diverse portfolio of solutions designed to deliver efficient and reliable services within the
+                        Oil and Gas markets in Angola, Nigeria, and Namibia. VOE offers a range of services, including
+                        Technical services, Inspection services, Earth science services, Training solutions, Engineering
+                        solutions, and Project management services.
+                    </p>
+                    <p class="mb-2">VOE is committed to combining local content with international standards to lead in
+                        its served locations. Our solutions focus on exploration, sourcing, and producing energy
+                        efficiently while minimizing environmental impact and maximizing productivity..</p>
+                    <p>
+                        At the heart of VOE is a dedicated team of professionals who drive our success, upholding our
+                        commitment to safety, quality, and sustainable development in every project
+                    </p>
+                    <!-- Accordion structure -->
+                    <div class="accordion" id="aboutAccordion">
+                        <div class="accordion-item">
+                            <h6 class="accordion-header text-primary " id="headingOne">
+                                <button class="accordion-button btn-primary" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    CORPORATE CULTURE
+                                </button>
+                            </h6>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#aboutAccordion">
+                                <div class="accordion-body">
+                                    <p><i class="fa fa-eye text-primary me-2"></i> <strong
+                                            class="text-primary">Vision:</strong> To
+                                        be a leading
+                                        provider of Oil and Gas
+                                        &amp; Energy Solutions,
+                                        trusted by our partners
+                                        and clients for our
+                                        staunch commitment to
+                                        excellence, compliance
+                                        and innovation.</p>
 
-                </p>
-                <p class="mb-4">VOE is committed to combining local content with international standards to lead in its
-                    served locations. Our solutions focus on transforming, transferring, and transporting energy
-                    efficiently while minimizing environmental impact and maximizing productivity. At the heart of VOE
-                    is a dedicated team of professionals who drive our success, upholding our commitment to safety,
-                    quality, and sustainable development in every project.</p>
-                <!-- Accordion structure -->
-                <div class="accordion" id="aboutAccordion">
-                    <div class="accordion-item">
-                        <h6 class="accordion-header text-primary " id="headingOne">
-                            <button class="accordion-button btn-primary" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                CORPORATE CULTURE
-                            </button>
-                        </h6>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                            data-bs-parent="#aboutAccordion">
-                            <div class="accordion-body">
-                                <p><i class="fa fa-eye text-primary me-2"></i> <strong
-                                        class="text-primary">Vision:</strong> To
-                                    be a leading
-                                    provider of Oil and Gas
-                                    &amp; Energy Solutions,
-                                    trusted by our partners
-                                    and clients for our
-                                    staunch commitment to
-                                    excellence, compliance
-                                    and innovation.</p>
-
-                                <p><i class="fa fa-bullseye text-primary me-2"></i> <strong
-                                        class="text-primary">Mission: </strong>We
-                                    are strongly committed
-                                    to achieving our
-                                    long-term strategy of
-                                    becoming the leading
-                                    provider of
-                                    multi-service solutions
-                                    that are innovative,
-                                    streamlined, sustainable
-                                    and operationally
-                                    excellent.
-                                </p>
+                                    <p><i class="fa fa-bullseye text-primary me-2"></i> <strong
+                                            class="text-primary">Mission: </strong>We
+                                        are strongly committed
+                                        to achieving our
+                                        long-term strategy of
+                                        becoming the leading
+                                        provider of
+                                        multi-service solutions
+                                        that are innovative,
+                                        streamlined, sustainable
+                                        and operationally
+                                        excellent.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h6 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button btn-primary collapsed" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                aria-controls="collapseTwo">
-                                BUSINESS GOALS
-                            </button>
-                        </h6>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#aboutAccordion">
-                            <div class="accordion-body">
-                                <p>
-                                    <i class="fa fa-shield-alt text-primary me-2"></i> <strong
-                                        class="text-primary">HSE: </strong>To create a culture of safety where
-                                    everyone is valued and respected, and accidents are prevented.
-                                </p>
-                                <p>
-                                    <i class=" fa fa-star text-primary me-2"></i> <strong class="text-primary">SERVICE
-                                        QUALILTY: </strong>To
-                                    create a
-                                    customer-centric culture
-                                    where everyone is
-                                    committed to providing
-                                    exceptional service.
-                                </p>
-                                <p>
-                                    <i class="fa fa-users text-primary me-2"></i> <strong class="text-primary">OUR
-                                        PEOPLE: </strong>To
-                                    create a workplace where
-                                    employees are valued,
-                                    respected, and empowered
-                                    to achieve their full
-                                    potential.
-                                </p>
-                                <p>
-                                    <i class="fa fa-handshake text-primary me-2"></i> <strong
-                                        class="text-primary">COMMUNITY: </strong>To
-                                    spread impact in the
-                                    communities where we
-                                    operate and leave them
-                                    in a better state than
-                                    we found them.
-                                </p>
+                        <div class="accordion-item">
+                            <h6 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button btn-primary collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    BUSINESS GOALS
+                                </button>
+                            </h6>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#aboutAccordion">
+                                <div class="accordion-body">
+                                    <p>
+                                        <i class="fa fa-shield-alt text-primary me-2"></i> <strong
+                                            class="text-primary">HSE: </strong>To create a culture of safety where
+                                        everyone is valued and respected, and accidents are prevented.
+                                    </p>
+                                    <p>
+                                        <i class=" fa fa-star text-primary me-2"></i> <strong
+                                            class="text-primary">SERVICE
+                                            QUALILTY: </strong>To
+                                        create a
+                                        customer-centric culture
+                                        where everyone is
+                                        committed to providing
+                                        exceptional service.
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-users text-primary me-2"></i> <strong class="text-primary">OUR
+                                            PEOPLE: </strong>To
+                                        create a workplace where
+                                        employees are valued,
+                                        respected, and empowered
+                                        to achieve their full
+                                        potential.
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-handshake text-primary me-2"></i> <strong
+                                            class="text-primary">COMMUNITY: </strong>To
+                                        spread impact in the
+                                        communities where we
+                                        operate and leave them
+                                        in a better state than
+                                        we found them.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h6 class="accordion-header" id="headingThree">
-                            <button class="accordion-button btn-primary collapsed" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                aria-controls="collapseThree">
-                                VALUES
-                            </button>
-                        </h6>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#aboutAccordion">
-                            <div class="accordion-body">
-                                <p> <i class="fa fa-balance-scale text-primary me-2"></i><strong
-                                        class="text-primary">INTEGRITY:</strong> Our
-                                    unwavering commitment to
-                                    honesty, transparency,
-                                    and ethical practices
-                                    forms the foundation of
-                                    everything we do,
-                                    ensuring trust, respect,
-                                    and long-lasting
-                                    relationships.
-                                </p>
-                                <p><i class="fa fa-trophy text-primary me-2"></i> <strong
-                                        class="text-primary">QUALITY: </strong>Our
-                                    relentless pursuit of
-                                    excellence drives us to
-                                    deliver solutions that
-                                    surpass expectations,
-                                    inspiring confidence and
-                                    creating lasting value
-                                    for our customers.
+                        <div class="accordion-item">
+                            <h6 class="accordion-header" id="headingThree">
+                                <button class="accordion-button btn-primary collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    VALUES
+                                </button>
+                            </h6>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#aboutAccordion">
+                                <div class="accordion-body">
+                                    <p> <i class="fa fa-balance-scale text-primary me-2"></i><strong
+                                            class="text-primary">INTEGRITY:</strong> Our
+                                        unwavering commitment to
+                                        honesty, transparency,
+                                        and ethical practices
+                                        forms the foundation of
+                                        everything we do,
+                                        ensuring trust, respect,
+                                        and long-lasting
+                                        relationships.
+                                    </p>
+                                    <p><i class="fa fa-trophy text-primary me-2"></i> <strong
+                                            class="text-primary">QUALITY: </strong>Our
+                                        relentless pursuit of
+                                        excellence drives us to
+                                        deliver solutions that
+                                        surpass expectations,
+                                        inspiring confidence and
+                                        creating lasting value
+                                        for our customers.
 
-                                </p>
-                                <p><i class="fa fa-hands-helping text-primary me-2"></i> <strong
-                                        class="text-primary">TEAMWORK: </strong>Together,
-                                    we achieve greatness.
-                                    Embracing collaboration,
-                                    mutual support, and
-                                    diverse perspectives, we
-                                    unite our strengths to
-                                    accomplish shared goals,
-                                    fuel innovation, and
-                                    foster an empowering
-                                    work environment.
-                                </p>
-                                <p><i class="fa fa-lightbulb text-primary me-2"></i> <strong
-                                        class="text-primary">INNOVATION: </strong>We
-                                    are committed to pushing
-                                    boundaries &amp;
-                                    embracing creativity.
-                                </p>
-                                <p><i class="fa fa-crown text-primary me-2"></i><strong
-                                        class="text-primary">LEADERSHIP: </strong>We
-                                    inspire, empower, and
-                                    guide. With visionary
-                                    thinking, integrity, and
-                                    a commitment to
-                                    excellence, we cultivate
-                                    leaders at all levels,
-                                    driving positive change,
-                                    fostering growth, and
-                                    making a meaningful
-                                    impact in our industry
-                                    and beyond.
-                                </p>
+                                    </p>
+                                    <p><i class="fa fa-hands-helping text-primary me-2"></i> <strong
+                                            class="text-primary">TEAMWORK: </strong>Together,
+                                        we achieve greatness.
+                                        Embracing collaboration,
+                                        mutual support, and
+                                        diverse perspectives, we
+                                        unite our strengths to
+                                        accomplish shared goals,
+                                        fuel innovation, and
+                                        foster an empowering
+                                        work environment.
+                                    </p>
+                                    <p><i class="fa fa-lightbulb text-primary me-2"></i> <strong
+                                            class="text-primary">INNOVATION: </strong>We
+                                        are committed to pushing
+                                        boundaries &amp;
+                                        embracing creativity.
+                                    </p>
+                                    <p><i class="fa fa-crown text-primary me-2"></i><strong
+                                            class="text-primary">LEADERSHIP: </strong>We
+                                        inspire, empower, and
+                                        guide. With visionary
+                                        thinking, integrity, and
+                                        a commitment to
+                                        excellence, we cultivate
+                                        leaders at all levels,
+                                        driving positive change,
+                                        fostering growth, and
+                                        making a meaningful
+                                        impact in our industry
+                                        and beyond.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <video class="video-fluid wow zoomIn" data-wow-delay="0.5s" autoplay muted loop>
-                        <source src="images/slider/energy/about.mp4" type="video/mp4">
+                        <source src="images/slider/energy/about1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -306,8 +317,8 @@
 
 
 
-   
-    
+
+
 
 
 
@@ -399,7 +410,7 @@
     </div>
 
 
-    
+
 
     <div class="container-fluid text-light footer mt-5 pt-4 " data-wow-delay="0.1s" id="partners">
         <div class="container py-3 px-lg-5">
@@ -461,7 +472,7 @@
                         <div class="partner-logo">
                             <img src="images/partners/C26.jpg" class="img-fluid" alt="Partner 18">
                         </div>
-                        
+
                     </div>
                     <div class="partner-carousel-inner partner-carousel-inner-reverse">
                         <!-- <div class="partner-logo">
@@ -518,12 +529,12 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
-    
-    
+
+
     </div>
-  
+
 
 
 
@@ -601,20 +612,19 @@
                                 <strong>Namibia Office:</strong>
                             </h6>
                             <p class="card-text text-dark" style="margin-top: 0; margin-bottom: 0.75rem;">
-                                <i class="fa fa-map-marker-alt text-warning"></i> Sam Nujoma Drive, Vivo House. Klein
-                                Windhoek, Windhoek
+                                <i class="fa fa-map-marker-alt text-warning"></i> Saphire Center, Johan Albritch, 1691, Windhoek, West, Namibia.
+                                
                             </p>
                             <h6 class="position-relative d-inline text-primary ps-4" style="margin-bottom: 0.25rem;">
                                 <strong>USA Office:</strong>
                             </h6>
                             <p class="card-text text-dark" style="margin-top: 0; margin-bottom: 0;">
-                                <i class="fa fa-map-marker-alt text-warning"></i> Victory Oil & Energy International
-                                Operations, 3 Sugarcreek Boulevard, Sugarland, Houston, Texas.
+                                <i class="fa fa-map-marker-alt text-warning"></i> 8 The Green, Ste! Dover, Delaware, 19901
                             </p>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>

@@ -534,6 +534,10 @@ body{
     background-size: cover;
     color: rgb(133, 125, 125);
 }
+.footer p{
+      font-family: "Rajdhani", sans-serif !important;    
+      text-align: normal !important;
+}
 
 .footer .btn.btn-social {
     margin-right: 5px;

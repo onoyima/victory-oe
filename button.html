@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sticky-navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .brxe-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .navbar-links {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Hide navbar links by default on small screens */
+        @media (max-width: 768px) {
+            .navbar-links {
+                display: none; /* Hide the links by default */
+                flex-direction: column; /* Stack links vertically */
+                position: fixed; /* Position the dropdown */
+                top: 60px; /* Adjust top to position just below the toggle button */
+                right: 0; /* Align to right */
+                width: 250px; /* Set a width for the menu */
+                background-color: white; /* Background color */
+                box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+                z-index: 999; /* Ensure it is on top */
+                transition: transform 0.3s ease; /* Smooth transition */
+                transform: translateX(100%); /* Initially off-screen */
+            }
+
+            .navbar-links.show {
+                display: flex; /* Show links when toggle is activated */
+                transform: translateX(0); /* Slide in */
+            }
+
+            .brxe-toggle {
+                display: block; /* Show toggle button on small screens */
+            }
+        }
+
+        @media (min-width: 769px) {
+            .brxe-toggle {
+                display: none; /* Hide toggle button on larger screens */
+            }
+        }
+
+        .brxe-text-link {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .brxe-text-link:hover {
+            color: #007BFF;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 8px 12px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show the dropdown on hover for desktop */
+        @media (min-width: 769px) {
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="brxe-dzfjwf" class="brxe-section sticky-navbar">
+    <div class="brxe-container">
+        <div class="navbar-brand">
+            <a href="#" class="navbar-brand p-0">
+                <img src="images/logo.png" alt="Logo" width="149.2" height="50">
+            </a>
+        </div>
+
+        <button id="brxe-toggle" class="brxe-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="navbar-links">
+            <a class="brxe-text-link" href="#about">About us</a>
+
+            <div class="dropdown">
+                <a class="brxe-text-link" href="#services" id="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content" id="dropdown-menu">
+                    <a href="#service1">Service 1</a>
+                    <a href="#service2">Service 2</a>
+                    <a href="#service3">Service 3</a>
+                    <a href="#service4">Service 4</a>
+                    <a href="#service5">Service 5</a>
+                    <a href="#service6">Service 6</a>
+                </div>
+            </div>
+
+            <a class="brxe-text-link" href="#partners">Partners</a>
+            <a class="brxe-text-link" href="#contact">Contact</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    const toggleButton = document.getElementById('brxe-toggle');
+    const navbarLinks = document.querySelector('.navbar-links');
+    const dropdownToggle = document.getElementById('dropdown-toggle');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('show');
+        const expanded = toggleButton.getAttribute('aria-expanded') === 'true' || false;
+        toggleButton.setAttribute('aria-expanded', !expanded);
+    });
+
+    // Toggle dropdown on click
+    dropdownToggle.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default anchor behavior
+        dropdownMenu.classList.toggle('show');
+    });
+
+    // Close dropdown when clicking outside
+    window.addEventListener('click', (event) => {
+        if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.classList.remove('show');
+        }
+    });
+</script>
+
+</body>
+</html>
+
+
+<div class="modal fade" id="inspectionModal" tabindex="-1" aria-labelledby="inspectionModalLabel"
+aria-hidden="true">
+
+
+<div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+        <div id="brxe-52858f" class="brxe-block bricks-lazy-hidden" type="button" class="btn-close"
+            data-bs-dismiss="modal" aria-label="Close">
+            <svg data-interaction-id="634d25" class="brxe-icon" id="brxe-vhvxif"
+                xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512">
+                <path
+                    d="M338.1 413.4c3.1 3.1 8.2 3.1 11.3 0s3.1-8.2 0-11.3L203.3 256 349.4 109.9c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0L192 244.7 45.9 98.6c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L180.7 256 34.6 402.1c-3.1 3.1-3.1 8.2 0 11.3s8.2 3.1 11.3 0L192 267.3 338.1 413.4z">
+                </path>
+            </svg>
+
+        </div>
+        <div id="brxe-c89b0f" class="brxe-block bricks-lazy-hidden">
+            <div id="brxe-6b5b13" class="brxe-text-basic">
+                VOE - Inspection Services
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="row g-4">
+                <!-- Card 1 -->
+
+                <div class="col-12">
+                    <div class="d-flex align-items-start mb-1 shadow-lg p-1 border rounded"
+                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div class="me-3">
+                            <img src="images/services/Rock-Oil-Sample-Analysis.jpg" class="img-fluid"
+                                style="width: 100px; height: 50px; border-radius: 10px;"
+                                alt="Slickline Service">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="mb-1">QHSE</h5>
+                            <p>We provide expert QHSE inspection services in safeguarding your projects and
+                                operations whilst upholding the highest standards in quality, health, safety,
+                                and environment.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-12">
+                    <div class="d-flex align-items-start mb-1 shadow-lg p-1 border rounded"
+                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div class="me-3">
+                            <img src="images/services/OCTG.jpg.png" class="img-fluid"
+                                style="width: 100px; height: 50px; border-radius: 10px;" alt="Fishing Service">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="mb-1">OCTG</h5>
+                            <p>From visual inspections to advanced testing, our OCTG inspection services provide
+                                the assurance you need.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-12">
+                    <div class="d-flex align-items-start mb-1 shadow-lg p-1 border rounded"
+                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div class="me-3">
+                            <img src="images/services/non-destructive-test.jpg" class="img-fluid"
+                                style="width: 100px; height: 50px; border-radius: 10px;"
+                                alt="Well Testing Service">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="mb-1">Non-Destructive Testing NDT</h5>
+                            <p>Maximize asset integrity with our expert NDT inspection services – providing
+                                precise, non-invasive testing for critical offshore & onshore infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex align-items-start mb-1 shadow-lg p-1 border rounded"
+                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div class="me-3">
+                            <img src="images/services/non-destructive-test.jpg" class="img-fluid"
+                                style="width: 100px; height: 50px; border-radius: 10px;"
+                                alt="Well Testing Service">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="mb-1">Non-Destructive Testing NDT</h5>
+                            <p>Maximize asset integrity with our expert NDT inspection services – providing
+                                precise, non-invasive testing for critical offshore & onshore infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex align-items-start mb-1 shadow-lg p-1 border rounded"
+                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div class="me-3">
+                            <img src="images/services/non-destructive-test.jpg" class="img-fluid"
+                                style="width: 100px; height: 50px; border-radius: 10px;"
+                                alt="Well Testing Service">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="mb-1">Non-Destructive Testing NDT</h5>
+                            <p>Maximize asset integrity with our expert NDT inspection services – providing
+                                precise, non-invasive testing for critical offshore & onshore infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-12">
+                    <div class="d-flex align-items-start mb-1 shadow-lg p-1 border rounded"
+                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                        <div class="me-3">
+                            <img src="images/services/Off-the-shelf-Training.jpg.png" class="img-fluid"
+                                style="width: 100px; height: 50px; border-radius: 10px;" alt="">
+                        </div>
+                        <div class="flex-grow-1">
+
+                            <h5 class="mb-1">Third Party</h5>
+                            <p>Maximize asset integrity with our expert NDT inspection services – providing
+                                precise, non-invasive testing for critical offshore & onshore infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="brx-popup-backdrop"></div>
+
+        <div id="brxe-440009" class="brxe-block bricks-lazy-hidden">
+            <div id="brxe-3f0483" class="brxe-text-basic">To learn more please
+                contact us</div>
+        </div>
+        <!-- Button Section -->
+        <div id="brxe-405c07" class="brxe-block bricks-lazy-hidden">
+            <a id="brxe-nmlapx" data-script-id="nmlapx" class="brxe-arrowbutton bc-arrow-button"
+                data-bs-toggle="modal" data-bs-target="#contact" href="" data-swap="disable">
+                <div class='bc-arrow-button__circle'>
+                    <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-left'
+                        xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+                        <path
+                            d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+                    </svg>
+                    <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-right'
+                        xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
+                        <path
+                            d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+                    </svg>
+                </div>
+                <div class='bc-arrow-button_title-wrapper'>
+                    <div class='bc-arrow-button_title-wrap'>
+                        <div class='bc-arrow-button__title'>Get in touch</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+</div>

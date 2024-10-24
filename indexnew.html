@@ -15,25 +15,23 @@
     href='idyha/wp-content/plugins/nextbricks/elements/css/nextbricks2c49.css?ver=1.7.0.2' media />
   <link rel="stylesheet" href="idyha/css/style.css">
   <title>Victory Oil &amp; Energy</title>
-
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@300;400;700;800&display=swap" rel="stylesheet"> -->
+  
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link href="css/bootstrap.min.css" as="style" rel='stylesheet'>
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel='stylesheet'>
   <link rel="preload" href="lib/animate/animate.min.css" as="style" onload="this.rel='stylesheet'">
   <link rel="preload" href="agency/css/styles.css" as="style" onload="this.rel='stylesheet'">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap"
-    rel="stylesheet">
+
+
+
     <style>
+        
       /* Styling for the "Back to Top" button */
       .back-to-top {
           position: fixed;
@@ -456,6 +454,47 @@
         .card {
             margin: 0;
         }
+        /* General Styles */
+.card-wrapper {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .card-wrapper {
+        flex-direction: column;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+
+    .card-image {
+        width: 100%; /* Make image span the width of the card */
+        height: auto; /* Maintain the aspect ratio */
+        border-radius: 10px 10px 0 0; /* Keep top corners rounded */
+    }
+
+    .flex-grow-1 {
+        text-align: center;
+    }
+}
+
+/* Styles for Larger Screens */
+@media (min-width: 769px) {
+    .img-container {
+        margin-right: 15px;
+    }
+}
+
   </style>
 </head>
 
@@ -807,7 +846,7 @@
                 <h3 class="mb-3">Technical Services</h3>
                 <p>From exploration to production, we’re your complete technical solution.</p>
                 <!-- <a class="btn btn-custom   " href="services/technical-Services.html">Read More</a> -->
-                <button class="btn btn-custom" data-bs-toggle="modal" data-interactions="[{&quot;id&quot;:&quot;zjgerz&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;show&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;452&quot;}]"
+                <button class="btn btn-custom" data-bs-toggle="modal" data-interactions="[{&quot;id&quot;:&quot;zjgerz&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;show&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;451&quot;}]"
                 data-interaction-id="4567H">Read
                   More</button>
               </div>
@@ -822,7 +861,8 @@
                 </p>
 
                 <!-- <a class="btn btn-custom " href="services/inspection-Services.html">Read More</a> -->
-                <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#inspectionModal">Read
+                <button class="btn btn-custom" data-bs-toggle="modal" data-interactions="[{&quot;id&quot;:&quot;zjgerz&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;show&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;452&quot;}]"
+                data-interaction-id="45tcvgh67H">Read
                   More</button>
               </div>
             </div>
@@ -834,8 +874,8 @@
                 <h3 class="mb-3">Earth Science Services</h3>
                 <p>We illuminate the obscured so you can capture what waits below.</p>
 
-                <!-- <a class="btn btn-custom " href="services/earth-Services.html">Read More</a> -->
-                <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#earthModal">Read
+                <button class="btn btn-custom" data-bs-toggle="modal" data-interactions="[{&quot;id&quot;:&quot;zjgerz&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;show&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;453&quot;}]"
+                data-interaction-id="456dxccvgb7H">Read
                   More</button>
 
               </div>
@@ -849,7 +889,8 @@
                 <p>Precision, innovation, results. Your trusted partner for engineered solutions. </p>
 
                 <!-- <a class="btn btn-custom " href="services/engineering-services.html">Read More</a> -->
-                <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#engineeringModal">Read
+                <button class="btn btn-custom" data-bs-toggle="modal" data-interactions="[{&quot;id&quot;:&quot;zjgerz&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;show&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;454&quot;}]"
+                data-interaction-id="7gcvezH">Read
                   More</button>
 
               </div>
@@ -864,7 +905,8 @@
                 <p>Bridge the knowledge gap. Empower your workforce with expert training.</p>
 
                 <!-- <a class="btn btn-custom" href="services/training-services.html">Read More</a> -->
-                <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#trainingModal">Read
+                <button class="btn btn-custom" data-bs-toggle="modal" data-interactions="[{&quot;id&quot;:&quot;zjgerz&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;show&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;455&quot;}]"
+                data-interaction-id="tc4567H">Read
                   More</button>
 
               </div>
@@ -877,9 +919,9 @@
                 <h3 class="mb-3">Project Management</h3>
                 <p>From Concept to Completion: Project Management Perfected!</p>
 
-                <button class="btn btn-custom"
-                  data-interactions="[{&quot;id&quot;:&quot;zjgerz&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;show&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1205&quot;}]"
-                  data-interaction-id="74be3c" data-bs-target="#projectmanageModal">Read More</button>
+                <button class="btn btn-custom" data-bs-toggle="modal" data-interactions="[{&quot;id&quot;:&quot;zjgerz&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;show&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;456&quot;}]"
+                data-interaction-id="45srg67H">Read
+                  More</button>
               </div>
             </div>
           </div>
@@ -1291,9 +1333,153 @@ MAKING SURE THEY ARE ALL ALIGNED
   
  <!-- TECHNICAL MODAL  -->
 
+ <div data-popup-id="451" class="brx-popup brxe-popup-1205 hide" data-interactions="[{&quot;id&quot;:&quot;ygmsbb&quot;,&quot;trigger&quot;:&quot;showPopup&quot;,&quot;action&quot;:&quot;startAnimation&quot;,&quot;animationType&quot;:&quot;slideInLeft&quot;,&quot;animationDuration&quot;:&quot;.3s&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1205&quot;}]"
+ data-interaction-id="3f2a81">
+ <div class="brx-popup-content">
+    <div id="brxe-6b5b13" class="brxe-text-basic">
+        VOE - Technical Services
+    </div>
+   <div id="brxe-52858f" class="brxe-block bricks-lazy-hidden">
+    <svg data-interaction-id="634d25"  data-interactions="[{&quot;id&quot;:&quot;ckmhfp&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;hide&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;451&quot;}]"
+      class="brxe-icon" id="brxe-vhvxif" xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512">
+      <path  d="M338.1 413.4c3.1 3.1 8.2 3.1 11.3 0s3.1-8.2 0-11.3L203.3 256 349.4 109.9c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0L192 244.7 45.9 98.6c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L180.7 256 34.6 402.1c-3.1 3.1-3.1 8.2 0 11.3s8.2 3.1 11.3 0L192 267.3 338.1 413.4z">
+      </path>
+     </svg>
+    </div>
+   <section id="brxe-159467" class="brxe-section bricks-lazy-hidden">
+    <div class="row g-4">
+       <div class="col-12">
+        <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="img-container text-center text-md-start">
+                <img src="images/services/Slickline.jpg" class="img-fluid card-image"
+                    alt="Slickline Service">
+            </div>
+            <div class="flex-grow-1 text-center text-md-start card-content">
+                <h5 class="mb-2 card-title">Slickline:</h5>
+                <p class="card-text">
+                     Need slickline solutions that deliver? Look no further. Our team of experts provides unparalleled service and results.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-12">
+        <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="img-container text-center text-md-start">
+                <img src="images/services/Operation-and-wellsite-geological-services-and-mudlogging.jpg.png" class="img-fluid card-image"
+                    alt="Fishing Service">
+            </div>
+            <div class="flex-grow-1 text-center text-md-start card-content">
+                <h5 class="mb-2 card-title">Fishing</h5>
+                <p class="card-text">
+                     From complex extractions to routine retrievals, we catch what others can't - our expert fishing services save the day
+                </p>
+            </div>
+        </div>
+    </div>
+      <!-- Card 3 -->
+         <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div class="img-container text-center text-md-start">
+                  <img src="images/services/well-testing.jpg" class="img-fluid card-image" alt="Well Testing Service">
+              </div>
+             <div class="flex-grow-1 text-center text-md-start">
+                  <h5 class="mb-2">Well Testing:</h5>
+                  <p>
+                     Our comprehensive well testing solutions deliver the insights you need - Precision, Performance, Profitability
+                
+                </p>
+              </div>
+          </div>
+      </div>
+      <!-- Card 4 -->
+         <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div class="img-container text-center text-md-start">
+                  <img src="images/services/Well-Bore-Cleaning.png"  class="img-fluid card-image" alt="Well Bore Clean-Out Service">
+              </div>
+             <div class="flex-grow-1 text-center text-md-start">
+                  <h5 class="mb-2"> Well Bore clean-Out & Filtration Services </h5>
+                  <p> From debris removal to pristine fluids, we optimize your downhole environment, delivering exceptional results
+                  </p>
+              </div>
+          </div>
+      </div>
+      <!-- Card 5 -->
+         <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div class="img-container text-center text-md-start">
+                  <img src="images/services/Drilling-Tools.jpg" class="img-fluid card-image" alt="Drilling Tools Service">
+              </div>
+             <div class="flex-grow-1 text-center text-md-start">
+                  <h5 class="mb-2">Drilling Tools & Rentals</h5>
+                  <p>
+                     Drill smarter, not harder – Power your projects seamlessly with our premium drilling equipment rental fleet.
+
+                  </p>
+              </div>
+          </div>
+      </div>
+      <!-- Card 6 -->
+         <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div class="img-container text-center text-md-start">
+                  <img src="images/services/Marine-support-service.jpg" class="img-fluid card-image" alt="Marine Support Service">
+              </div>
+             <div class="flex-grow-1 text-center text-md-start">
+                  <h5 class="mb-2">Marine Support Services </h5>
+                  <p>
+                     Power your offshore projects with our comprehensive suite of marine support services – delivering seamless solutions for all your maritime needs
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div id="brxe-440009" class="brxe-block bricks-lazy-hidden">
+        <div id="brxe-3f0483" class="brxe-text-basic">To learn more please
+          contact us</div>
+      </div>
+      <div id="brxe-405c07" class="brxe-block bricks-lazy-hidden">
+       <a id="brxe-pqmipa" data-script-id="nmlapx" class="brxe-arrowbutton bc-arrow-button" href="get-in-touch/index.html" data-swap="disable">
+          <div class='bc-arrow-button__circle'>
+            <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-left' xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'>
+              <path
+                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+            </svg>
+            <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-right' xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'>
+              <path
+                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+            </svg>
+          </div>
+          <div class='bc-arrow-button_title-wrapper'>
+            <div class='bc-arrow-button_title-wrap'>
+              <div class='bc-arrow-button__title'>Get in touch</div>
+            </div>
+          </div>
+        </a>
+       </div>
+   </section>
+ </div>
+ <div class="brx-popup-backdrop"></div>
+</div>
+  
+ <!-- INSPECTION MODAL  -->
+
  <div data-popup-id="452" class="brx-popup brxe-popup-1205 hide" data-interactions="[{&quot;id&quot;:&quot;ygmsbb&quot;,&quot;trigger&quot;:&quot;showPopup&quot;,&quot;action&quot;:&quot;startAnimation&quot;,&quot;animationType&quot;:&quot;slideInLeft&quot;,&quot;animationDuration&quot;:&quot;.3s&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1205&quot;}]"
  data-interaction-id="3f2a81">
  <div class="brx-popup-content">
+    <div id="brxe-6b5b13" class="brxe-text-basic">
+        VOE - Inspection Services
+    </div>
    <div id="brxe-52858f" class="brxe-block bricks-lazy-hidden">
     <svg data-interaction-id="634d25"  data-interactions="[{&quot;id&quot;:&quot;ckmhfp&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;hide&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;452&quot;}]"
       class="brxe-icon" id="brxe-vhvxif" xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512">
@@ -1303,825 +1489,536 @@ MAKING SURE THEY ARE ALL ALIGNED
     </div>
    <section id="brxe-159467" class="brxe-section bricks-lazy-hidden">
     <div class="row g-4">
-      <!-- Card 1 -->
-      <div class="col-12">
-          <div class="d-flex align-items-start mb-2 shadow-lg p-2 border rounded"
-              style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-              <div class="me-3">
-                  <img src="images/services/Field-studies-and-geological-mapping.jpg"
-                      class="img-fluid" style="width: 150px; height: 150px; border-radius: 10px;"
-                      alt="Slickline Service">
-              </div>
-              <div class="flex-grow-1">
-                  <h5 class="mb-2">Field Studies & Geological Mapping</h5>
-                  <p>
-                      From surface surveys to subsurface analysis, we transform landscapes into
-                      actionable datasets through the use of our advanced and expert geological
-                      mapping services.
+       <div class="col-12">
+        <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="img-container text-center text-md-start">
+                <img src="images/services/Rock-Oil-Sample-Analysis.jpg" class="img-fluid card-image"
+                    alt="Slickline Service">
+            </div>
+            <div class="flex-grow-1 text-center text-md-start card-content">
+                <h5 class="mb-2 card-title">QHSE</h5>
+                <p class="card-text">
+                    We provide expert QHSE inspection services in safeguarding your projects and
+                    operations whilst upholding the highest standards in quality, health, safety,
+                    and environment.
+                </p>
+            </div>
+        </div>
+    </div>
 
-                  </p>
-              </div>
-          </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col-12">
-          <div class="d-flex align-items-start mb-2 shadow-lg p-2 border rounded"
-              style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-              <div class="me-3">
-                  <img src="images/services/Geotechnical-investigation.jpg" class="img-fluid"
-                      style="width: 150px; height: 150px; border-radius: 10px;" alt="Fishing Service">
-              </div>
-              <div class="flex-grow-1">
-                  <h5 class="mb-2">Geotechnical Investigation</h5>
-                  <p>
-                      Drive project success with our reliable geotechnical investigation services –
-                      delivering precise data to support safe and efficient operations.
-
-                  </p>
-              </div>
-          </div>
-      </div>
+    <!-- Card 2 -->
+    <div class="col-12">
+        <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="img-container text-center text-md-start">
+                <img src="images/services/OCTG.jpg.png" class="img-fluid card-image"
+                    alt="Fishing Service">
+            </div>
+            <div class="flex-grow-1 text-center text-md-start card-content">
+                <h5 class="mb-2 card-title">OCTG</h5>
+                <p class="card-text">
+                    From visual inspections to advanced testing, our OCTG inspection services provide
+                                    the assurance you need.
+                </p>
+            </div>
+        </div>
+    </div>
       <!-- Card 3 -->
-      <div class="col-12">
-          <div class="d-flex align-items-start mb-2 shadow-lg p-2 border rounded"
-              style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-              <div class="me-3">
-                  <img src="images/services/Earth.jpg" class="img-fluid"
-                      style="width: 150px; height: 150px; border-radius: 10px;"
-                      alt="Well Testing Service">
+         <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div class="img-container text-center text-md-start">
+                  <img src="images/services/non-destructive-test.jpg" class="img-fluid card-image" alt="Well Testing Service">
               </div>
-              <div class="flex-grow-1">
-                  <h5 class="mb-2">Seismic Support Services</h5>
+             <div class="flex-grow-1 text-center text-md-start">
+                  <h5 class="mb-2">Non-Destructive Testing NDT</h5>
                   <p>
 
-                      Transform complex data into crystal-clear insights with our visualization
-                      services.
-                      From seismic to production, we turn your numbers into powerful visual stories.
+                    Maximize asset integrity with our expert NDT inspection services – providing
+                    precise, non-invasive testing for critical offshore & onshore infrastructure.
                   </p>
               </div>
           </div>
       </div>
       <!-- Card 4 -->
-      <div class="col-12">
-          <div class="d-flex align-items-start mb-2 shadow-lg p-2 border rounded"
-              style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-              <div class="me-3">
-                  <img src="images/services/Data-visualization-and-geoscience-training-service.jpg"
-                      class="img-fluid" style="width: 150px; height: 150px; border-radius: 10px;"
-                      alt="Well Bore Clean-Out Service">
+         <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div class="img-container text-center text-md-start">
+                  <img src="images/services/Off-the-shelf-Training.jpg.png"  class="img-fluid card-image" alt="Well Bore Clean-Out Service">
               </div>
-              <div class="flex-grow-1">
-                  <h5 class="mb-2"> Data Visualization Services (Viz Centre)
-                  </h5>
+             <div class="flex-grow-1 text-center text-md-start">
+                  <h5 class="mb-2">  Third Party</h5>
                   <p>
-
-                      Amplify your seismic success with our comprehensive support services.
-                      From survey design to data processing, we're the backbone of your exploration
-                      efforts
+                    Maximize asset integrity with our expert NDT inspection services – providing
+                    precise, non-invasive testing for critical offshore & onshore infrastructure.
                   </p>
               </div>
           </div>
       </div>
-      <!-- Card 5 -->
-      <div class="col-12">
-          <div class="d-flex align-items-start mb-2 shadow-lg p-2 border rounded"
-              style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-              <div class="me-3">
-                  <img src="images/services/Earth-Science.jpg" class="img-fluid"
-                      style="width: 150px; height: 150px; border-radius: 10px;"
-                      alt="Drilling Tools Service">
-              </div>
-              <div class="flex-grow-1">
-                  <h5 class="mb-2">
-                      Evironmental Solutions & Chemicals</h5>
-                  <p>
-                      Unlock eco-friendly efficiency with our innovative environmental and chemical
-                      solutions.
-                      From waste management to tailored treatments, we're your partners in responsible
-                      resource extraction
-
-                  </p>
-              </div>
-          </div>
-      </div>
-      <!-- Card 6 -->
-      <div class="col-12">
-          <div class="d-flex align-items-start mb-2 shadow-lg p-2 border rounded"
-              style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-              <div class="me-3">
-                  <img src="images/services/Marine-support-service.jpg" class="img-fluid"
-                      style="width: 150px; height: 150px; border-radius: 10px;"
-                      alt="Marine Support Service">
-              </div>
-              <div class="flex-grow-1">
-                  <h5 class="mb-2">
-                      Operations & Wellsite Geological Services</h5>
-                  <p>
-                      Optimize your wellsite operations with our expert geological services. From well
-                      planning to real-time monitoring, we deliver the insights you need.
-
-                  </p>
-              </div>
-          </div>
-      </div>
+      
     </div>
-     <div id="brxe-440009" class="brxe-block bricks-lazy-hidden">
-       <div id="brxe-3f0483" class="brxe-text-basic">To learn more please
-         contact us</div>
-     </div>
-     <div id="brxe-405c07" class="brxe-block bricks-lazy-hidden">
-      <a id="brxe-pqmipa" data-script-id="nmlapx" class="brxe-arrowbutton bc-arrow-button" href="get-in-touch/index.html" data-swap="disable">
-         <div class='bc-arrow-button__circle'>
-           <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-left' xmlns='http://www.w3.org/2000/svg'
-             viewBox='0 0 24 24'>
-             <path
-               d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
-           </svg>
-           <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-right' xmlns='http://www.w3.org/2000/svg'
-             viewBox='0 0 24 24'>
-             <path
-               d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
-           </svg>
-         </div>
-         <div class='bc-arrow-button_title-wrapper'>
-           <div class='bc-arrow-button_title-wrap'>
-             <div class='bc-arrow-button__title'>Get in touch</div>
-           </div>
-         </div>
-       </a>
+    <div id="brxe-440009" class="brxe-block bricks-lazy-hidden">
+        <div id="brxe-3f0483" class="brxe-text-basic">To learn more please
+          contact us</div>
       </div>
+      <div id="brxe-405c07" class="brxe-block bricks-lazy-hidden">
+       <a id="brxe-pqmipa" data-script-id="nmlapx" class="brxe-arrowbutton bc-arrow-button" href="get-in-touch/index.html" data-swap="disable">
+          <div class='bc-arrow-button__circle'>
+            <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-left' xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'>
+              <path
+                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+            </svg>
+            <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-right' xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'>
+              <path
+                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+            </svg>
+          </div>
+          <div class='bc-arrow-button_title-wrapper'>
+            <div class='bc-arrow-button_title-wrap'>
+              <div class='bc-arrow-button__title'>Get in touch</div>
+            </div>
+          </div>
+        </a>
+       </div>
+   </section>
+ </div>
+ <div class="brx-popup-backdrop"></div>
+</div>
+ <!-- EARTH MODAL  -->
+
+ <div data-popup-id="453" class="brx-popup brxe-popup-1205 hide" data-interactions="[{&quot;id&quot;:&quot;ygmsbb&quot;,&quot;trigger&quot;:&quot;showPopup&quot;,&quot;action&quot;:&quot;startAnimation&quot;,&quot;animationType&quot;:&quot;slideInLeft&quot;,&quot;animationDuration&quot;:&quot;.3s&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1205&quot;}]"
+ data-interaction-id="3f2a81">
+ <div class="brx-popup-content">
+    <div id="brxe-6b5b13" class="brxe-text-basic">
+        VOE - Earth Services
+    </div>
+   <div id="brxe-52858f" class="brxe-block bricks-lazy-hidden">
+    <svg data-interaction-id="634d25"  data-interactions="[{&quot;id&quot;:&quot;ckmhfp&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;hide&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;453&quot;}]"
+      class="brxe-icon" id="brxe-vhvxif" xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512">
+      <path  d="M338.1 413.4c3.1 3.1 8.2 3.1 11.3 0s3.1-8.2 0-11.3L203.3 256 349.4 109.9c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0L192 244.7 45.9 98.6c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L180.7 256 34.6 402.1c-3.1 3.1-3.1 8.2 0 11.3s8.2 3.1 11.3 0L192 267.3 338.1 413.4z">
+      </path>
+     </svg>
+    </div>
+   <section id="brxe-159467" class="brxe-section bricks-lazy-hidden">
+    <div class="row g-4">
+       <div class="col-12">
+        <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="img-container text-center text-md-start">
+                <img src="images/services/Field-studies-and-geological-mapping.jpg" class="img-fluid card-image"
+                    alt="Slickline Service">
+            </div>
+            <div class="flex-grow-1 text-center text-md-start card-content">
+                <h5 class="mb-2 card-title">Field Studies & Geological Mapping:</h5>
+                <p class="card-text">
+                    
+                     From surface surveys to subsurface analysis, we transform landscapes into actionable datasets through the use of our advanced and expert geological mapping services.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-12">
+        <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="img-container text-center text-md-start">
+                <img src="images/services/Geotechnical-investigation.jpg" class="img-fluid card-image"
+                    alt="Fishing Service">
+            </div>
+            <div class="flex-grow-1 text-center text-md-start card-content">
+                <h5 class="mb-2 card-title">  Geotechnical Investigation:</h5>
+                <p class="card-text">
+                    Drive project success with our reliable geotechnical investigation services – delivering precise data to support safe and efficient operations.
+                    
+
+                </p>
+            </div>
+        </div>
+    </div>
+      <!-- Card 3 -->
+         <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div class="img-container text-center text-md-start">
+                  <img src="images/services/Data-visualization-and-geoscience-training-service.jpg" class="img-fluid card-image" alt="Well Testing Service">
+              </div>
+             <div class="flex-grow-1 text-center text-md-start">
+                  <h5 class="mb-2">Data Visualization Services (Viz Centre):</h5>
+                  <p>
+                     Transform complex data into crystal-clear insights with our visualization services.
+                    From seismic to production, we turn your numbers into powerful visual stories.
+                    
+                </p>
+              </div>
+          </div>
+      </div>
+      <!-- Card 4 -->
+         <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div class="img-container text-center text-md-start">
+                  <img src="images/services/"  class="img-fluid card-image" alt="Well Bore Clean-Out Service">
+              </div>
+             <div class="flex-grow-1 text-center text-md-start">
+                  <h5 class="mb-2"> Environmental Solutions & Chemicals:</h5>
+                  <p>
+                     Unlock eco-friendly efficiency with our innovative environmental and chemical solutions.
+From waste management to tailored treatments, we're your partners in responsible resource extraction
+                </p>
+              </div>
+          </div>
+      </div>
+      
+         <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div class="img-container text-center text-md-start">
+                  <img src="images/services/Operation-and-wellsite-geological-services-and-mudlogging.jpg.png"  class="img-fluid card-image" alt="Well Bore Clean-Out Service">
+              </div>
+             <div class="flex-grow-1 text-center text-md-start">
+                  <h5 class="mb-2"> Operations & Wellsite Geological Services:</h5>
+                  <p>
+                     
+                     Optimize your wellsite operations with our expert geological services. From well planning to real-time monitoring, we deliver the insights you need.
+                </p>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+    <div id="brxe-440009" class="brxe-block bricks-lazy-hidden">
+        <div id="brxe-3f0483" class="brxe-text-basic">To learn more please
+          contact us</div>
+      </div>
+      <div id="brxe-405c07" class="brxe-block bricks-lazy-hidden">
+       <a id="brxe-pqmipa" data-script-id="nmlapx" class="brxe-arrowbutton bc-arrow-button" href="get-in-touch/index.html" data-swap="disable">
+          <div class='bc-arrow-button__circle'>
+            <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-left' xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'>
+              <path
+                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+            </svg>
+            <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-right' xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'>
+              <path
+                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+            </svg>
+          </div>
+          <div class='bc-arrow-button_title-wrapper'>
+            <div class='bc-arrow-button_title-wrap'>
+              <div class='bc-arrow-button__title'>Get in touch</div>
+            </div>
+          </div>
+        </a>
+       </div>
+   </section>
+ </div>
+ <div class="brx-popup-backdrop"></div>
+</div>
+
+ 
+
+ <!-- ENGINEERING MODAL  -->
+
+ <div data-popup-id="454" class="brx-popup brxe-popup-1205 hide" data-interactions="[{&quot;id&quot;:&quot;ygmsbb&quot;,&quot;trigger&quot;:&quot;showPopup&quot;,&quot;action&quot;:&quot;startAnimation&quot;,&quot;animationType&quot;:&quot;slideInLeft&quot;,&quot;animationDuration&quot;:&quot;.3s&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1205&quot;}]"
+ data-interaction-id="3f2a81">
+ <div class="brx-popup-content">
+    <div id="brxe-6b5b13" class="brxe-text-basic">
+        VOE - Engineering Solutions
+    </div>
+   <div id="brxe-52858f" class="brxe-block bricks-lazy-hidden">
+    <svg data-interaction-id="634d25"  data-interactions="[{&quot;id&quot;:&quot;ckmhfp&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;hide&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;454&quot;}]"
+      class="brxe-icon" id="brxe-vhvxif" xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512">
+      <path  d="M338.1 413.4c3.1 3.1 8.2 3.1 11.3 0s3.1-8.2 0-11.3L203.3 256 349.4 109.9c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0L192 244.7 45.9 98.6c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L180.7 256 34.6 402.1c-3.1 3.1-3.1 8.2 0 11.3s8.2 3.1 11.3 0L192 267.3 338.1 413.4z">
+      </path>
+     </svg>
+    </div>
+    <section id="brxe-159467" class="brxe-section bricks-lazy-hidden">
+        <div class="row g-4">
+           <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <div class="img-container text-center text-md-start">
+                    <img src="images/services/Data-visualization-and-geoscience-training-service.jpg" class="img-fluid card-image"
+                        alt="Slickline Service">
+                </div>
+                <div class="flex-grow-1 text-center text-md-start card-content">
+                    <h5 class="mb-2 card-title">Data Engineering</h5>
+                    <p class="card-text">
+                        Transform raw data into refined insights with our expert data engineering services.
+    From wellhead to boardroom, we build the pipelines that fuel your decision-making power.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <div class="img-container text-center text-md-start">
+                    <img src="images/services/digitaltwin.jpg" class="img-fluid card-image"
+                        alt="Fishing Service">
+                </div>
+                <div class="flex-grow-1 text-center text-md-start card-content">
+                    <h5 class="mb-2 card-title">Digital Twin & Modelling </h5>
+                    <p class="card-text">
+                       
+                         Our premium digital twin & modelling services enable & empower predictive maintenance, risk assessment, and optimized decision-making
+                    </p>
+                </div>
+            </div>
+        </div>
+      
+        </div>
+        <div id="brxe-440009" class="brxe-block bricks-lazy-hidden">
+            <div id="brxe-3f0483" class="brxe-text-basic">To learn more please
+              contact us</div>
+          </div>
+          <div id="brxe-405c07" class="brxe-block bricks-lazy-hidden">
+           <a id="brxe-pqmipa" data-script-id="nmlapx" class="brxe-arrowbutton bc-arrow-button" href="get-in-touch/index.html" data-swap="disable">
+              <div class='bc-arrow-button__circle'>
+                <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-left' xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 24 24'>
+                  <path
+                    d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+                </svg>
+                <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-right' xmlns='http://www.w3.org/2000/svg'
+                  viewBox='0 0 24 24'>
+                  <path
+                    d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+                </svg>
+              </div>
+              <div class='bc-arrow-button_title-wrapper'>
+                <div class='bc-arrow-button_title-wrap'>
+                  <div class='bc-arrow-button__title'>Get in touch</div>
+                </div>
+              </div>
+            </a>
+           </div>
+       </section>
+ </div>
+ <div class="brx-popup-backdrop"></div>
+</div>
+
+   <!--  TRAINING MODAL  -->
+
+ <div data-popup-id="455" class="brx-popup brxe-popup-1205 hide" data-interactions="[{&quot;id&quot;:&quot;ygmsbb&quot;,&quot;trigger&quot;:&quot;showPopup&quot;,&quot;action&quot;:&quot;startAnimation&quot;,&quot;animationType&quot;:&quot;slideInLeft&quot;,&quot;animationDuration&quot;:&quot;.3s&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1205&quot;}]"
+ data-interaction-id="3f2a81">
+ <div class="brx-popup-content">
+    <div id="brxe-6b5b13" class="brxe-text-basic">
+        VOE - Training Solutions
+    </div>
+   <div id="brxe-52858f" class="brxe-block bricks-lazy-hidden">
+    <svg data-interaction-id="634d25"  data-interactions="[{&quot;id&quot;:&quot;ckmhfp&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;hide&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;455&quot;}]"
+      class="brxe-icon" id="brxe-vhvxif" xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512">
+      <path  d="M338.1 413.4c3.1 3.1 8.2 3.1 11.3 0s3.1-8.2 0-11.3L203.3 256 349.4 109.9c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0L192 244.7 45.9 98.6c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L180.7 256 34.6 402.1c-3.1 3.1-3.1 8.2 0 11.3s8.2 3.1 11.3 0L192 267.3 338.1 413.4z">
+      </path>
+     </svg>
+    </div>
+   <section id="brxe-159467" class="brxe-section bricks-lazy-hidden">
+    <div class="row g-4">
+       <div class="col-12">
+        <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="img-container text-center text-md-start">
+                <img src="images/services/bespoke-training.jpg" class="img-fluid card-image"
+                    alt="Slickline Service">
+            </div>
+            <div class="flex-grow-1 text-center text-md-start card-content">
+                <h5 class="mb-2 card-title">Bespoke Training</h5>
+                <p class="card-text">
+                     Unlock your workforce's potential with our bespoke training programs.
+                    Customized knowledge, real-world application – we're engineering the future of energy professionals.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-12">
+        <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="img-container text-center text-md-start">
+                <img src="images/services/Hybrid.png" class="img-fluid card-image"
+                    alt="Fishing Service">
+            </div>
+            <div class="flex-grow-1 text-center text-md-start card-content">
+                <h5 class="mb-2 card-title">Hybrid Training Solutions:</h5>
+                <p class="card-text">
+                     Blending digital and hands-on: Our hybrid training revolutionizes learning.
+                    Experience the best of both worlds – flexible online modules meet practical field simulations.
+                </p>
+            </div>
+        </div>
+    </div>
+      <!-- Card 3 -->
+         <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div class="img-container text-center text-md-start">
+                  <img src="images/services/Learning-management-solutions.jpg" class="img-fluid card-image" alt="Well Testing Service">
+              </div>
+             <div class="flex-grow-1 text-center text-md-start">
+                  <h5 class="mb-2">Learning Management Solutions:</h5>
+                  <p>
+
+                     Optimize skill development with our comprehensive Learning Management Solutions – tailored to drive growth and efficiency for industry excellence.
+                </p>
+              </div>
+          </div>
+      </div>
+      <!-- Card 4 -->
+         <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div class="img-container text-center text-md-start">
+                  <img src="images/services/Off-the-shelf-Training.jpg.png"  class="img-fluid card-image" alt="Well Bore Clean-Out Service">
+              </div>
+             <div class="flex-grow-1 text-center text-md-start">
+                  <h5 class="mb-2"> Enterprise Training</h5>
+                  <p>
+                     We provide a holistic learning experience to large scale organisations to position their workforce for industry dominance.    
+                </p>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+    <div id="brxe-440009" class="brxe-block bricks-lazy-hidden">
+        <div id="brxe-3f0483" class="brxe-text-basic">To learn more please
+          contact us</div>
+      </div>
+      <div id="brxe-405c07" class="brxe-block bricks-lazy-hidden">
+       <a id="brxe-pqmipa" data-script-id="nmlapx" class="brxe-arrowbutton bc-arrow-button" href="get-in-touch/index.html" data-swap="disable">
+          <div class='bc-arrow-button__circle'>
+            <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-left' xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'>
+              <path
+                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+            </svg>
+            <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-right' xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'>
+              <path
+                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+            </svg>
+          </div>
+          <div class='bc-arrow-button_title-wrapper'>
+            <div class='bc-arrow-button_title-wrap'>
+              <div class='bc-arrow-button__title'>Get in touch</div>
+            </div>
+          </div>
+        </a>
+       </div>
+   </section>
+ </div>
+ <div class="brx-popup-backdrop"></div>
+</div>
+
+   <!--  PROJECT MANAGMENT MODAL  -->
+
+ <div data-popup-id="456" class="brx-popup brxe-popup-1205 hide" data-interactions="[{&quot;id&quot;:&quot;ygmsbb&quot;,&quot;trigger&quot;:&quot;showPopup&quot;,&quot;action&quot;:&quot;startAnimation&quot;,&quot;animationType&quot;:&quot;slideInLeft&quot;,&quot;animationDuration&quot;:&quot;.3s&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1205&quot;}]"
+ data-interaction-id="3f2a81">
+ <div class="brx-popup-content">
+    <div id="brxe-6b5b13" class="brxe-text-basic">
+        VOE - Project Managment Services
+    </div>
+   <div id="brxe-52858f" class="brxe-block bricks-lazy-hidden">
+    <svg data-interaction-id="634d25"  data-interactions="[{&quot;id&quot;:&quot;ckmhfp&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;hide&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;456&quot;}]"
+      class="brxe-icon" id="brxe-vhvxif" xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512">
+      <path  d="M338.1 413.4c3.1 3.1 8.2 3.1 11.3 0s3.1-8.2 0-11.3L203.3 256 349.4 109.9c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0L192 244.7 45.9 98.6c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L180.7 256 34.6 402.1c-3.1 3.1-3.1 8.2 0 11.3s8.2 3.1 11.3 0L192 267.3 338.1 413.4z">
+      </path>
+     </svg>
+    </div>
+   <section id="brxe-159467" class="brxe-section bricks-lazy-hidden">
+    <div class="row g-4">
+       <div class="col-12">
+        <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="img-container text-center text-md-start">
+                <img src="images/services/" class="img-fluid card-image"
+                    alt="Slickline Service">
+            </div>
+            <div class="flex-grow-1 text-center text-md-start card-content">
+                <h5 class="mb-2 card-title"> Procurement:</h5>
+                <p class="card-text">
+                    From sourcing to contract management, our expert procurement solutions ensure you get the best products and services at the best prices.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-12">
+        <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="img-container text-center text-md-start">
+                <img src="images/services/Technical.jpg" class="img-fluid card-image"
+                    alt="Fishing Service">
+            </div>
+            <div class="flex-grow-1 text-center text-md-start card-content">
+                <h5 class="mb-2 card-title">Technical Manpower</h5>
+                <p class="card-text">
+                     Meet your workforce needs with our reliable technical manpower services. We source and supply qualified professionals to support your operations.    
+                
+                </p>
+            </div>
+        </div>
+    </div>
+      <!-- Card 3 -->
+         <div class="col-12">
+            <div class="d-flex flex-column flex-md-row align-items-start mb-2 shadow-lg p-2 border rounded card-wrapper"
+                style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+              <div class="img-container text-center text-md-start">
+                  <img src="images/services/Learning-management-solutions.jpg" class="img-fluid card-image" alt="Well Testing Service">
+              </div>
+             <div class="flex-grow-1 text-center text-md-start">
+                  <h5 class="mb-2">Project Planning & Management</h5>
+                  <p>
+                     Optimize your project lifecycle with our comprehensive planning and management solutions. We provide the tools and expertise you need to succeed.
+                
+                </p>
+              </div>
+          </div>
+      </div>
+    
+    </div>
+    <div id="brxe-440009" class="brxe-block bricks-lazy-hidden">
+        <div id="brxe-3f0483" class="brxe-text-basic">To learn more please
+          contact us</div>
+      </div>
+      <div id="brxe-405c07" class="brxe-block bricks-lazy-hidden">
+       <a id="brxe-pqmipa" data-script-id="nmlapx" class="brxe-arrowbutton bc-arrow-button" href="get-in-touch/index.html" data-swap="disable">
+          <div class='bc-arrow-button__circle'>
+            <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-left' xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'>
+              <path
+                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+            </svg>
+            <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-right' xmlns='http://www.w3.org/2000/svg'
+              viewBox='0 0 24 24'>
+              <path
+                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
+            </svg>
+          </div>
+          <div class='bc-arrow-button_title-wrapper'>
+            <div class='bc-arrow-button_title-wrap'>
+              <div class='bc-arrow-button__title'>Get in touch</div>
+            </div>
+          </div>
+        </a>
+       </div>
    </section>
  </div>
  <div class="brx-popup-backdrop"></div>
 </div>
 <!-- ================================ -->
-
-
-
-
-  <div data-popup-id="1255" class="brx-popup brxe-popup-1255 hide"
-    data-interactions="[{&quot;id&quot;:&quot;ygmsbb&quot;,&quot;trigger&quot;:&quot;showPopup&quot;,&quot;action&quot;:&quot;startAnimation&quot;,&quot;animationType&quot;:&quot;slideInLeft&quot;,&quot;animationDuration&quot;:&quot;.3s&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1255&quot;}]"
-    data-interaction-id="3f2a81">
-    <div class="brx-popup-content">
-      <div id="brxe-52858f" class="brxe-block bricks-lazy-hidden"><svg data-interaction-id="634d25"
-          data-interactions="[{&quot;id&quot;:&quot;ckmhfp&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;hide&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1205&quot;}]"
-          class="brxe-icon" id="brxe-vhvxif" xmlns="http://www.w3.org/2000/svg" height="20" width="15"
-          viewBox="0 0 384 512">
-          <path
-            d="M338.1 413.4c3.1 3.1 8.2 3.1 11.3 0s3.1-8.2 0-11.3L203.3 256 349.4 109.9c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0L192 244.7 45.9 98.6c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L180.7 256 34.6 402.1c-3.1 3.1-3.1 8.2 0 11.3s8.2 3.1 11.3 0L192 267.3 338.1 413.4z">
-          </path>
-        </svg></div>
-      <section id="brxe-159467" class="brxe-section bricks-lazy-hidden">
-        <div id="brxe-e445ad" class="brxe-container bricks-lazy-hidden">
-          <div id="brxe-c89b0f" class="brxe-block bricks-lazy-hidden">
-            <div id="brxe-6b5b13" class="brxe-text-basic">Capital
-              Investments</div>
-          </div>
-         
-        </div>
-      </section>
-    </div>
-    <div class="brx-popup-backdrop"></div>
-  </div>
-
-
-
- 
-
-
-  <div data-popup-id="1205" class="brx-popup brxe-popup-1205 hide"
-    data-interactions="[{&quot;id&quot;:&quot;ygmsbb&quot;,&quot;trigger&quot;:&quot;showPopup&quot;,&quot;action&quot;:&quot;startAnimation&quot;,&quot;animationType&quot;:&quot;slideInLeft&quot;,&quot;animationDuration&quot;:&quot;.3s&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1205&quot;}]"
-    data-interaction-id="3f2a81">
-    <div class="brx-popup-content">
-      <div id="brxe-52858f" class="brxe-block bricks-lazy-hidden"><svg data-interaction-id="634d25"
-          data-interactions="[{&quot;id&quot;:&quot;ckmhfp&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;hide&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1205&quot;}]"
-          class="brxe-icon" id="brxe-vhvxif" xmlns="http://www.w3.org/2000/svg" height="20" width="15"
-          viewBox="0 0 384 512">
-          <path
-            d="M338.1 413.4c3.1 3.1 8.2 3.1 11.3 0s3.1-8.2 0-11.3L203.3 256 349.4 109.9c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0L192 244.7 45.9 98.6c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L180.7 256 34.6 402.1c-3.1 3.1-3.1 8.2 0 11.3s8.2 3.1 11.3 0L192 267.3 338.1 413.4z">
-          </path>
-        </svg></div>
-      <section id="brxe-159467" class="brxe-section bricks-lazy-hidden">
-        <div id="brxe-e445ad" class="brxe-container bricks-lazy-hidden">
-          <div id="brxe-c89b0f" class="brxe-block bricks-lazy-hidden">
-            <div id="brxe-6b5b13" class="brxe-text-basic">Capital
-              Investments</div>
-          </div>
-          <div id="brxe-a11a38" class="brxe-block bricks-lazy-hidden">
-            <div id="brxe-6925eb" class="brxe-text-basic">We drive African
-              growth through equity investments. With
-              unparalleled local expertise, our team identifies high-potential
-              businesses in Africa's most dynamic
-              sectors, and we partner with exceptional leadership teams and
-              strategic investors to unlock value. Through
-              rigorous analysis and a vast network, we source the most
-              promising deals. <br /></p>
-              <p>We provide more than just capital; we offer deal sourcing,
-                operational guidance, and exit strategies to
-                maximise returns for key stakeholders. Together, we build a
-                stronger future for the continent, all while
-                delivering exceptional returns.
-            </div>
-          </div>
-          <div id="brxe-440009" class="brxe-block bricks-lazy-hidden">
-            <div id="brxe-3f0483" class="brxe-text-basic">To learn more please
-              contact us</div>
-          </div>
-          <div id="brxe-405c07" class="brxe-block bricks-lazy-hidden"><a id="brxe-pqmipa" data-script-id="pqmipa"
-            class="brxe-arrowbutton bc-arrow-button" href="get-in-touch/index.html" data-swap="disable">
-              <div class='bc-arrow-button__circle'>
-                <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-left' xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 24 24'>
-                  <path
-                    d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
-                </svg>
-                <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-right' xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 24 24'>
-                  <path
-                    d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
-                </svg>
-              </div>
-              <div class='bc-arrow-button_title-wrapper'>
-                <div class='bc-arrow-button_title-wrap'>
-                  <div class='bc-arrow-button__title'>Get in touch</div>
-                </div>
-              </div>
-            </a></div>
-        </div>
-      </section>
-    </div>
-    <div class="brx-popup-backdrop"></div>
-  </div>
-
-
-  <!-- IDYHA MODAL  -->
-  <!-- <div data-popup-id="1205" class="brx-popup brxe-popup-1205 hide"
-    data-interactions="[{&quot;id&quot;:&quot;ygmsbb&quot;,&quot;trigger&quot;:&quot;showPopup&quot;,&quot;action&quot;:&quot;startAnimation&quot;,&quot;animationType&quot;:&quot;slideInLeft&quot;,&quot;animationDuration&quot;:&quot;.3s&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1205&quot;}]"
-    data-interaction-id="3f2a81">
-    <div class="brx-popup-content">
-      <div id="brxe-52858f" class="brxe-block bricks-lazy-hidden"><svg data-interaction-id="634d25"
-          data-interactions="[{&quot;id&quot;:&quot;ckmhfp&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;hide&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1205&quot;}]"
-          class="brxe-icon" id="brxe-vhvxif" xmlns="http://www.w3.org/2000/svg" height="20" width="15"
-          viewBox="0 0 384 512">
-          <path
-            d="M338.1 413.4c3.1 3.1 8.2 3.1 11.3 0s3.1-8.2 0-11.3L203.3 256 349.4 109.9c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0L192 244.7 45.9 98.6c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L180.7 256 34.6 402.1c-3.1 3.1-3.1 8.2 0 11.3s8.2 3.1 11.3 0L192 267.3 338.1 413.4z">
-          </path>
-        </svg></div>
-      <section id="brxe-159467" class="brxe-section bricks-lazy-hidden">
-        <div id="brxe-e445ad" class="brxe-container bricks-lazy-hidden">
-          <div id="brxe-c89b0f" class="brxe-block bricks-lazy-hidden">
-            <div id="brxe-6b5b13" class="brxe-text-basic">Capital
-              Investments</div>
-          </div>
-          <div id="brxe-a11a38" class="brxe-block bricks-lazy-hidden">
-            <div id="brxe-6925eb" class="brxe-text-basic">We drive African
-              growth through equity investments. With
-              unparalleled local expertise, our team identifies high-potential
-              businesses in Africa's most dynamic
-              sectors, and we partner with exceptional leadership teams and
-              strategic investors to unlock value. Through
-              rigorous analysis and a vast network, we source the most
-              promising deals. <br /></p>
-              <p>We provide more than just capital; we offer deal sourcing,
-                operational guidance, and exit strategies to
-                maximise returns for key stakeholders. Together, we build a
-                stronger future for the continent, all while
-                delivering exceptional returns.
-            </div>
-          </div>
-          <div id="brxe-440009" class="brxe-block bricks-lazy-hidden">
-            <div id="brxe-3f0483" class="brxe-text-basic">To learn more please
-              contact us</div>
-          </div>
-          <div id="brxe-405c07" class="brxe-block bricks-lazy-hidden"><a id="brxe-pqmipa" data-script-id="pqmipa"
-              class="brxe-arrowbutton bc-arrow-button" data-interactions="[{&quot;id&quot;:&quot;zjgerz&quot;,&quot;trigger&quot;:&quot;click&quot;,&quot;action&quot;:&quot;show&quot;,&quot;target&quot;:&quot;popup&quot;,&quot;templateId&quot;:&quot;1204&quot;}]"
-                data-interaction-id="74be3c21" data-swap="disable">
-              <div class='bc-arrow-button__circle'>
-                <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-left' xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 24 24'>
-                  <path
-                    d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
-                </svg>
-                <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-right' xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 24 24'>
-                  <path
-                    d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
-                </svg>
-              </div>
-              <div class='bc-arrow-button_title-wrapper'>
-                <div class='bc-arrow-button_title-wrap'>
-                  <div class='bc-arrow-button__title'>Get in touch</div>
-                </div>
-              </div>
-            </a></div>
-        </div>
-      </section>
-    </div>
-    <div class="brx-popup-backdrop"></div>
-  </div> -->
-
-
-
-
-  <div class="modal fade" id="earthModal" tabindex="-1" aria-labelledby="technicalModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-
-            <div id="brxe-52858f" class="brxe-block bricks-lazy-hidden" type="button" class="btn-close"
-                data-bs-dismiss="modal" aria-label="Close">
-                <svg data-interaction-id="634d25" class="brxe-icon" id="brxe-vhvxif"
-                    xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512">
-                    <path
-                        d="M338.1 413.4c3.1 3.1 8.2 3.1 11.3 0s3.1-8.2 0-11.3L203.3 256 349.4 109.9c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0L192 244.7 45.9 98.6c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L180.7 256 34.6 402.1c-3.1 3.1-3.1 8.2 0 11.3s8.2 3.1 11.3 0L192 267.3 338.1 413.4z">
-                    </path>
-                </svg>
-
-            </div>
-            <div id="brxe-c89b0f" class="brxe-block bricks-lazy-hidden">
-                <div id="brxe-6b5b13" class="brxe-text-basic">
-                    VOE - Earth Sciecne Services
-                </div>
-            </div>
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-12 col-md-6">
-                    <div class="d-flex align-items-start mb-3 shadow-lg p-3 border rounded"
-                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); height: 200px;">
-                        <div class="me-3">
-                            <img src="images/services/Slickline.jpg" class="img-fluid"
-                                style="width: 150px; height: 150px; border-radius: 10px;" alt="Slickline Service">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="mb-2">Slickline</h5>
-                            <p>Need slickline solutions that deliver? Look no further. Our team of experts
-                                provides unparalleled service and results.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-12 col-md-6">
-                    <div class="d-flex align-items-start mb-3 shadow-lg p-3 border rounded"
-                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); height: 200px;">
-                        <div class="me-3">
-                            <img src="images/services/Drilling-Tools.jpg" class="img-fluid"
-                                style="width: 150px; height: 150px; border-radius: 10px;" alt="Fishing Service">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="mb-2">Fishing</h5>
-                            <p>From complex extractions to routine retrievals, we catch what others can't - our
-                                expert fishing services save the day.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-12 col-md-6">
-                    <div class="d-flex align-items-start mb-3 shadow-lg p-3 border rounded"
-                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); height: 200px;">
-                        <div class="me-3">
-                            <img src="images/services/well-testing.jpg" class="img-fluid"
-                                style="width: 150px; height: 150px; border-radius: 10px;"
-                                alt="Well Testing Service">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="mb-2">Well Testing</h5>
-                            <p>Our comprehensive well testing solutions deliver the insights you need -
-                                Precision, Performance, Profitability.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="col-12 col-md-6">
-                    <div class="d-flex align-items-start mb-3 shadow-lg p-3 border rounded"
-                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); height: 200px;">
-                        <div class="me-3">
-                            <img src="images/services/Well-Bore-Cleaning.png" class="img-fluid"
-                                style="width: 150px; height: 150px; border-radius: 10px;"
-                                alt="Well Bore Clean-Out Service">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="mb-2">Well Bore Clean-Out & Filtration Services</h5>
-                            <p>From debris removal to pristine fluids, we optimize your downhole environment,
-                                delivering exceptional results.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 5 -->
-                <div class="col-12 col-md-6">
-                    <div class="d-flex align-items-start mb-3 shadow-lg p-3 border rounded"
-                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); height: 200px;">
-                        <div class="me-3">
-                            <img src="images/services/Drilling-Tools.jpg" class="img-fluid"
-                                style="width: 150px; height: 150px; border-radius: 10px;"
-                                alt="Drilling Tools Service">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="mb-2">Drilling Tools & Rentals</h5>
-                            <p>Drill smarter, not harder – Power your projects seamlessly with our premium
-                                drilling equipment rental fleet.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 6 -->
-                <div class="col-12 col-md-6">
-                    <div class="d-flex align-items-start mb-3 shadow-lg p-3 border rounded"
-                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); height: 200px;">
-                        <div class="me-3">
-                            <img src="images/services/Marine-support-service.jpg" class="img-fluid"
-                                style="width: 150px; height: 150px; border-radius: 10px;"
-                                alt="Marine Support Service">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="mb-2">Marine Support Services</h5>
-                            <p>Power your offshore projects with our comprehensive suite of marine support
-                                services – delivering seamless solutions for all your maritime needs.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="brx-popup-backdrop"></div>
-
-            <div id="brxe-440009" class="brxe-block bricks-lazy-hidden">
-                <div id="brxe-3f0483" class="brxe-text-basic">To learn more please
-                    contact us</div>
-            </div>
-            <!-- Button Section -->
-            <div id="brxe-405c07" class="brxe-block bricks-lazy-hidden">
-                <a id="brxe-nmlapx" data-script-id="nmlapx" class="brxe-arrowbutton bc-arrow-button"
-                    data-bs-toggle="modal" data-bs-target="#contact" href="" data-swap="disable">
-                    <div class='bc-arrow-button__circle'>
-                        <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-left'
-                            xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-                            <path
-                                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
-                        </svg>
-                        <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-right'
-                            xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-                            <path
-                                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
-                        </svg>
-                    </div>
-                    <div class='bc-arrow-button_title-wrapper'>
-                        <div class='bc-arrow-button_title-wrap'>
-                            <div class='bc-arrow-button__title'>Get in touch</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-<div class="modal fade" id="inspectionModal" tabindex="-1" aria-labelledby="inspectionModalLabel"
-aria-hidden="true">
-
-
-<div class="modal-dialog modal-lg">
-    <div class="modal-content">
-
-        <div id="brxe-52858f" class="brxe-block bricks-lazy-hidden" type="button" class="btn-close"
-            data-bs-dismiss="modal" aria-label="Close">
-            <svg data-interaction-id="634d25" class="brxe-icon" id="brxe-vhvxif"
-                xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512">
-                <path
-                    d="M338.1 413.4c3.1 3.1 8.2 3.1 11.3 0s3.1-8.2 0-11.3L203.3 256 349.4 109.9c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0L192 244.7 45.9 98.6c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L180.7 256 34.6 402.1c-3.1 3.1-3.1 8.2 0 11.3s8.2 3.1 11.3 0L192 267.3 338.1 413.4z">
-                </path>
-            </svg>
-
-        </div>
-        <div id="brxe-c89b0f" class="brxe-block bricks-lazy-hidden">
-            <div id="brxe-6b5b13" class="brxe-text-basic">
-                VOE - Inspection Services
-            </div>
-        </div>
-        <div class="modal-body">
-            <div class="row g-4">
-                <!-- Card 1 -->
-
-                <div class="col-12">
-                    <div class="d-flex align-items-start mb-1 shadow-lg p-1 border rounded"
-                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                        <div class="me-3">
-                            <img src="images/services/Rock-Oil-Sample-Analysis.jpg" class="img-fluid"
-                                style="width: 100px; height: 50px; border-radius: 10px;"
-                                alt="Slickline Service">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="mb-1">QHSE</h5>
-                            <p>We provide expert QHSE inspection services in safeguarding your projects and
-                                operations whilst upholding the highest standards in quality, health, safety,
-                                and environment.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-12">
-                    <div class="d-flex align-items-start mb-1 shadow-lg p-1 border rounded"
-                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                        <div class="me-3">
-                            <img src="images/services/OCTG.jpg.png" class="img-fluid"
-                                style="width: 100px; height: 50px; border-radius: 10px;" alt="Fishing Service">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="mb-1">OCTG</h5>
-                            <p>From visual inspections to advanced testing, our OCTG inspection services provide
-                                the assurance you need.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-12">
-                    <div class="d-flex align-items-start mb-1 shadow-lg p-1 border rounded"
-                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                        <div class="me-3">
-                            <img src="images/services/non-destructive-test.jpg" class="img-fluid"
-                                style="width: 100px; height: 50px; border-radius: 10px;"
-                                alt="Well Testing Service">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="mb-1">Non-Destructive Testing NDT</h5>
-                            <p>Maximize asset integrity with our expert NDT inspection services – providing
-                                precise, non-invasive testing for critical offshore & onshore infrastructure.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="d-flex align-items-start mb-1 shadow-lg p-1 border rounded"
-                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                        <div class="me-3">
-                            <img src="images/services/non-destructive-test.jpg" class="img-fluid"
-                                style="width: 100px; height: 50px; border-radius: 10px;"
-                                alt="Well Testing Service">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="mb-1">Non-Destructive Testing NDT</h5>
-                            <p>Maximize asset integrity with our expert NDT inspection services – providing
-                                precise, non-invasive testing for critical offshore & onshore infrastructure.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="d-flex align-items-start mb-1 shadow-lg p-1 border rounded"
-                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                        <div class="me-3">
-                            <img src="images/services/non-destructive-test.jpg" class="img-fluid"
-                                style="width: 100px; height: 50px; border-radius: 10px;"
-                                alt="Well Testing Service">
-                        </div>
-                        <div class="flex-grow-1">
-                            <h5 class="mb-1">Non-Destructive Testing NDT</h5>
-                            <p>Maximize asset integrity with our expert NDT inspection services – providing
-                                precise, non-invasive testing for critical offshore & onshore infrastructure.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="col-12">
-                    <div class="d-flex align-items-start mb-1 shadow-lg p-1 border rounded"
-                        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                        <div class="me-3">
-                            <img src="images/services/Off-the-shelf-Training.jpg.png" class="img-fluid"
-                                style="width: 100px; height: 50px; border-radius: 10px;" alt="">
-                        </div>
-                        <div class="flex-grow-1">
-
-                            <h5 class="mb-1">Third Party</h5>
-                            <p>Maximize asset integrity with our expert NDT inspection services – providing
-                                precise, non-invasive testing for critical offshore & onshore infrastructure.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-        <div class="brx-popup-backdrop"></div>
-
-        <div id="brxe-440009" class="brxe-block bricks-lazy-hidden">
-            <div id="brxe-3f0483" class="brxe-text-basic">To learn more please
-                contact us</div>
-        </div>
-        <!-- Button Section -->
-        <div id="brxe-405c07" class="brxe-block bricks-lazy-hidden">
-            <a id="brxe-nmlapx" data-script-id="nmlapx" class="brxe-arrowbutton bc-arrow-button"
-                data-bs-toggle="modal" data-bs-target="#contact" href="" data-swap="disable">
-                <div class='bc-arrow-button__circle'>
-                    <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-left'
-                        xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-                        <path
-                            d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
-                    </svg>
-                    <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-right'
-                        xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-                        <path
-                            d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
-                    </svg>
-                </div>
-                <div class='bc-arrow-button_title-wrapper'>
-                    <div class='bc-arrow-button_title-wrap'>
-                        <div class='bc-arrow-button__title'>Get in touch</div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-
-    </div>
-</div>
-</div>
-
-<div class="modal fade" id="technicalModal" tabindex="-1" aria-labelledby="earthModallLabel" aria-hidden="true">
-
-
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-
-            <div id="brxe-52858f" class="brxe-block bricks-lazy-hidden" type="button" class="btn-close"
-                data-bs-dismiss="modal" aria-label="Close">
-                <svg data-interaction-id="634d25" class="brxe-icon" id="brxe-vhvxif"
-                    xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512">
-                    <path
-                        d="M338.1 413.4c3.1 3.1 8.2 3.1 11.3 0s3.1-8.2 0-11.3L203.3 256 349.4 109.9c3.1-3.1 3.1-8.2 0-11.3s-8.2-3.1-11.3 0L192 244.7 45.9 98.6c-3.1-3.1-8.2-3.1-11.3 0s-3.1 8.2 0 11.3L180.7 256 34.6 402.1c-3.1 3.1-3.1 8.2 0 11.3s8.2 3.1 11.3 0L192 267.3 338.1 413.4z">
-                    </path>
-                </svg>
-
-            </div>
-            <div id="brxe-c89b0f" class="brxe-block bricks-lazy-hidden">
-                <div id="brxe-6b5b13" class="brxe-text-basic">
-                    VOE - Technical Services
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="row g-4">
-                    <!-- Card 1 -->
-                    <div class="col-12">
-                        <div class="d-flex align-items-start mb-2 shadow-lg p-2 border rounded"
-                            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                            <div class="me-3">
-                                <img src="images/services/Field-studies-and-geological-mapping.jpg"
-                                    class="img-fluid" style="width: 150px; height: 150px; border-radius: 10px;"
-                                    alt="Slickline Service">
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5 class="mb-2">Field Studies & Geological Mapping</h5>
-                                <p>
-                                    From surface surveys to subsurface analysis, we transform landscapes into
-                                    actionable datasets through the use of our advanced and expert geological
-                                    mapping services.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="col-12">
-                        <div class="d-flex align-items-start mb-2 shadow-lg p-2 border rounded"
-                            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                            <div class="me-3">
-                                <img src="images/services/Geotechnical-investigation.jpg" class="img-fluid"
-                                    style="width: 150px; height: 150px; border-radius: 10px;" alt="Fishing Service">
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5 class="mb-2">Geotechnical Investigation</h5>
-                                <p>
-                                    Drive project success with our reliable geotechnical investigation services –
-                                    delivering precise data to support safe and efficient operations.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="col-12">
-                        <div class="d-flex align-items-start mb-2 shadow-lg p-2 border rounded"
-                            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                            <div class="me-3">
-                                <img src="images/services/Earth.jpg" class="img-fluid"
-                                    style="width: 150px; height: 150px; border-radius: 10px;"
-                                    alt="Well Testing Service">
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5 class="mb-2">Seismic Support Services</h5>
-                                <p>
-
-                                    Transform complex data into crystal-clear insights with our visualization
-                                    services.
-                                    From seismic to production, we turn your numbers into powerful visual stories.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 4 -->
-                    <div class="col-12">
-                        <div class="d-flex align-items-start mb-2 shadow-lg p-2 border rounded"
-                            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                            <div class="me-3">
-                                <img src="images/services/Data-visualization-and-geoscience-training-service.jpg"
-                                    class="img-fluid" style="width: 150px; height: 150px; border-radius: 10px;"
-                                    alt="Well Bore Clean-Out Service">
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5 class="mb-2"> Data Visualization Services (Viz Centre)
-                                </h5>
-                                <p>
-
-                                    Amplify your seismic success with our comprehensive support services.
-                                    From survey design to data processing, we're the backbone of your exploration
-                                    efforts
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 5 -->
-                    <div class="col-12">
-                        <div class="d-flex align-items-start mb-2 shadow-lg p-2 border rounded"
-                            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                            <div class="me-3">
-                                <img src="images/services/Earth-Science.jpg" class="img-fluid"
-                                    style="width: 150px; height: 150px; border-radius: 10px;"
-                                    alt="Drilling Tools Service">
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5 class="mb-2">
-                                    Evironmental Solutions & Chemicals</h5>
-                                <p>
-                                    Unlock eco-friendly efficiency with our innovative environmental and chemical
-                                    solutions.
-                                    From waste management to tailored treatments, we're your partners in responsible
-                                    resource extraction
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 6 -->
-                    <div class="col-12">
-                        <div class="d-flex align-items-start mb-2 shadow-lg p-2 border rounded"
-                            style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-                            <div class="me-3">
-                                <img src="images/services/Marine-support-service.jpg" class="img-fluid"
-                                    style="width: 150px; height: 150px; border-radius: 10px;"
-                                    alt="Marine Support Service">
-                            </div>
-                            <div class="flex-grow-1">
-                                <h5 class="mb-2">
-                                    Operations & Wellsite Geological Services</h5>
-                                <p>
-                                    Optimize your wellsite operations with our expert geological services. From well
-                                    planning to real-time monitoring, we deliver the insights you need.
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="brx-popup-backdrop"></div>
-
-            <div id="brxe-440009" class="brxe-block bricks-lazy-hidden">
-                <div id="brxe-3f0483" class="brxe-text-basic">To learn more please
-                    contact us</div>
-            </div>
-            <!-- Button Section -->
-            <div id="brxe-405c07" class="brxe-block bricks-lazy-hidden">
-                <a id="brxe-nmlapx" data-script-id="nmlapx" class="brxe-arrowbutton bc-arrow-button"
-                    data-bs-toggle="modal" " href="get-in-touch/index.html" data-swap="disable">
-                    <div class='bc-arrow-button__circle'>
-                        <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-left'
-                            xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-                            <path
-                                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
-                        </svg>
-                        <svg class='bc-arrow-button__arrow bc-arrow-button__arrow-right'
-                            xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-                            <path
-                                d='M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z' />
-                        </svg>
-                    </div>
-                    <div class='bc-arrow-button_title-wrapper'>
-                        <div class='bc-arrow-button_title-wrap'>
-                            <div class='bc-arrow-button__title'>Get in touch</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-
-        </div>
-    </div>
-</div>
 
 
 
@@ -2186,6 +2083,16 @@ MAKING SURE THEY ARE ALL ALIGNED
             behavior: 'smooth' // Smooth scrolling effect
         });
     });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.querySelector('.brx-popup');
+
+    modal.addEventListener('showPopup', function() {
+        modal.scrollTop = 0;  // Scrolls the modal to the top
+    });
+});
+
 </script>
 
 

@@ -494,6 +494,65 @@
         margin-right: 15px;
     }
 }
+/* General Styles */
+.footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #f1f1f1;
+}
+
+/* Align icons and text in the menu */
+.footer .btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align text and icon properly */
+  padding: 5px 0;
+}
+
+.footer .btn i {
+  margin-right: 8px;
+  font-size: 18px; /* Ensure icons have consistent size */
+}
+
+.footer .btn span {
+  font-size: 16px;
+}
+
+/* Social icons */
+.btn-social i {
+  font-size: 20px;
+}
+
+/* Media Queries for mobile devices */
+@media (max-width: 768px) {
+  .footer .col-lg-4 {
+    padding-left: 10px; /* Remove left padding on mobile */
+  }
+
+  .footer .btn {
+    justify-content: center; /* Center menu items on mobile */
+  }
+
+  .footer .btn-social {
+    justify-content: center;
+    margin-bottom: 2px; /* Center social icons on mobile */
+  }
+}
+
+/* Media Queries for larger screens */
+@media (min-width: 769px) {
+  .footer .col-lg-4 {
+    padding-left: 100px; /* Maintain left padding on larger screens */
+  }
+
+  .footer .btn {
+    justify-content: flex-start; /* Align menu items to the left on larger screens */
+  }
+}
+
 
   </style>
 </head>
@@ -1130,10 +1189,10 @@
 
 
 <!-- footer  -->
-  <div class="container-fluid bg-secondary text-light footer mt-5 pt-4 ">
+  <!-- <div class="container-fluid bg-secondary text-light footer mt-5 pt-4 ">
     <div class="container py-3 px-lg-5">
       <div class="row g-5">
-        <!-- Footer Column 1 -->
+        
         <div class="col-md-6 col-lg-5">
           <a href="" class="navbar-brand p-0">
             <img src="images/logo.png" alt="Logo" width="80%">
@@ -1146,8 +1205,7 @@
             space.
           </p>
         </div>
-
-        <!-- Footer Column 2 -->
+        
         <div class="col-md-6 col-lg-4" style="padding-left: 100px;">
           <h5 class="text-white mb-4"><strong>Menu</strong></h5>
           <div class="d-flex flex-column">
@@ -1163,25 +1221,11 @@
             <a class="btn text-light mb-2" href="">
               <i class="fas fa-handshake me-2"></i> Partners
             </a>
-            <!-- <a class="btn btn-link text-light mb-2" href="">
-                        <i class="fas fa-cog me-2"></i> Services
-                    </a>
-                    <a class="btn btn-link text-light mb-2" href="">
-                        <i class="fas fa-envelope me-2"></i> Contact Us
-                    </a>
-                    <a class="btn btn-link text-light mb-2" href="">
-                        <i class="fas fa-info-circle me-2"></i> About Us
-                    </a>
-                    <a class="btn btn-link text-light mb-2" href="">
-                        <i class="fas fa-handshake me-2"></i> Partners
-                    </a> -->
           </div>
         </div>
 
 
 
-
-        <!-- Footer Column 4 -->
         <div class="col-md-6 col-lg-3">
           <h5 class="text-white mb-4"><strong>Get In Touch</strong></h5>
           <p><i class="fa fa-map-marker-alt me-3"></i>Rua Dr. Jose Pereiva do Nascimento,
@@ -1205,8 +1249,72 @@
     </div>
 
 
-  </div>
+  </div> -->
  
+  <div class="container-fluid bg-secondary text-light footer mt-5 pt-4">
+    <div class="container py-3 px-lg-5">
+      <div class="row g-5">
+        <!-- Footer Column 1 -->
+        <div class="col-md-6 col-lg-5">
+          <a href="" class="navbar-brand p-0">
+            <img src="images/logo.png" alt="Logo" class="img-fluid" style="width: 80%;">
+          </a>
+          <p class="text-justify">
+            Victory Oil & Energy is a leading multi-service Pan African-centric oil and energy organization
+            with a diverse and growing portfolio of solutions and capabilities geared towards the delivery
+            of efficient and reliable quality services within the oil & gas and renewable energy market space.
+          </p>
+        </div>
+  
+        <!-- Footer Column 2 (Menu) -->
+        <div class="col-md-6 col-lg-4 menu-section " >
+            <h5 class="text-white mb-4" style="padding-left: 150px;"><strong>Menu :</strong></h5>
+            <div class="d-flex flex-column">
+              <a class="btn d-flex align-items-center text-light mb-2" href="">
+                <i class="fas fa-cog me-2"></i> <span>Services</span>
+              </a>
+              <a class="btn d-flex align-items-center text-light mb-2" href="">
+                <i class="fas fa-envelope me-2"></i> <span>Contact Us</span>
+              </a>
+              <a class="btn d-flex align-items-center text-light mb-2" href="">
+                <i class="fas fa-info-circle me-2"></i> <span>About Us</span>
+              </a>
+              <a class="btn d-flex align-items-center text-light mb-2" href="">
+                <i class="fas fa-handshake me-2"></i> <span>Partners</span>
+              </a>
+            </div>
+          </div>
+          
+  
+        <!-- Footer Column 3 (Get In Touch) -->
+        <div class="col-md-6 col-lg-3">
+          <h5 class="text-white mb-4"><strong>Get In Touch :</strong></h5>
+          <p><i class="fa fa-map-marker-alt me-3"></i>Rua Dr. Jose Pereiva do Nascimento, No 49 Maianga, Luanda Angola.</p>
+          <p><i class="fa fa-phone-alt me-3"></i> <strong>+244 222 350 574</strong></p>
+          <p><i class="fa fa-envelope me-3"></i><strong>general@victoryoe.com</strong></p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social me-2" href="https://web.facebook.com/VictoryOilEnergy"><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social me-2" href="https://www.instagram.com/victoryoilenergy.ao/"><i
+                class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/victoryoe/"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Footer Bottom -->
+      
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+        &copy; <span><a class="border-bottom" href="#">Victory Oil & Energy</a> All Rights Reserved.</span>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
 <!-- =============================== ALL THE MODALS HERE ===================
 MAKING SURE THEY ARE ALL ALIGNED 
 ======================================================================= -->

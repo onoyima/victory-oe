@@ -6617,6 +6617,48 @@ body.bricks-is-frontend :focus-visible {
   }
 }
 
+.brxe-popup-1112 .brx-popup-content {
+  width: 70vw;
+  height: 100vh;
+  padding-top: 2.5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2.5rem
+}
+
+.brxe-popup-1112.brx-popup {
+  align-items: flex-start
+}
+
+.brxe-popup-1112.brx-popup .brx-popup-backdrop {
+  background-color: rgba(54, 54, 58, 0.34)
+}
+
+@media (max-width: 991px) {
+  .brxe-popup-1112 .brx-popup-content {
+    width: 70vw
+  }
+}
+
+@media (max-width: 880px) {
+  .brxe-popup-1112 .brx-popup-content {
+    width: 90vw
+  }
+}
+
+@media (max-width: 767px) {
+  .brxe-popup-1112 .brx-popup-content {
+    width: 90vw
+  }
+}
+
+@media (max-width: 478px) {
+  .brxe-popup-1112 .brx-popup-content {
+    width: 100vw
+  }
+}
+
+
 .brxe-popup-1205 .brx-popup-content {
   width: 70vw;
   height: 100vh;

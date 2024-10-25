@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en-GB">
 <meta charset="utf-8">
@@ -185,9 +188,7 @@
                 </div>
 
                 <!-- Message Container -->
-                <div id="message-container" class="text-center mb-4"></div>
-                <?php session_start(); ?>
-                <div id="message-container">
+                <div id="message-container" class="text-center mb-4">
                     <?php
                     if (isset($_SESSION['message'])) {
                         echo $_SESSION['message'];
@@ -196,31 +197,30 @@
                     ?>
                 </div>
 
-
-                <div class="wow fadeInUp" data-wow-delay="0.3s">
+                <div class="fadeInUp" data-wow-delay="0.3s">
                     <form action="process.php" method="POST">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder=" " required>
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder=" " required>
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder=" " required>
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 100px" required></textarea>
+                                    <textarea class="form-control" placeholder=" " id="message" name="message" style="height: 100px" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>

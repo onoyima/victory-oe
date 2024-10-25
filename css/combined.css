@@ -1,0 +1,582 @@
+<style>
+    /* Styling for the "Back to Top" button */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      /* Hidden initially */
+      background-color: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 100;
+      text-align: center;
+    }
+
+    .back-to-top i {
+      font-size: 20px;
+    }
+
+    /* Adjustments for smaller screens */
+    @media (max-width: 768px) {
+      .back-to-top {
+        bottom: 10px;
+        /* Move the button slightly higher on small screens */
+        right: 10px;
+        /* Adjust right position for small screens */
+        padding: 8px 12px;
+        /* Slightly reduce button size */
+      }
+
+      .back-to-top i {
+        font-size: 18px;
+        /* Adjust icon size on small screens */
+      }
+    }
+  </style>
+  <style>
+    h2,
+    h3 {
+      /* font-family: "roboto" !important;          */
+      /* font-family: "Quicksand", sans-serif !important;          */
+      /* font-family: "Nanum Gothic", sans-serif !important; */
+      /* font-family: "Athiti", sans-serif !important; */
+      /* font-family: "Arsenal", sans-serif !important; */
+      font-family: "Rajdhani", sans-serif !important;
+      /* font-family: "Sevillana", cursive !important; */
+      font-size: 30px !important;
+      /* font-size:  clamp(38px, 5.208vw, 100px); */
+
+      letter-spacing: 2px;
+      line-height: 1;
+      margin: 0;
+      text-rendering: optimizelegibility;
+      /* color: red !important; */
+
+    }
+
+    p {
+
+
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 1px;
+      font-size: 1.5rem;
+      line-height: 2;
+    }
+
+    h1 {
+      font-size: calc(1.375rem + 1.5vw);
+      /* font-weight: 300 !important; */
+      letter-spacing: 5px;
+
+      font-family: "Rajdhani", sans-serif !important;
+
+    }
+
+
+
+    .title1 {
+
+      font-family: "Rajdhani", sans-serif !important;
+      font-weight: 300 !important;
+      font-style: normal !important;
+      color: gold !important;
+      /* letter-spacing: 5px; */
+      line-height: 2 !important;
+
+
+    }
+
+
+
+
+    /* .sevillana-regular {
+  font-family: "Sevillana", cursive !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+} */
+
+
+    @media (max-width: 767.98px) {
+      #about .col-lg-6 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+      }
+
+      .section-title {
+        text-align: center;
+      }
+
+      video.video-fluid {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    /* Set a fixed height for all cards */
+
+
+
+
+    /* Ensure paragraph takes exactly 3 lines */
+    .card-body p {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      /* Limit to 3 lines */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /* Optional, adds "..." if the text overflows */
+      line-height: 1.5em;
+      /* Set line height to control spacing between lines */
+      height: 4.5em;
+      /* Ensure 3 lines total (3 * line-height) */
+
+    }
+
+    /* Ensure 'Read More' button stays at the bottom */
+    .card-body .btn {
+      margin-top: auto;
+      /* Pushes the button to the bottom */
+    }
+
+
+
+    /* Base styles for buttons */
+    .btn-custom {
+      font-family: "Rajdhani", sans-serif !important;
+      position: relative;
+      font-size: 2rem;
+      /* text-transform: uppercase; */
+      letter-spacing: 1px;
+      /* font-weight: bold; */
+      padding: 0.5rem 1rem;
+      color: #009dd1;
+      /* Button text color */
+      transition: color 0.3s ease;
+    }
+
+    .btn-custom::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #009dd1;
+      /* Line color */
+      left: 0;
+      bottom: -5px;
+      transition: width 0.3s ease;
+    }
+
+    .btn-custom:hover::after {
+      width: 100%;
+      /* Expands line on hover */
+    }
+
+    .btn-custom:hover {
+      color: #009dd1;
+      /* Darker color on hover */
+    }
+
+    /* Additional styles for different sections */
+    .btn-custom:focus {
+      outline: none;
+    }
+
+    .text-primary {
+      color: #009dd1 !important;
+    }
+
+    .about {
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+
+    }
+
+    .about p {
+      font-size: 14px !important;
+    }
+  </style>
+
+  <style>
+    /* Sticky Navbar */
+    .sticky-navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .brxe-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .brxe-text-link {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #333;
+      position: relative;
+    }
+
+    .brxe-text-link:hover {
+      color: #007BFF;
+    }
+
+    /* Dropdown Menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 8px 12px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+  <style>
+    /* General Styles */
+    .sticky-navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .brxe-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .brxe-text-link {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .brxe-text-link:hover {
+      color: #007BFF;
+    }
+
+    /* Responsive Styles */
+    .navbar-links {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Hide navbar links by default on small screens */
+    @media (max-width: 768px) {
+      .navbar-links {
+        display: none;
+        /* Hide the links by default */
+        flex-direction: column;
+        /* Stack links vertically */
+        position: absolute;
+        /* Position the dropdown */
+        top: 60px;
+        /* Adjust based on your navbar height */
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+      }
+
+      .navbar-links.show {
+        display: flex;
+        /* Show links when toggle is activated */
+      }
+
+      .brxe-toggle {
+        display: block;
+        /* Show toggle button on small screens */
+      }
+    }
+
+    @media (min-width: 769px) {
+      .brxe-toggle {
+        display: none;
+        /* Hide toggle button on larger screens */
+      }
+    }
+
+    /* Dropdown Menu */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 8px 12px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Show the dropdown */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+
+
+  
+  <style>
+    @media (max-width: 768px) {
+      .masthead {
+        top: 30% !important;
+        padding-top: 20px !important;
+      }
+
+      .masthead h1 {
+        font-size: 2rem;
+        padding-bottom: 10px;
+      }
+
+      .masthead p {
+        font-size: 1rem;
+        padding-top: 10px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .masthead {
+        top: 25% !important;
+      }
+
+      .masthead h1 {
+        font-size: 1.5rem;
+      }
+
+      .masthead p {
+        font-size: 0.9rem;
+      }
+    }
+
+    .modal-dialog {
+      max-width: 95% !important;
+      margin: 0rem auto;
+    }
+
+    @media (min-width: 768px) {
+      .modal-dialog {
+        max-width: 1000% !important;
+      }
+    }
+
+
+    .modal-content {
+      max-width: 70%;
+      max-height: 100%;
+      padding: 5px;
+    }
+
+
+    .card {
+      margin: 0;
+    }
+
+
+
+    /* General Styles */
+    .card-wrapper {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      height: 250px;
+      /* Fixed height to make all cards the same size */
+    }
+
+    .img-container {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      /* Ensures image doesn’t overflow */
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    .card-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Locks image within the container without distortion */
+      border-radius: 10px;
+    }
+
+    /* To make the text uniform in size */
+    .card-title {
+      font-size: 2em;
+      font-family: "Rajdhani", sans-serif !important;
+      margin-bottom: 1rem !important;
+      letter-spacing: 2;
+      font-weight: 400  !important;
+      line-height: 1.4;
+      /* Same font size for all titles */
+    }
+
+    .card-text {
+      font-size: 14px;
+      /* Same font size for all text */
+    }
+
+    /* Media Query for Small Screens */
+    @media (max-width: 768px) {
+      .card-wrapper {
+        flex-direction: column;
+        height: auto;
+        /* Adjust height for smaller screens */
+      }
+
+      .img-container {
+        width: 100%;
+        height: auto;
+      }
+
+      .card-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+      }
+    }
+
+    /* For Large Screens */
+    @media (min-width: 769px) {
+      .img-container {
+        margin-right: 15px;
+      }
+
+      .card-wrapper {
+        height: 159px;
+        /* Fixed height for uniform cards */
+      }
+
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Vertically center the text */
+      }
+    }
+
+
+
+
+
+
+    /* Styles for Larger Screens */
+    @media (min-width: 769px) {
+      .img-container {
+        margin-right: 15px;
+      }
+    }
+
+    /* General Styles */
+    .footer a {
+      color: #f8f9fa;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #f1f1f1;
+    }
+
+    /* Align icons and text in the menu */
+    .footer .btn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      /* Align text and icon properly */
+      padding: 5px 0;
+    }
+
+    .footer .btn i {
+      margin-right: 8px;
+      font-size: 18px;
+      /* Ensure icons have consistent size */
+    }
+
+    .footer .btn span {
+      font-size: 16px;
+    }
+
+    /* Social icons */
+    .btn-social i {
+      font-size: 20px;
+    }
+
+    /* Media Queries for mobile devices */
+    @media (max-width: 768px) {
+      .footer .col-lg-4 {
+        padding-left: 10px;
+        /* Remove left padding on mobile */
+      }
+
+      .footer .btn {
+        justify-content: center;
+        /* Center menu items on mobile */
+      }
+
+      .footer .btn-social {
+        justify-content: center;
+        margin-bottom: 2px;
+        /* Center social icons on mobile */
+      }
+    }
+
+    /* Media Queries for larger screens */
+    @media (min-width: 769px) {
+      .footer .col-lg-4 {
+        padding-left: 100px;
+        /* Maintain left padding on larger screens */
+      }
+
+      .footer .btn {
+        justify-content: flex-start;
+        /* Align menu items to the left on larger screens */
+      }
+    }
+  </style>

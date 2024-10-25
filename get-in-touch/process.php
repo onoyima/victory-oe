@@ -27,9 +27,9 @@ if (isset($_POST['btn-send'])) {
     } else {
         $_SESSION['message'] = "<div class='alert alert-warning'>All fields are required!</div>";
     }
-    header("Location: get-in-touch/index.php"); // Redirect back to index.php
+    header("Location: index.php"); // Redirect back to index.php
     exit;
 } else {
-    header("Location: get-in-touch/index.php"); // Redirect back to index.php
+    header("Location: index.php"); // Redirect back to index.php
     exit;
 }

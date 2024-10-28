@@ -51,18 +51,12 @@ body{
   h2,
   h3
   {       
-            /* font-family: "roboto" !important;          */
-            /* font-family: "Quicksand", sans-serif !important;          */
-             /* font-family: "Nanum Gothic", sans-serif !important; */
-            /* font-family: "Athiti", sans-serif !important; */
-            /* font-family: "Arsenal", sans-serif !important; */
+    
             font-family: "Rajdhani", sans-serif !important;        
-                font-size:  30px !important;
-          /* font-size:  clamp(38px, 5.208vw, 100px); */
-  
-          letter-spacing: 2px;
-          line-height: 1;
-          margin: 0;
+            font-size:  30px !important;
+            letter-spacing: 2px;
+            line-height: 1;
+            margin: 0;
             text-rendering: optimizelegibility;
           /* color: red !important; */
       

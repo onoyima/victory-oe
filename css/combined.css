@@ -53,17 +53,57 @@
       line-height: 1;
       margin: 0;
       text-rendering: optimizelegibility;
-      /* color: red !important; */
+     
 
     }
 
-    p {
+    /* sub services main title */
 
+    .brxe-text-basic{
+      font-family: "Rajdhani", sans-serif !important;
+      font-size: 3rem !important;
+      letter-spacing: 2px !important;
+      line-height: 1 !important;
+      margin: 0;
+      text-align: center;
+      text-rendering: optimizelegibility;
+    }
+    #brxe-3f0483{
+      font-family: "Rajdhani", sans-serif !important;
+      font-size: 2.5rem !important;
+      letter-spacing: 2px !important;
+    }
+    p {
 
       font-family: "Poppins", sans-serif;
       letter-spacing: 1px;
       font-size: 1.5rem;
       line-height: 2;
+    }
+
+    .card-title, .card-body h3{
+      font-family: "Rajdhani", sans-serif !important;
+      font-size: 30px !important;
+      letter-spacing: 2px !important;
+      line-height: 1 !important;
+      margin: 0;
+      text-rendering: optimizelegibility;
+    }
+
+    .card-body p {
+      font-family: "Poppins", sans-serif !important;
+      letter-spacing: 1px !important;
+      /* font-size: 1.5rem; */
+      font-size: 14px !important;
+      line-height: 2 !important;
+    }
+    .card-text {
+      font-family: "Poppins", sans-serif !important;
+      letter-spacing: 1px !important;
+      /* font-size: 1.5rem; */
+      font-size: 14px !important;
+      line-height: 2 !important;
+      
     }
 
     h1 {

@@ -141,14 +141,14 @@ body{
 
 
 /*** Navbar ***/
-.navbar-light .navbar-nav .nav-link {
+/* .navbar-light .navbar-nav .nav-link {
     position: relative;
     margin-left: 25px;
     padding: 35px 0;
     color: rgb(14, 44, 179);
     outline: none;
     transition: .5s;
-}
+} */
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;

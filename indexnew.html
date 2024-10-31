@@ -47,6 +47,7 @@
 </head>
 
 <body id="page-top" class="home page-template-default page page-id-8 brx-body bricks-is-frontend wp-embed-responsive">
+  <div id="progress-bar"></div>
 
   <header id="brx-header" class="sticky on-scroll  ">
     <section id="brxe-dzfjwf" class="brxe-section bricks-lazy-hidden">
@@ -675,69 +676,6 @@
 
   </main>
 
-
-  <!-- footer  -->
-  <!-- <div class="container-fluid bg-secondary text-light footer mt-5 pt-4 ">
-    <div class="container py-3 px-lg-5">
-      <div class="row g-5">
-        
-        <div class="col-md-6 col-lg-5">
-          <a href="" class="navbar-brand p-0">
-            <img src="images/logo.png" alt="Logo" width="80%">
-          </a>
-          <p class="text-justify">
-            Victory Oil & Energy is a leading multi-service Pan African-centric oil and energy organization
-            with a diverse and growing portfolio of solutions and capabilities geared towards the
-            delivery
-            of efficient and reliable quality services within the oil & gas and renewable energy market
-            space.
-          </p>
-        </div>
-        
-        <div class="col-md-6 col-lg-4" style="padding-left: 100px;">
-          <h5 class="text-white mb-4"><strong>Menu</strong></h5>
-          <div class="d-flex flex-column">
-            <a class="btn  text-light mb-2" href="">
-              <i class="fas fa-cog me-2"></i> Services
-            </a>
-            <a class="btn  text-light mb-2" href="">
-              <i class="fas fa-envelope me-2"></i> Contact Us
-            </a>
-            <a class="btn  text-light mb-2" href="">
-              <i class="fas fa-info-circle me-2"></i> About Us
-            </a>
-            <a class="btn text-light mb-2" href="">
-              <i class="fas fa-handshake me-2"></i> Partners
-            </a>
-          </div>
-        </div>
-
-
-
-        <div class="col-md-6 col-lg-3">
-          <h5 class="text-white mb-4"><strong>Get In Touch</strong></h5>
-          <p><i class="fa fa-map-marker-alt me-3"></i>Rua Dr. Jose Pereiva do Nascimento,
-            No 49 Maianga, Luanda Angola.</p>
-          <p><i class="fa fa-phone-alt me-3"></i> <strong>+244 222 350 574</strong></p>
-          <p><i class="fa fa-envelope me-3"></i><strong>general@victoryoe.com</strong></p>
-          <div class="d-flex pt-2">
-            <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-outline-light btn-social me-2" href="https://web.facebook.com/VictoryOilEnergy"><i
-                class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-outline-light btn-social me-2" href="https://www.instagram.com/victoryoilenergy.ao/"><i
-                class="fab fa-instagram"></i></a>
-            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/victoryoe/"><i
-                class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-        &copy; <span><a class="border-bottom" href="#">Victory Oil & Energy</a> All Rights Reserved.</span>
-      </div>
-    </div>
-
-
-  </div> -->
 
   <div class="container-fluid bg-secondary text-light footer mt-5 pt-4">
     <div class="container py-3 px-lg-5">
@@ -1750,6 +1688,37 @@ MAKING SURE THEY ARE ALL ALIGNED
   <script src="idyha/wp-content/themes/bricks/assets/js/bricks.min6c77.js?ver=1725537282"
     id="bricks-scripts-js"></script>
 
+    <script>
+      let lastScrollTop = 0;
+
+window.addEventListener('scroll', function() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const maxHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progressBar = document.getElementById('progress-bar');
+
+    // Calculate the progress as a percentage
+    const progress = (scrollTop / maxHeight) * 100;
+
+    // Update the width of the progress bar
+    progressBar.style.width = `${progress}%`;
+
+    // If the progress bar is not blinking, start the animation
+    if (!progressBar.classList.contains('blinking')) {
+        progressBar.classList.add('blinking');
+    }
+
+    // Optional: Stop blinking when scrolling up
+    if (scrollTop < lastScrollTop) {
+        progressBar.classList.remove('blinking');
+        const newProgress = Math.max(0, progress - 1); // Decrease progress by 1%
+        progressBar.style.width = `${newProgress}%`;
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+});
+
+    </script>
+  
 </body>
 
 </html>

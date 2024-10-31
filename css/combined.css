@@ -626,3 +626,25 @@
 }
 
   
+
+  @keyframes blink {
+  0% {
+    background-color: #009dd1; /* Starting color */
+  }
+  50% {
+    background-color: gold; /* Midway color */
+  }
+  100% {
+    background-color: #009dd1; /* Back to starting color */
+  }
+}
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px; /* Height of the progress bar */
+  width: 0; /* Initial width */
+  animation: blink 1s infinite; /* Apply the blinking effect */
+  z-index: 1000; /* Make sure it's above other elements */
+}

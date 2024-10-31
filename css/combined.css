@@ -74,13 +74,23 @@
       line-height: 2;
     }
 
-    .card-title, .card-body h3{
+    .card-title {
       font-family: "Rajdhani", sans-serif !important;
       font-size: 30px !important;
       letter-spacing: 2px !important;
       line-height: 1 !important;
       margin: 0;
       text-rendering: optimizelegibility;
+    }
+
+    .card-body h3{
+      font-family: "Poppins", sans-serif !important;
+      font-size: 30px !important;
+      letter-spacing: 2px !important;
+      line-height: 1 !important;
+      margin: 0;
+      text-rendering: optimizelegibility;
+      /* color: red !important; */
     }
 
     .card-body p {
@@ -653,4 +663,8 @@
       letter-spacing: 1px !important;
       font-size: 1em !important;
       line-height: 2 !important;
+}
+
+.brxe-text-basic{
+  font-family: "Poppins", sans-serif !important;
 }

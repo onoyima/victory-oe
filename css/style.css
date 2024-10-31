@@ -52,23 +52,15 @@ body{
   h3
   {       
     
-            font-family: "Rajdhani", sans-serif !important;        
+            font-family: "Poppins", sans-serif !important;
             font-size:  30px !important;
             letter-spacing: 2px;
             line-height: 1;
             margin: 0;
             text-rendering: optimizelegibility;
-          /* color: red !important; */
-      
   }
   p{
-    
-    /* font-family: "Quicksand", sans-serif !important; */
-    /* font-family: "Nanum Gothic", sans-serif !important; */
-            /* font-family: "Athiti", sans-serif !important; */
-            /* font-family: "Arsenal", sans-serif !important; */
-            /* font-family: "Rajdhani", sans-serif !important; */ 
-            font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif !important;
     letter-spacing:1px;
     font-size: 1rem;
     line-height: 2;

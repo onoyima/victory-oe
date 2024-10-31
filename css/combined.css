@@ -614,3 +614,15 @@
       }
     }
   </style>
+
+  .brx-popup-content {
+    width: 100%; /* Optional: Set width of the popup */
+}
+
+.conts {
+    display: flex;
+    justify-content: space-between; /* Space between the items */
+
+}
+
+  

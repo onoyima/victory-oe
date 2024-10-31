@@ -83,7 +83,7 @@
       text-rendering: optimizelegibility;
     }
 
-    .card-body h3{
+    #brxe-ygtcpk h3{
       font-family: "Poppins", sans-serif !important;
       font-size: 30px !important;
       letter-spacing: 2px !important;
@@ -665,6 +665,3 @@
       line-height: 2 !important;
 }
 
-.brxe-text-basic{
-  font-family: "Poppins", sans-serif !important;
-}

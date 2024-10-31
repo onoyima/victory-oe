@@ -648,3 +648,9 @@
   animation: blink 1s infinite; /* Apply the blinking effect */
   z-index: 1000; /* Make sure it's above other elements */
 }
+.dropdown-item{
+  font-family: "Poppins", sans-serif !important;
+      letter-spacing: 1px !important;
+      font-size: 1em !important;
+      line-height: 2 !important;
+}

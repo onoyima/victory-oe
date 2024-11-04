@@ -51,13 +51,14 @@ body{
   h2
   {       
     
-            font-family: "Rajdhani", sans-serif !important;  
+            /* font-family: "Rajdhani", sans-serif !important;   */
             font-size:  30px !important;
             letter-spacing: 1px;
             line-height: 1;
             margin: 0;
             text-rendering: optimizelegibility;
   }
+  
   p{
     font-family: "Poppins", sans-serif !important;
     letter-spacing:1px;

@@ -6718,7 +6718,8 @@ body.bricks-is-frontend :focus-visible {
   font-size: var(--Text-7xl);
   font-family: "Noi Grotesk";
   font-weight: 300;
-  line-height: 1
+  line-height: 1;
+  padding-left: 20px;
 }
 
 #brxe-6925eb {
@@ -6733,7 +6734,7 @@ body.bricks-is-frontend :focus-visible {
 }
 
 #brxe-3f0483 {
-  font-family: "Satoshi";
+  font-family: "Noi Grotesk";
   color: var(--bricks-color-ustdyi);
   font-size: var(--Text-s);
   font-weight: 600
@@ -6908,7 +6909,7 @@ body.bricks-is-frontend :focus-visible {
 }
 
 #brxe-acff64 {
-  font-family: "Satoshi";
+  font-family: "Noi Grotesk" !important;
   color: var(--bricks-color-ustdyi);
   font-size: var(--Text-s);
   font-weight: 600;

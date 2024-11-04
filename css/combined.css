@@ -62,7 +62,7 @@
     
     
     #brxe-3f0483{
-      font-family: "Rajdhani", sans-serif !important;
+      font-family: "Noi Grotesk" !important;
       font-size: 2.5rem !important;
       letter-spacing: 2px !important;
     }
@@ -75,7 +75,7 @@
     }
 
     .card-title {
-      font-family: "Rajdhani", sans-serif !important;
+      font-family: "Noi Grotesk" !important;
       font-size: 30px !important;
       letter-spacing: 2px !important;
       line-height: 1 !important;
@@ -84,13 +84,22 @@
     }
 
     #brxe-ygtcpk h3{
-      font-family: "Poppins", sans-serif !important;
+      font-family: "Noi Grotesk" !important;
       font-size: 25px !important;
       letter-spacing: 2px !important;
       line-height: 1 !important;
       margin: 0;
       text-rendering: optimizelegibility;
       /* color: red !important; */
+    }
+
+    .section-title h2{
+      font-family: "Noi Grotesk" !important;
+      font-size: 30px !important;
+      letter-spacing: 2px !important;
+      line-height: 1 !important;
+      margin: 0;
+      text-rendering: optimizelegibility;
     }
 
     .card-body p {
@@ -493,7 +502,7 @@
     /* To make the text uniform in size */
     .card-title {
       font-size: 2em;
-      font-family: "Rajdhani", sans-serif !important;
+      font-family: "Noi Grotesk" !important;
       margin-bottom: 1rem !important;
       letter-spacing: 2;
       font-weight: 400  !important;

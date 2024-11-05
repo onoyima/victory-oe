@@ -31,6 +31,7 @@ html {
   --Space-xl: clamp(62px, 7.604vw, 146px);
   --Space-l: clamp(215px, 5.99vw, 115px);
   --Space-m: clamp(38px, 4.948vw, 95px);
+  
   --Space-s: clamp(24px, 4.375vw, 84px);
   --Space-xs: clamp(26px, 3.229vw, 62px);
   --Space-xxs: clamp(32px, 1.667vw, 32px);

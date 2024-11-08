@@ -282,7 +282,7 @@ session_start();
 
         <!-- Footer Column 2 (Menu) -->
         <div class="col-md-6 col-lg-4 menu-section ">
-          <h5 class="text-white mb-4" style="padding-left: 10px;"><strong>Menu :</strong></h5>
+          <h5 class="text-white mb-4" style="padding-left: 0px;"><strong>Menu :</strong></h5>
           <div class="d-flex flex-column">
             <a class="btn d-flex align-items-center text-light mb-2" href="">
               <i class="fas fa-cog me-2"></i> <span>Services</span>
@@ -305,7 +305,7 @@ session_start();
           <h5 class="text-white mb-4"><strong>Get In Touch :</strong></h5>
           <p><i class="fa fa-map-marker-alt me-3"></i>Rua Dr. Jose Pereiva do Nascimento, No 49 Maianga, Luanda Angola.
           </p>
-          <p><i class="fa fa-phone-alt me-3"></i> <strong>+244 222 350 574</strong></p>
+          <p><i class="fa fa-phone-alt me-3"></i>+244 222 350 574</strong></p>
           <p><i class="fa fa-envelope me-3"></i><strong>general@victoryoe.com</strong></p>
           <div class="d-flex pt-2">
             <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-twitter"></i></a>

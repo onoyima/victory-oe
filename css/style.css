@@ -524,6 +524,15 @@ body{
       font-family: "Rajdhani", sans-serif !important;    
       text-align: normal !important;
 }
+.footer span{
+    font-family: "Rajdhani", sans-serif !important;    
+    text-align: normal !important;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-top: 0;
+    /* margin-bottom: 1rem; */
+}
 
 .footer .btn.btn-social {
     margin-right: 5px;

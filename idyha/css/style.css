@@ -6738,7 +6738,8 @@ body.bricks-is-frontend :focus-visible {
   font-family: "Noi Grotesk";
   color: var(--bricks-color-ustdyi);
   /* color: red !important; */
-  font-size: var(--Text-s);
+  /* font-size: var(--Text-s); */
+  font-size: 2em !important; 
   line-height: 1 !important;
   font-weight: 200 !important;
 }

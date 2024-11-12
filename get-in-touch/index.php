@@ -240,7 +240,7 @@ session_start();
                 <div class="card-body">
                   <!-- Angola Office -->
                   <h6 class="position-relative d-inline text-primary ps-4"><strong>Angola Office:</strong></h6>
-                  <p class="card-text text-dark"><i class="fa fa-map-marker-alt text-warning"></i> Rua Dr. Jose Pereiva do Nascimento, No 49 Maianga, Luanda Angola.</p>
+                  <p class="card-text text-dark"><i class="fa fa-map-marker-alt text-warning"></i>Rua Dr. Jose Maria Antunes, No 46 Maianga, Luanda.</p>
                   <!-- Nigeria Office -->
                   <h6 class="position-relative d-inline text-primary ps-4"><strong>Nigeria Office:</strong></h6>
                   <p class="card-text text-dark"><i class="fa fa-map-marker-alt text-warning"></i> No 1, Oladimeji Alo Str, off Hakeem Dickson Road, Lekki Phase 1, Lagos</p>
@@ -303,9 +303,9 @@ session_start();
         <!-- Footer Column 3 (Get In Touch) -->
         <div class="col-md-6 col-lg-3">
           <h5 class="text-white mb-4"><strong>Get In Touch :</strong></h5>
-          <p><i class="fa fa-map-marker-alt me-3"></i>Rua Dr. Jose Pereiva do Nascimento, No 49 Maianga, Luanda Angola.
+          <p><i class="fa fa-map-marker-alt me-3"></i>Rua Dr. Jose Maria Antunes, No 46 Maianga, Luanda.
           </p>
-          <p><i class="fa fa-phone-alt me-3"></i>+244 222 350 574</strong></p>
+          <p><i class="fa fa-phone-alt me-3"></i>+244 932 552 546</strong></p>
           <p><i class="fa fa-envelope me-3"></i><strong>general@victoryoe.com</strong></p>
           <div class="d-flex pt-2">
             <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-twitter"></i></a>

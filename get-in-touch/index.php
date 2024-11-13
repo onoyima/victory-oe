@@ -306,6 +306,7 @@ session_start();
           <p><i class="fa fa-map-marker-alt me-3"></i>Rua Dr. Jose Maria Antunes, No 46 Maianga, Luanda.
           </p>
           <p><i class="fa fa-phone-alt me-3"></i>+244 932 552 546</strong></p>
+          <p><i class="fa fa-phone-alt me-3"></i>+244 934 088 785</strong></p>
           <p><i class="fa fa-envelope me-3"></i><strong>general@victoryoe.com</strong></p>
           <div class="d-flex pt-2">
             <a class="btn btn-outline-light btn-social me-2" href=""><i class="fab fa-twitter"></i></a>
